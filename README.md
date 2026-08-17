@@ -20,7 +20,13 @@ python -m venv .venv
 .venv/Scripts/python scripts/update.py
 ```
 
-可用 `MAX_NODES=500` 控制输出节点数量上限。建议不要取消上限，否则配置过大可能影响 Clash Verge 启动和测速。
+脚本会并行拉取上游、TCP 探活，再用 mihomo 做协议级延迟测试，只保留延迟最低且真实可用的节点。默认最多输出 200 个，节点名带延迟前缀（如 `123ms | HK-1`），并生成 `FAST`（最快约 20 个）和 `AUTO` 两组。
+
+```bash
+MAX_NODES=200 python scripts/update.py
+```
+
+常用环境变量：`MAX_NODES`（输出上限）、`DELAY_CANDIDATES`（协议测速候选数）、`DISABLE_DELAY_TEST=1`（只做 TCP 探活）。建议不要把上限开得太大，否则 Clash Verge 启动和 url-test 都会变慢。
 
 ## 安全与合规
 

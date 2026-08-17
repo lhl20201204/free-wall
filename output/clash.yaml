@@ -5,30 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - client-fingerprint: chrome
-  name: 118ms | us|f608|puddincat07@Telegram
-  network: ws
-  password: humanity
-  port: '443'
-  server: 104.18.152.77
+  name: '7ms | qilan.de | US Node | HOST #19'
+  password: MiTiVPN
+  port: 443
+  server: cdn2-mitivpn.global.ssl.fastly.net
+  servername: cdn2-mitivpn.global.ssl.fastly.net
   skip-cert-verify: false
-  sni: www.ignitelimit.com
+  sni: cdn2-mitivpn.global.ssl.fastly.net
+  tls: true
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.103 Safari/537.36
-    path: /assignment
-- alpn:
-  - http/1.1
-  - h2
-  - h3
-  client-fingerprint: chrome
-  name: 126ms | us|5eb0|puddincat07@Telegram
+- client-fingerprint: chrome
+  name: '7ms | qilan.de | US Node | HOST #33'
+  password: Mitivpn
+  port: 443
+  server: 3-mitivpn.global.ssl.fastly.net
+  servername: 3-mitivpn.global.ssl.fastly.net
+  skip-cert-verify: false
+  sni: 3-mitivpn.global.ssl.fastly.net
+  tls: true
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 86ms | us|b3d2|puddincat07@Telegram
   network: ws
   password: humanity
   port: '443'
-  server: 198.41.223.96
+  server: 104.16.7.70
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -36,41 +39,13 @@ proxies:
   ws-opts:
     headers:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.71 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: 130ms | 🇫🇷FR_154|281KB/s|A001-260618
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.233
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  sub_tag: A001-260618
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/57.0.2987.133 Safari/537.36
-    path: /assignment
-- name: 133ms | 🇺🇸 美国 CloudFlare节点 16
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.71.213
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
+        like Gecko) Chrome/46.0.2490.86 Safari/537.36
     path: /assignment
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 138ms | 🇫🇷FR_151|181KB/s|A001-260618
+  name: 86ms | 🇫🇷FR_151|181KB/s|A001-260618
   network: ws
   password: humanity
   port: 443
@@ -85,26 +60,6 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/63.0.3239.84 Safari/537.36
     path: /assignment
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: ios
-  name: 144ms | 🇫🇷FR_57|169KB/s|B007-260618
-  network: ws
-  password: humanity
-  port: 443
-  server: 45.130.125.158
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  sub_tag: B007-260618
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/63.0.3239.132 Safari/537.36
-    path: /assignment
 proxy-groups:
 - name: FAST
   type: url-test
@@ -112,35 +67,29 @@ proxy-groups:
   interval: 180
   tolerance: 50
   proxies:
-  - 118ms | us|f608|puddincat07@Telegram
-  - 126ms | us|5eb0|puddincat07@Telegram
-  - 130ms | 🇫🇷FR_154|281KB/s|A001-260618
-  - 133ms | 🇺🇸 美国 CloudFlare节点 16
-  - 138ms | 🇫🇷FR_151|181KB/s|A001-260618
-  - 144ms | 🇫🇷FR_57|169KB/s|B007-260618
+  - '7ms | qilan.de | US Node | HOST #19'
+  - '7ms | qilan.de | US Node | HOST #33'
+  - 86ms | us|b3d2|puddincat07@Telegram
+  - 86ms | 🇫🇷FR_151|181KB/s|A001-260618
 - name: AUTO
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 180
   tolerance: 80
   proxies:
-  - 118ms | us|f608|puddincat07@Telegram
-  - 126ms | us|5eb0|puddincat07@Telegram
-  - 130ms | 🇫🇷FR_154|281KB/s|A001-260618
-  - 133ms | 🇺🇸 美国 CloudFlare节点 16
-  - 138ms | 🇫🇷FR_151|181KB/s|A001-260618
-  - 144ms | 🇫🇷FR_57|169KB/s|B007-260618
+  - '7ms | qilan.de | US Node | HOST #19'
+  - '7ms | qilan.de | US Node | HOST #33'
+  - 86ms | us|b3d2|puddincat07@Telegram
+  - 86ms | 🇫🇷FR_151|181KB/s|A001-260618
 - name: PROXY
   type: select
   proxies:
   - FAST
   - AUTO
   - DIRECT
-  - 118ms | us|f608|puddincat07@Telegram
-  - 126ms | us|5eb0|puddincat07@Telegram
-  - 130ms | 🇫🇷FR_154|281KB/s|A001-260618
-  - 133ms | 🇺🇸 美国 CloudFlare节点 16
-  - 138ms | 🇫🇷FR_151|181KB/s|A001-260618
-  - 144ms | 🇫🇷FR_57|169KB/s|B007-260618
+  - '7ms | qilan.de | US Node | HOST #19'
+  - '7ms | qilan.de | US Node | HOST #33'
+  - 86ms | us|b3d2|puddincat07@Telegram
+  - 86ms | 🇫🇷FR_151|181KB/s|A001-260618
 rules:
 - MATCH,PROXY

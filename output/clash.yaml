@@ -4,7 +4,7 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 11ms | 美国 009
+- name: 5ms | 美国 009
   type: vmess
   network: tcp
   server: 84.17.41.2
@@ -14,15 +14,27 @@ proxies:
   alterId: 0
   cipher: auto
 - cipher: rc4-md5
-  name: 11ms | 🇺🇸US_513|336KB/s|A004-260618
+  name: 10ms | 🇺🇸US_513|336KB/s|A004-260618
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 138.199.43.159
   sub_tag: A004-260618
   type: ss
   udp: true
+- name: 168ms | 美国/San Francisco/United States/San Francisco-8
+  type: vmess
+  server: rush-6it6b.teeopp.quest
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /video/kz49hf/gbin5jve.m3u8
 - client-fingerprint: chrome
-  name: 154ms | us|b395|puddincat07@Telegram
+  name: 184ms | us|b395|puddincat07@Telegram
   network: ws
   password: humanity
   port: '443'
@@ -37,23 +49,37 @@ proxies:
         Gecko) Chrome/42.0.2311.90 Safari/537.36
     path: /assignment
 - alpn:
-  - h2
   - http/1.1
+  - h2
+  - h3
   client-fingerprint: chrome
-  name: 155ms | 🇫🇷FR_657|140KB/s|A001-260618
+  name: 268ms | us|5eb0|puddincat07@Telegram
   network: ws
   password: humanity
-  port: 443
-  server: 162.159.136.234
+  port: '443'
+  server: 198.41.223.96
   skip-cert-verify: false
   sni: www.ignitelimit.com
-  sub_tag: A001-260618
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/63.0.3239.84 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.71 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 282ms | xx|8008|puddincat07@Telegram
+  network: ws
+  password: humanity
+  port: '443'
+  server: www.ignitelimit.com
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36
     path: /assignment
 proxy-groups:
 - name: FAST
@@ -62,29 +88,35 @@ proxy-groups:
   interval: 180
   tolerance: 50
   proxies:
-  - 11ms | 美国 009
-  - 11ms | 🇺🇸US_513|336KB/s|A004-260618
-  - 154ms | us|b395|puddincat07@Telegram
-  - 155ms | 🇫🇷FR_657|140KB/s|A001-260618
+  - 5ms | 美国 009
+  - 10ms | 🇺🇸US_513|336KB/s|A004-260618
+  - 168ms | 美国/San Francisco/United States/San Francisco-8
+  - 184ms | us|b395|puddincat07@Telegram
+  - 268ms | us|5eb0|puddincat07@Telegram
+  - 282ms | xx|8008|puddincat07@Telegram
 - name: AUTO
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 180
   tolerance: 80
   proxies:
-  - 11ms | 美国 009
-  - 11ms | 🇺🇸US_513|336KB/s|A004-260618
-  - 154ms | us|b395|puddincat07@Telegram
-  - 155ms | 🇫🇷FR_657|140KB/s|A001-260618
+  - 5ms | 美国 009
+  - 10ms | 🇺🇸US_513|336KB/s|A004-260618
+  - 168ms | 美国/San Francisco/United States/San Francisco-8
+  - 184ms | us|b395|puddincat07@Telegram
+  - 268ms | us|5eb0|puddincat07@Telegram
+  - 282ms | xx|8008|puddincat07@Telegram
 - name: PROXY
   type: select
   proxies:
   - FAST
   - AUTO
   - DIRECT
-  - 11ms | 美国 009
-  - 11ms | 🇺🇸US_513|336KB/s|A004-260618
-  - 154ms | us|b395|puddincat07@Telegram
-  - 155ms | 🇫🇷FR_657|140KB/s|A001-260618
+  - 5ms | 美国 009
+  - 10ms | 🇺🇸US_513|336KB/s|A004-260618
+  - 168ms | 美国/San Francisco/United States/San Francisco-8
+  - 184ms | us|b395|puddincat07@Telegram
+  - 268ms | us|5eb0|puddincat07@Telegram
+  - 282ms | xx|8008|puddincat07@Telegram
 rules:
 - MATCH,PROXY

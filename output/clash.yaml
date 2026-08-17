@@ -4,60 +4,64 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 5ms | 美国 009
-  type: vmess
-  network: tcp
-  server: 84.17.41.2
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-- cipher: rc4-md5
-  name: 10ms | 🇺🇸US_513|336KB/s|A004-260618
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 138.199.43.159
-  sub_tag: A004-260618
-  type: ss
-  udp: true
-- name: 168ms | 美国/San Francisco/United States/San Francisco-8
-  type: vmess
-  server: rush-6it6b.teeopp.quest
+- alpn:
+  - h3
+  client-fingerprint: randomized
+  name: '12ms | qilan.de | US EbraSha | HOST #8'
+  password: tg-dns68
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  server: vip.putata.eu.org
+  servername: vip.putata.eu.org
+  skip-cert-verify: false
+  sni: vip.putata.eu.org
   tls: true
-  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 92ms | 🇩🇪DE_50|104KB/s|A004-260618 01
   network: ws
+  packet-encoding: xudp
+  port: 2053
+  server: cf.levikogjgfdd.ir
+  servername: deapp.jisuyun.top
+  skip-cert-verify: false
+  sub_tag: A004-260618
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 9a1a05d9-69be-45d3-e326-c6621edf7b31
   ws-opts:
-    path: /video/kz49hf/gbin5jve.m3u8
-- client-fingerprint: chrome
-  name: 184ms | us|b395|puddincat07@Telegram
+    headers:
+      Host: deapp.jisuyun.top
+    path: /devm
+  xudp: true
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: ios
+  name: 93ms | 🇫🇷FR_111|223KB/s|B007-260618
   network: ws
   password: humanity
-  port: '443'
-  server: 104.26.15.137
+  port: 443
+  server: 45.130.125.158
   skip-cert-verify: false
   sni: www.ignitelimit.com
+  sub_tag: B007-260618
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/42.0.2311.90 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/63.0.3239.132 Safari/537.36
     path: /assignment
-- alpn:
-  - http/1.1
-  - h2
-  - h3
-  client-fingerprint: chrome
-  name: 268ms | us|5eb0|puddincat07@Telegram
+- client-fingerprint: chrome
+  name: 96ms | us|b3d2|puddincat07@Telegram
   network: ws
   password: humanity
   port: '443'
-  server: 198.41.223.96
+  server: 104.16.7.70
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
@@ -65,21 +69,54 @@ proxies:
   ws-opts:
     headers:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.71 Safari/537.36
+        like Gecko) Chrome/46.0.2490.86 Safari/537.36
     path: /assignment
 - client-fingerprint: chrome
-  name: 282ms | xx|8008|puddincat07@Telegram
+  name: 104ms | 🇫🇷法国FR009 1.61MB/s中性 TG@jcnode
   network: ws
   password: humanity
-  port: '443'
-  server: www.ignitelimit.com
+  port: 443
+  server: 130.250.137.171
+  servername: www.ignitelimit.com
   skip-cert-verify: false
+  sni: www.ignitelimit.com
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/67.0.3396.87 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 110ms | 🇫🇷法国FR008 1.64MB/s中性 TG@jcnode
+  network: ws
+  password: humanity
+  port: 443
+  server: 216.24.57.1
+  servername: www.ignitelimit.com
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.77 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 114ms | us|7ca3|puddincat07@Telegram
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.16.174.109
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.3
+        (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
     path: /assignment
 proxy-groups:
 - name: FAST
@@ -88,35 +125,38 @@ proxy-groups:
   interval: 180
   tolerance: 50
   proxies:
-  - 5ms | 美国 009
-  - 10ms | 🇺🇸US_513|336KB/s|A004-260618
-  - 168ms | 美国/San Francisco/United States/San Francisco-8
-  - 184ms | us|b395|puddincat07@Telegram
-  - 268ms | us|5eb0|puddincat07@Telegram
-  - 282ms | xx|8008|puddincat07@Telegram
+  - '12ms | qilan.de | US EbraSha | HOST #8'
+  - 92ms | 🇩🇪DE_50|104KB/s|A004-260618 01
+  - 93ms | 🇫🇷FR_111|223KB/s|B007-260618
+  - 96ms | us|b3d2|puddincat07@Telegram
+  - 104ms | 🇫🇷法国FR009 1.61MB/s中性 TG@jcnode
+  - 110ms | 🇫🇷法国FR008 1.64MB/s中性 TG@jcnode
+  - 114ms | us|7ca3|puddincat07@Telegram
 - name: AUTO
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 180
   tolerance: 80
   proxies:
-  - 5ms | 美国 009
-  - 10ms | 🇺🇸US_513|336KB/s|A004-260618
-  - 168ms | 美国/San Francisco/United States/San Francisco-8
-  - 184ms | us|b395|puddincat07@Telegram
-  - 268ms | us|5eb0|puddincat07@Telegram
-  - 282ms | xx|8008|puddincat07@Telegram
+  - '12ms | qilan.de | US EbraSha | HOST #8'
+  - 92ms | 🇩🇪DE_50|104KB/s|A004-260618 01
+  - 93ms | 🇫🇷FR_111|223KB/s|B007-260618
+  - 96ms | us|b3d2|puddincat07@Telegram
+  - 104ms | 🇫🇷法国FR009 1.61MB/s中性 TG@jcnode
+  - 110ms | 🇫🇷法国FR008 1.64MB/s中性 TG@jcnode
+  - 114ms | us|7ca3|puddincat07@Telegram
 - name: PROXY
   type: select
   proxies:
   - FAST
   - AUTO
   - DIRECT
-  - 5ms | 美国 009
-  - 10ms | 🇺🇸US_513|336KB/s|A004-260618
-  - 168ms | 美国/San Francisco/United States/San Francisco-8
-  - 184ms | us|b395|puddincat07@Telegram
-  - 268ms | us|5eb0|puddincat07@Telegram
-  - 282ms | xx|8008|puddincat07@Telegram
+  - '12ms | qilan.de | US EbraSha | HOST #8'
+  - 92ms | 🇩🇪DE_50|104KB/s|A004-260618 01
+  - 93ms | 🇫🇷FR_111|223KB/s|B007-260618
+  - 96ms | us|b3d2|puddincat07@Telegram
+  - 104ms | 🇫🇷法国FR009 1.61MB/s中性 TG@jcnode
+  - 110ms | 🇫🇷法国FR008 1.64MB/s中性 TG@jcnode
+  - 114ms | us|7ca3|puddincat07@Telegram
 rules:
 - MATCH,PROXY

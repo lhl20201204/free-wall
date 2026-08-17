@@ -4,49 +4,43 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+- cipher: rc4-md5
+  name: 2ms | shadowsocks-27269
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 138.199.42.68
+  type: ss
+  udp: true
+- alpn:
+  - http/1.1
+  name: 12ms | DE德国(mibei77.com 米贝节点分享)_2_3
+  password: MiTiVPN
+  port: 443
+  server: 45.80.111.7
+  skip-cert-verify: true
+  sni: d-2-AA-ia-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e1@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
 - client-fingerprint: chrome
-  name: 159ms | us|f508|puddincat07@Telegram
-  network: ws
-  password: humanity
-  port: '443'
-  server: 130.250.137.171
+  name: '19ms | qilan.de | US Node | HOST #33'
+  password: Mitivpn
+  port: 443
+  server: 3-mitivpn.global.ssl.fastly.net
+  servername: 3-mitivpn.global.ssl.fastly.net
   skip-cert-verify: false
-  sni: www.ignitelimit.com
+  sni: 3-mitivpn.global.ssl.fastly.net
+  tls: true
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.7
-        (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
-    path: /assignment
-- alpn:
-  - http/1.1
-  - h2
-  - h3
-  client-fingerprint: chrome
-  name: 160ms | us|5eb0|puddincat07@Telegram
-  network: ws
-  password: humanity
-  port: '443'
-  server: 198.41.223.96
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.71 Safari/537.36
-    path: /assignment
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 161ms | 🇫🇷FR_657|140KB/s|A001-260618
+- client-fingerprint: chrome
+  name: 221ms | 🇫🇷FR_154|281KB/s|A001-260618
   network: ws
   password: humanity
   port: 443
-  server: 162.159.136.234
+  server: 104.18.152.233
   skip-cert-verify: false
   sni: www.ignitelimit.com
   sub_tag: A001-260618
@@ -54,42 +48,39 @@ proxies:
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/63.0.3239.84 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/57.0.2987.133 Safari/537.36
     path: /assignment
-- client-fingerprint: chrome
-  name: 174ms | xx|8008|puddincat07@Telegram
-  network: ws
-  password: humanity
-  port: '443'
-  server: www.ignitelimit.com
-  skip-cert-verify: false
+- name: 260ms | 美国/San Francisco/United States/San Francisco-20
   type: trojan
-  udp: true
+  server: edu.ruangguru.com
+  port: 443
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
+  sni: id1.nathaya.web.id
+  skip-cert-verify: true
+  network: ws
   ws-opts:
+    path: /trojan
     headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36
-    path: /assignment
+      Host: id1.nathaya.web.id
 - alpn:
   - h3
   - h2
   - http/1.1
-  client-fingerprint: ios
-  name: 179ms | 🇫🇷FR_111|223KB/s|B007-260618
+  client-fingerprint: chrome
+  name: 323ms | us|2a14|puddincat07@Telegram
   network: ws
   password: humanity
-  port: 443
-  server: 45.130.125.158
+  port: '443'
+  server: 172.67.221.242
   skip-cert-verify: false
   sni: www.ignitelimit.com
-  sub_tag: B007-260618
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/63.0.3239.132 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/64.0.3282.186 Safari/537.36
     path: /assignment
 proxy-groups:
 - name: FAST
@@ -98,32 +89,35 @@ proxy-groups:
   interval: 180
   tolerance: 50
   proxies:
-  - 159ms | us|f508|puddincat07@Telegram
-  - 160ms | us|5eb0|puddincat07@Telegram
-  - 161ms | 🇫🇷FR_657|140KB/s|A001-260618
-  - 174ms | xx|8008|puddincat07@Telegram
-  - 179ms | 🇫🇷FR_111|223KB/s|B007-260618
+  - 2ms | shadowsocks-27269
+  - 12ms | DE德国(mibei77.com 米贝节点分享)_2_3
+  - '19ms | qilan.de | US Node | HOST #33'
+  - 221ms | 🇫🇷FR_154|281KB/s|A001-260618
+  - 260ms | 美国/San Francisco/United States/San Francisco-20
+  - 323ms | us|2a14|puddincat07@Telegram
 - name: AUTO
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 180
   tolerance: 80
   proxies:
-  - 159ms | us|f508|puddincat07@Telegram
-  - 160ms | us|5eb0|puddincat07@Telegram
-  - 161ms | 🇫🇷FR_657|140KB/s|A001-260618
-  - 174ms | xx|8008|puddincat07@Telegram
-  - 179ms | 🇫🇷FR_111|223KB/s|B007-260618
+  - 2ms | shadowsocks-27269
+  - 12ms | DE德国(mibei77.com 米贝节点分享)_2_3
+  - '19ms | qilan.de | US Node | HOST #33'
+  - 221ms | 🇫🇷FR_154|281KB/s|A001-260618
+  - 260ms | 美国/San Francisco/United States/San Francisco-20
+  - 323ms | us|2a14|puddincat07@Telegram
 - name: PROXY
   type: select
   proxies:
   - FAST
   - AUTO
   - DIRECT
-  - 159ms | us|f508|puddincat07@Telegram
-  - 160ms | us|5eb0|puddincat07@Telegram
-  - 161ms | 🇫🇷FR_657|140KB/s|A001-260618
-  - 174ms | xx|8008|puddincat07@Telegram
-  - 179ms | 🇫🇷FR_111|223KB/s|B007-260618
+  - 2ms | shadowsocks-27269
+  - 12ms | DE德国(mibei77.com 米贝节点分享)_2_3
+  - '19ms | qilan.de | US Node | HOST #33'
+  - 221ms | 🇫🇷FR_154|281KB/s|A001-260618
+  - 260ms | 美国/San Francisco/United States/San Francisco-20
+  - 323ms | us|2a14|puddincat07@Telegram
 rules:
 - MATCH,PROXY

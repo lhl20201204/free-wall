@@ -4,8 +4,45 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 4ms | 🇫🇷FR_63|172KB/s
+  network: ws
+  password: bd85f5fe32d9446a8b1f59e4f710455b
+  port: 443
+  server: 104.24.163.206
+  skip-cert-verify: false
+  sni: BpB-PAnEL-62c3.mlM-eE9A3b83.wOrKErS.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.89 Safari/537.36
+    path: /eyJqdW5rIjoibkN2cER2SDZIUTkiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6IiIsInBhbmVsSVBzIjoiWzJhMDI6ODk4OjE0Njo2NDo6XSJ9
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2560
 - client-fingerprint: chrome
-  name: '9ms | qilan.de | US Node | HOST #33'
+  name: 5ms | 🇫🇷FR_311|206KB/s|C002-260622
+  network: ws
+  password: d0298536-d670-4045-bbb1-ddd5ea68683e
+  port: 443
+  server: 104.19.173.68
+  skip-cert-verify: false
+  sni: azadnet-5vk.pages.dev
+  sub_tag: C002-260622
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.67 Safari/537.36
+    path: /azadnet-5vk.pages.dev/?PROT_TYPE=trojan
+    early-data-header-name: Sec-WebSocket-Protocol
+    max-early-data: 2560
+- client-fingerprint: chrome
+  name: '8ms | qilan.de | US Node | HOST #33'
   password: Mitivpn
   port: 443
   server: 3-mitivpn.global.ssl.fastly.net
@@ -16,68 +53,98 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  name: 89ms | us|9f71|puddincat07@Telegram
-  network: ws
-  password: humanity
-  port: '443'
-  server: 104.17.111.8
+  name: '11ms | qilan.de | US Node | HOST #19'
+  password: MiTiVPN
+  port: 443
+  server: cdn2-mitivpn.global.ssl.fastly.net
+  servername: cdn2-mitivpn.global.ssl.fastly.net
   skip-cert-verify: false
-  sni: www.ignitelimit.com
+  sni: cdn2-mitivpn.global.ssl.fastly.net
+  tls: true
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/50.0.2661.102 Safari/537.36
-    path: /assignment
 - alpn:
   - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 91ms | us|2a14|puddincat07@Telegram
-  network: ws
-  password: humanity
-  port: '443'
-  server: 172.67.221.242
+  client-fingerprint: randomized
+  name: '11ms | qilan.de | US EbraSha | HOST #8'
+  password: tg-dns68
+  port: 443
+  server: vip.putata.eu.org
+  servername: vip.putata.eu.org
   skip-cert-verify: false
-  sni: www.ignitelimit.com
+  sni: vip.putata.eu.org
+  tls: true
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/64.0.3282.186 Safari/537.36
-    path: /assignment
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 93ms | 🇫🇷FR_657|140KB/s|A001-260618
+- client-fingerprint: chrome
+  name: 80ms | 🇫🇷FR_12|319KB/s
   network: ws
   password: humanity
   port: 443
-  server: 162.159.136.234
+  server: 188.114.97.7
   skip-cert-verify: false
   sni: www.ignitelimit.com
-  sub_tag: A001-260618
   type: trojan
   udp: true
   ws-opts:
     headers:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/63.0.3239.84 Safari/537.36
+        like Gecko) Chrome/70.0.3538.102 Safari/537.36
     path: /assignment
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 98ms | 🇫🇷FR_125|210KB/s|B007-260618
+- client-fingerprint: chrome
+  name: 81ms | 🇫🇷FR_670|243KB/s|F003-260618
   network: ws
   password: humanity
   port: 443
-  server: join-telegram-channel.tirexnet.kdns.fr
+  server: 216.24.57.1
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: F003-260618
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1606 Build/MMB29M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 82ms | 🇫🇷FR_314|330KB/s|B007-260618
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.174.36
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: B007-260618
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/53.0.2785.143 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 82ms | 🇫🇷FR_301|402KB/s|B007-260618
+  network: ws
+  password: humanity
+  port: 443
+  server: 172.67.149.60
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: B007-260618
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.3
+        (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
+    path: /assignment
+- client-fingerprint: chrome
+  name: 82ms | 🇫🇷FR_483|187KB/s|B007-260618
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.159
   skip-cert-verify: false
   sni: www.ignitelimit.com
   sub_tag: B007-260618
@@ -86,26 +153,101 @@ proxies:
   ws-opts:
     headers:
       User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/48.0.2564.116 Safari/537.36
+        Gecko) Chrome/70.0.3538.67 Safari/537.36
     path: /assignment
-- alpn:
-  - http/1.1
-  - h2
-  - h3
-  client-fingerprint: chrome
-  name: 155ms | us|5eb0|puddincat07@Telegram
+- client-fingerprint: chrome
+  name: 82ms | 🇫🇷FR_530|347KB/s
   network: ws
   password: humanity
-  port: '443'
-  server: 198.41.223.96
+  port: 443
+  server: 104.16.174.37
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/39.0.2171.95 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 82ms | 🇫🇷FR_9|112KB/s
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.77
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.71 Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J710F Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 83ms | 🇫🇷FR_660|464KB/s|A001-260618
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.233
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: A001-260618
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/57.0.2987.133 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 83ms | 🇫🇷FR_317|284KB/s|C002-260622
+  network: ws
+  password: humanity
+  port: 443
+  server: www.speedtest.org
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: C002-260622
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.117 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 86ms | 🇫🇷FR_98|264KB/s|B007-260618
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.174.117
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: B007-260618
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/47.0.2526.111 Safari/537.36 MVisionPlayer/1.0.0.0
+    path: /assignment
+- client-fingerprint: chrome
+  name: 90ms | 🇫🇷FR_376|246KB/s|S004-260618
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.17.111.4
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: S004-260618
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; WAS-LX3 Build/HUAWEIWAS-LX3)
+        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
     path: /assignment
 proxy-groups:
 - name: FAST
@@ -114,35 +256,65 @@ proxy-groups:
   interval: 180
   tolerance: 50
   proxies:
-  - '9ms | qilan.de | US Node | HOST #33'
-  - 89ms | us|9f71|puddincat07@Telegram
-  - 91ms | us|2a14|puddincat07@Telegram
-  - 93ms | 🇫🇷FR_657|140KB/s|A001-260618
-  - 98ms | 🇫🇷FR_125|210KB/s|B007-260618
-  - 155ms | us|5eb0|puddincat07@Telegram
+  - 4ms | 🇫🇷FR_63|172KB/s
+  - 5ms | 🇫🇷FR_311|206KB/s|C002-260622
+  - '8ms | qilan.de | US Node | HOST #33'
+  - '11ms | qilan.de | US Node | HOST #19'
+  - '11ms | qilan.de | US EbraSha | HOST #8'
+  - 80ms | 🇫🇷FR_12|319KB/s
+  - 81ms | 🇫🇷FR_670|243KB/s|F003-260618
+  - 82ms | 🇫🇷FR_314|330KB/s|B007-260618
+  - 82ms | 🇫🇷FR_301|402KB/s|B007-260618
+  - 82ms | 🇫🇷FR_483|187KB/s|B007-260618
+  - 82ms | 🇫🇷FR_530|347KB/s
+  - 82ms | 🇫🇷FR_9|112KB/s
+  - 83ms | 🇫🇷FR_660|464KB/s|A001-260618
+  - 83ms | 🇫🇷FR_317|284KB/s|C002-260622
+  - 86ms | 🇫🇷FR_98|264KB/s|B007-260618
+  - 90ms | 🇫🇷FR_376|246KB/s|S004-260618
 - name: AUTO
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 180
   tolerance: 80
   proxies:
-  - '9ms | qilan.de | US Node | HOST #33'
-  - 89ms | us|9f71|puddincat07@Telegram
-  - 91ms | us|2a14|puddincat07@Telegram
-  - 93ms | 🇫🇷FR_657|140KB/s|A001-260618
-  - 98ms | 🇫🇷FR_125|210KB/s|B007-260618
-  - 155ms | us|5eb0|puddincat07@Telegram
+  - 4ms | 🇫🇷FR_63|172KB/s
+  - 5ms | 🇫🇷FR_311|206KB/s|C002-260622
+  - '8ms | qilan.de | US Node | HOST #33'
+  - '11ms | qilan.de | US Node | HOST #19'
+  - '11ms | qilan.de | US EbraSha | HOST #8'
+  - 80ms | 🇫🇷FR_12|319KB/s
+  - 81ms | 🇫🇷FR_670|243KB/s|F003-260618
+  - 82ms | 🇫🇷FR_314|330KB/s|B007-260618
+  - 82ms | 🇫🇷FR_301|402KB/s|B007-260618
+  - 82ms | 🇫🇷FR_483|187KB/s|B007-260618
+  - 82ms | 🇫🇷FR_530|347KB/s
+  - 82ms | 🇫🇷FR_9|112KB/s
+  - 83ms | 🇫🇷FR_660|464KB/s|A001-260618
+  - 83ms | 🇫🇷FR_317|284KB/s|C002-260622
+  - 86ms | 🇫🇷FR_98|264KB/s|B007-260618
+  - 90ms | 🇫🇷FR_376|246KB/s|S004-260618
 - name: PROXY
   type: select
   proxies:
   - FAST
   - AUTO
   - DIRECT
-  - '9ms | qilan.de | US Node | HOST #33'
-  - 89ms | us|9f71|puddincat07@Telegram
-  - 91ms | us|2a14|puddincat07@Telegram
-  - 93ms | 🇫🇷FR_657|140KB/s|A001-260618
-  - 98ms | 🇫🇷FR_125|210KB/s|B007-260618
-  - 155ms | us|5eb0|puddincat07@Telegram
+  - 4ms | 🇫🇷FR_63|172KB/s
+  - 5ms | 🇫🇷FR_311|206KB/s|C002-260622
+  - '8ms | qilan.de | US Node | HOST #33'
+  - '11ms | qilan.de | US Node | HOST #19'
+  - '11ms | qilan.de | US EbraSha | HOST #8'
+  - 80ms | 🇫🇷FR_12|319KB/s
+  - 81ms | 🇫🇷FR_670|243KB/s|F003-260618
+  - 82ms | 🇫🇷FR_314|330KB/s|B007-260618
+  - 82ms | 🇫🇷FR_301|402KB/s|B007-260618
+  - 82ms | 🇫🇷FR_483|187KB/s|B007-260618
+  - 82ms | 🇫🇷FR_530|347KB/s
+  - 82ms | 🇫🇷FR_9|112KB/s
+  - 83ms | 🇫🇷FR_660|464KB/s|A001-260618
+  - 83ms | 🇫🇷FR_317|284KB/s|C002-260622
+  - 86ms | 🇫🇷FR_98|264KB/s|B007-260618
+  - 90ms | 🇫🇷FR_376|246KB/s|S004-260618
 rules:
 - MATCH,PROXY

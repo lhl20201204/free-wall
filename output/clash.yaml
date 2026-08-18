@@ -4,23 +4,47 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
+- cipher: aes-128-gcm
+  name: 18ms | shadowsocks-158
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.167
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 18ms | shadowsocks-194
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.169
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 18ms | shadowsocks-163
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.168
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 18ms | shadowsocks-159
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.170
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  name: 52ms | 🇫🇷FR_210|203KB/s
-  network: ws
-  password: Aimer
-  port: 2053
-  server: 167.68.4.199
+  name: '92ms | qilan.de | US Node | HOST #33'
+  password: Mitivpn
+  port: 443
+  server: 3-mitivpn.global.ssl.fastly.net
+  servername: 3-mitivpn.global.ssl.fastly.net
   skip-cert-verify: false
-  sni: epge.muarua.filegear-sg.me
+  sni: 3-mitivpn.global.ssl.fastly.net
+  tls: true
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /?proxyip=ts.hpc.tw
 - client-fingerprint: chrome
-  name: 119ms | us|b3d2|puddincat07@Telegram
+  name: 128ms | us|b3d2|puddincat07@Telegram
   network: ws
   password: humanity
   port: '443'
@@ -35,7 +59,37 @@ proxies:
         like Gecko) Chrome/46.0.2490.86 Safari/537.36
     path: /assignment
 - client-fingerprint: chrome
-  name: 136ms | 🇫🇷FR_276|380KB/s|F003-260618
+  name: 140ms | us|b84c|puddincat07@Telegram
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.16.174.6
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.67 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 146ms | us|b395|puddincat07@Telegram
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.26.15.137
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/42.0.2311.90 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 163ms | 🇫🇷FR_276|380KB/s|F003-260618
   network: ws
   password: humanity
   port: 443
@@ -50,25 +104,21 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/67.0.3396.87 Safari/537.36
     path: /assignment
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 144ms | 🇫🇷FR_307|78KB/s|A001-260618
+- name: 359ms | 美国 001
+  type: vmess
   network: ws
-  password: humanity
-  port: 443
-  server: 162.159.136.234
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  sub_tag: A001-260618
-  type: trojan
-  udp: true
+  server: www.true.th
+  port: 80
+  uuid: a150d554-e962-4632-829f-ee583ada3f95
+  servername: d7pu5mzr9c4b0.cloudfront.net
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  delay: 676
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/63.0.3239.84 Safari/537.36
-    path: /assignment
+      Host: d7pu5mzr9c4b0.cloudfront.net
+    path: /htun
 proxy-groups:
 - name: FAST
   type: url-test
@@ -76,29 +126,47 @@ proxy-groups:
   interval: 180
   tolerance: 50
   proxies:
-  - 52ms | 🇫🇷FR_210|203KB/s
-  - 119ms | us|b3d2|puddincat07@Telegram
-  - 136ms | 🇫🇷FR_276|380KB/s|F003-260618
-  - 144ms | 🇫🇷FR_307|78KB/s|A001-260618
+  - 18ms | shadowsocks-158
+  - 18ms | shadowsocks-194
+  - 18ms | shadowsocks-163
+  - 18ms | shadowsocks-159
+  - '92ms | qilan.de | US Node | HOST #33'
+  - 128ms | us|b3d2|puddincat07@Telegram
+  - 140ms | us|b84c|puddincat07@Telegram
+  - 146ms | us|b395|puddincat07@Telegram
+  - 163ms | 🇫🇷FR_276|380KB/s|F003-260618
+  - 359ms | 美国 001
 - name: AUTO
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 180
   tolerance: 80
   proxies:
-  - 52ms | 🇫🇷FR_210|203KB/s
-  - 119ms | us|b3d2|puddincat07@Telegram
-  - 136ms | 🇫🇷FR_276|380KB/s|F003-260618
-  - 144ms | 🇫🇷FR_307|78KB/s|A001-260618
+  - 18ms | shadowsocks-158
+  - 18ms | shadowsocks-194
+  - 18ms | shadowsocks-163
+  - 18ms | shadowsocks-159
+  - '92ms | qilan.de | US Node | HOST #33'
+  - 128ms | us|b3d2|puddincat07@Telegram
+  - 140ms | us|b84c|puddincat07@Telegram
+  - 146ms | us|b395|puddincat07@Telegram
+  - 163ms | 🇫🇷FR_276|380KB/s|F003-260618
+  - 359ms | 美国 001
 - name: PROXY
   type: select
   proxies:
   - FAST
   - AUTO
   - DIRECT
-  - 52ms | 🇫🇷FR_210|203KB/s
-  - 119ms | us|b3d2|puddincat07@Telegram
-  - 136ms | 🇫🇷FR_276|380KB/s|F003-260618
-  - 144ms | 🇫🇷FR_307|78KB/s|A001-260618
+  - 18ms | shadowsocks-158
+  - 18ms | shadowsocks-194
+  - 18ms | shadowsocks-163
+  - 18ms | shadowsocks-159
+  - '92ms | qilan.de | US Node | HOST #33'
+  - 128ms | us|b3d2|puddincat07@Telegram
+  - 140ms | us|b84c|puddincat07@Telegram
+  - 146ms | us|b395|puddincat07@Telegram
+  - 163ms | 🇫🇷FR_276|380KB/s|F003-260618
+  - 359ms | 美国 001
 rules:
 - MATCH,PROXY

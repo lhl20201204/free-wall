@@ -4,7 +4,89 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- name: 2ms | 🇺🇸US_1|1.0MB/s
+- cipher: aes-128-gcm
+  name: 18ms | shadowsocks-158
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.167
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 18ms | shadowsocks-163
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.168
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 18ms | 🇺🇸US_128|145KB/s
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.170
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 18ms | shadowsocks-194
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.169
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 18ms | 🇺🇸US_246|294KB/s|A004-260618
+  password: qB2Cv9VIlujj
+  port: 8388
+  server: 23.150.248.20
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 20ms | trojan-635823137
+  password: kkzh2prsyr2ik47as615
+  port: 57142
+  server: 64.94.95.114
+  skip-cert-verify: true
+  sni: ''
+  type: trojan
+  udp: true
+- name: 21ms | trojan-674674247
+  password: kkzh2prsyr2ik47as615
+  port: 57142
+  server: 64.94.95.118
+  skip-cert-verify: true
+  sni: static.rutube.ru
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 21ms | 🇺🇸US_49|318KB/s|B007-260618
+  password: kkzh2prsyr2ik47as615
+  port: 57142
+  server: 64.94.95.117
+  skip-cert-verify: true
+  sni: static.rutube.ru
+  sub_tag: B007-260618
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: 23ms | 🇺🇸US_9|272KB/s|A004-260618
+  network: tcp
+  password: kkzh2prsyr2ik47as615
+  port: 57142
+  server: 64.94.95.115
+  skip-cert-verify: true
+  sni: static.rutube.ru
+  sub_tag: A004-260618
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 24ms | 🇺🇸US_415|75KB/s|A004-260618
+  password: 5d79906d-89ab-430b-acbc-3327568a5be3
+  port: 52345
+  server: 152.67.250.45
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 24ms | 🇺🇸US_1|1.0MB/s
   password: c857562678594197
   port: 20063
   server: saj2000e.pacemakere.com
@@ -12,7 +94,301 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 2ms | 🇺🇸US_434|235KB/s|R002-260618
+- name: 24ms | US - zhuhai.uk 05
+  type: http
+  server: 138.199.35.198
+  port: 9002
+  username: 'null'
+  password: 'null'
+  tls: true
+  sni: 138.199.35.198
+  skip-cert-verify: true
+- name: 24ms | 🇺🇸美国US089 1.58MB/s危险 TG@jcnode
+  port: 9002
+  server: 138.199.35.204
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 24ms | 🇺🇸US_72|209KB/s|P002-260618
+  password: None
+  port: 9002
+  server: 138.199.35.209
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 24ms | 🇺🇸US_238|74KB/s|R002-260618
+  port: 9002
+  server: 138.199.35.206
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 24ms | 🇺🇸US_105|288KB/s|P002-260618
+  password: None
+  port: 9002
+  server: 138.199.35.205
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 24ms | 🇺🇸US_206|212KB/s|R002-260618
+  password: None
+  port: 9002
+  server: 138.199.35.200
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 24ms | [0.02MB/s][809ms] [freeSub#128] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  password: ''
+  port: 9002
+  server: 138.199.35.196
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 24ms | 🇺🇸US_235|288KB/s|R002-260618
+  password: ''
+  port: 9002
+  server: 138.199.35.201
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  username: ''
+- name: 24ms | 🇺🇸US_54|235KB/s|R002-260618
+  port: 9002
+  server: 138.199.35.215
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 24ms | 🇺🇸US_51|139KB/s|R002-260618
+  port: 9002
+  server: 138.199.35.195
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 24ms | [1033ms] [freeSub#170] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  password: e4b72b531a2d10900519
+  port: 443
+  server: 162.243.146.243
+  sni: a2f392f3.acsnet.co
+  tls: true
+  type: http
+  username: testuser1
+- name: 24ms | 🇺🇸US_45|257KB/s|P002-260618
+  password: ''
+  port: 9002
+  server: 138.199.35.210
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  username: ''
+  udp: true
+- name: 24ms | [0.02MB/s][814ms] [freeSub#109] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  port: 9002
+  server: 138.199.35.208
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 24ms | [880ms] [freeSub#099] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  port: 9002
+  server: 138.199.35.202
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 24ms | [0.05MB/s][819ms] [freeSub#108] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  password: null
+  port: 9002
+  server: 138.199.35.212
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- name: 24ms | 🇺🇸US_258|414KB/s|P002-260618
+  password: None
+  port: 9002
+  server: 138.199.35.217
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 24ms | 🇺🇸美国US254 测速未知危险 TG@jcnode
+  password: 'null'
+  port: 9002
+  server: 138.199.35.218
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+- name: 24ms | [0.03MB/s][808ms] [freeSub#133] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  password: null
+  port: 9002
+  server: 138.199.35.220
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- name: 24ms | 🇺🇸US_108|221KB/s|R002-260618
+  port: 9002
+  server: 138.199.35.214
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 24ms | 🇺🇸US_198|233KB/s|P002-260618
+  password: None
+  port: 9002
+  server: 138.199.35.213
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- delay: 1860
+  name: 24ms | 🇺🇸美国US023 1.8MB/s危险 TG@jcnode
+  port: 9002
+  server: 138.199.35.207
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 24ms | [838ms] [freeSub#098] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  port: 9002
+  server: 138.199.35.199
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 24ms | [867ms] [freeSub#112] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  password: ''
+  port: 9002
+  server: 138.199.35.203
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+- name: 24ms | 🇺🇸US_226|144KB/s|R002-260618
+  port: 9002
+  server: 138.199.35.216
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 24ms | vmess-244981234
+  network: tcp
+  port: 180
+  server: 82.198.246.250
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: 25ms | [0.01MB/s][833ms] [freeSub#116] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  password: null
+  port: 9002
+  server: 138.199.35.219
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- alterId: 0
+  cipher: auto
+  name: 25ms | vmess-650629583
+  network: raw
+  port: 180
+  server: 82.198.246.37
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: 25ms | [0.03MB/s][831ms] [freeSub#156] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  port: 9002
+  server: 138.199.35.197
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 26ms | [0.02MB/s][823ms] [freeSub#125] 🔴🇺🇸[🎬📺🎭🎪]_github.com/Ruk1n
+  port: 9002
+  server: 138.199.35.211
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 26ms | 🇺🇸US_280|239KB/s|R002-260618
+  password: None
+  port: 443
+  server: purposebydesig.club
+  skip-cert-verify: false
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  sni: purposebydesig.club
+- name: 26ms | 🇺🇸US_401|250KB/s|P002-260618
+  password: None
+  port: 443
+  server: crosscards.site
+  skip-cert-verify: false
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  sni: crosscards.site
+- name: 26ms | 🇺🇸US_351|263KB/s|P002-260618
+  password: None
+  port: 443
+  server: fullmanfirm.icu
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  sni: fullmanfirm.icu
+- name: 26ms | 🇺🇸US_148|294KB/s|R002-260618
+  port: 443
+  server: mmgr.club
+  skip-cert-verify: true
+  sni: mmgr.club
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 26ms | 🇺🇸US_149|305KB/s|R002-260618
+  port: 443
+  server: tzoa.fun
+  sni: tzoa.fun
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 27ms | 🇺🇸US_93|283KB/s|R002-260618
+  port: 443
+  server: goedkoopgeluid.icu
+  skip-cert-verify: true
+  sni: goedkoopgeluid.icu
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 27ms | 🇺🇸US_342|260KB/s|R002-260618
   port: 443
   server: webdrone.club
   sni: webdrone.club
@@ -20,24 +396,311 @@ proxies:
   tls: true
   type: http
   udp: true
-- client-fingerprint: chrome
-  name: 4ms | 🇫🇷FR_492|298KB/s|F003-260618
-  network: ws
-  password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
+- name: 27ms | [936ms] [freeSub#092] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
   port: 443
-  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
+  server: efr-marktplatz.club
+  sni: efr-marktplatz.club
+  tls: true
+  type: http
+- name: 27ms | 🇺🇸US_181|186KB/s|R002-260618
+  port: 443
+  server: jgwynphotoarts.pro
   skip-cert-verify: false
-  sni: _acme-challenge.sb.cloudns.biz
-  sub_tag: F003-260618
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  sni: jgwynphotoarts.pro
+- name: 27ms | 🇺🇸US_133|267KB/s|R002-260618
+  port: 443
+  server: zebpay.site
+  sni: zebpay.site
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 29ms | 🇺🇸US_111|335KB/s|R002-260618
+  port: 443
+  server: berniesbodybla.fun
+  sni: berniesbodybla.fun
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- cipher: aes-256-gcm
+  name: 29ms | 🇺🇸US_331|371KB/s|A004-260618
+  password: goRz8CTFE6zPZXIA
+  port: 80
+  server: 94.72.127.58
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 29ms | 🇺🇸US_335|187KB/s|A004-260618
+  password: kRKZE3ZhECwawy1N
+  port: 80
+  server: 94.72.127.55
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 29ms | [971ms] [freeSub#218] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  port: 443
+  server: kimberlymilano.icu
+  sni: kimberlymilano.icu
+  tls: true
+  type: http
+- client-fingerprint: chrome
+  name: 29ms | 🇺🇸US_324|325KB/s|A004-260618
+  network: tcp
+  password: M7v%w11Se*
+  port: 443
+  server: 34.94.125.227
+  skip-cert-verify: false
+  sni: mxlo.wsone.icu
+  sub_tag: A004-260618
   type: trojan
   udp: true
+- name: 31ms | 🇺🇸US_178|292KB/s|P002-260618
+  password: None
+  port: 443
+  server: purecambogiasl.live
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  sni: purecambogiasl.live
+- cipher: rc4-md5
+  name: 32ms | 🇺🇸US_140|420KB/s|A004-260618
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 107.151.182.197
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 32ms | [0.04MB/s][788ms] [freeSub#463] 🟠🇺🇸[🎬📺🎪✈️]_github.com/Ruk1
+  port: 1080
+  server: 43.162.94.99
+  type: socks5
+- name: 33ms | [943ms] [freeSub#166] 🔴🇺🇸[🎬📺🎭🎪]_github.com/Ruk1n
+  port: 443
+  server: carolinafreigh.fun
+  sni: carolinafreigh.fun
+  tls: true
+  type: http
+- name: 33ms | [858ms] [freeSub#161] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  port: 443
+  server: voteshirleysew.club
+  sni: voteshirleysew.club
+  tls: true
+  type: http
+- name: 34ms | 🇺🇸US_158|350KB/s|P002-260618
+  password: None
+  port: 443
+  server: jewelscollecti.icu
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  sni: jewelscollecti.icu
+- name: 34ms | trojan-655646828
+  password: r49gssuondznyu2eex83
+  port: 50740
+  server: 14.1.28.76
+  skip-cert-verify: true
+  sni: 14.1.28.76
+  type: trojan
+  udp: true
+- cipher: rc4-md5
+  name: 34ms | shadowsocks-27269
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 138.199.42.68
+  type: ss
+  udp: true
+- name: 36ms | trojan-855382209
+  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
+  port: 20065
+  server: us01.duotg.top
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: trojan
+  udp: true
+- name: 36ms | trojan-860329334
+  password: 02cd3bac-2a78-4dbb-82b9-6b64084ddd8e
+  port: 46292
+  server: 107.150.105.84
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 36ms | 🇺🇸US_115|373KB/s|A004-260618
+  password: G5p6ww4o67HB
+  port: 8388
+  server: 108.181.0.177
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 36ms | 美国/洛杉矶/United States/Los Angeles [https://raw.githubusercontent.com/barry-far/V2
+  type: trojan
+  server: 172.233.143.225
+  port: 28443
+  password: 11f75919-38dd-47d2-bdf5-c93980317309
+  sni: vpn-node.internal
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /xVpnTrojanWsSvc7f3a
+    headers:
+      Host: vpn-node.internal
+- alterId: 0
+  cipher: auto
+  country: 🇺🇸US
+  h2-opts: {}
+  http-opts: {}
+  name: 37ms | 🇺🇸US²_8|4.6MB/s|X|[原生|机房]
+  network: ws
+  port: 8443
+  server: 3h-unitedstates3.09vpn.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 0c17318b-d8e7-4816-a6a2-ab873a3bcc8b
+  ws-opts:
+    path: /vmess/
+- cipher: aes-128-gcm
+  name: 37ms | shadowsocks-156
+  password: shadowsocks
+  port: 443
+  server: 173.244.56.9
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 37ms | shadowsocks-155
+  password: shadowsocks
+  port: 443
+  server: 173.244.56.6
+  type: ss
+  udp: true
+- name: 38ms | 美国/凤凰城/United States/Phoenix [https://raw.githubusercontent.com/MatinGhanbari/v2
+  type: vmess
+  server: 129.146.77.248
+  port: 39495
+  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+- name: 38ms | 🇺🇸_US_美国_1
+  type: vmess
+  server: 23.95.248.105
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  servername: 23.95.248.105
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '39ms | 🇺🇸_US_美国_1 #4'
+  network: ws
+  port: 443
+  server: www.361371.xyz
+  servername: www.361371.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: da77c564-3815-468c-8867-0aea0b397027
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/41.0.2272.118 Safari/537.36
+      Host: www.361371.xyz
+    path: /ws-6rm27y
+- name: 44ms | 美国/United States [https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/
+  type: vmess
+  server: 173.249.209.146
+  port: 20086
+  uuid: 3935c2dc-dbb0-43f7-b367-fe89abe87fdf
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
     path: /
+- cipher: aes-256-gcm
+  name: 44ms | 🇨🇦CA_28|78KB/s|A004-260618
+  password: sZSZi7tGs9wodT7k
+  port: 80
+  server: 155.138.136.240
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 44ms | 🇨🇦CA_38|146KB/s|A004-260618
+  password: 5d79906d-89ab-430b-acbc-3327568a5be3
+  port: 13345
+  server: 140.238.153.81
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 44ms | 🇨🇦CA_29|450KB/s|A004-260618
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 154.127.56.212
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- name: 45ms | trojan-738907396
+  password: EQ30679154
+  port: 443
+  server: 35.91.251.124
+  skip-cert-verify: true
+  sni: sincere-gelding.rooster465.autos
+  type: trojan
+  udp: true
+- name: 45ms | trojan-710506302
+  password: EQ30679154
+  port: 443
+  server: sincere-gelding.rooster465.autos
+  skip-cert-verify: false
+  sni: sincere-gelding.rooster465.autos
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 45ms | shadowsocks-11012
+  password: eDfN7SODQceIOmIAbtJJtK
+  port: 443
+  server: 198.98.53.130
+  type: ss
+  udp: true
+- name: 46ms | 🇺🇸openproxylist.com ss-US-3
+  type: ss
+  server: 15.204.247.175
+  port: 8008
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+  udp: true
+- cipher: aes-128-gcm
+  name: 48ms | 🇺🇸US_3|293KB/s
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.160
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 48ms | shadowsocks-487917493
+  password: ytw2awn
+  port: 443
+  server: 142.4.216.225
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  name: 4ms | 🇫🇷FR_1257|135KB/s|R002-260618
+  name: 50ms | 🇫🇷FR_411|263KB/s|R002-260618
   network: ws
   password: 8ccc5a61-b4f5-4fe4-a394-65890d8f044b
   port: 443
@@ -48,16 +711,109 @@ proxies:
   ws-opts:
     path: /sg-orcl
   udp: true
-- name: 6ms | trojan-865910607
-  password: 16ae55f9-6b9e-4e57-b494-7e0bba25bf3a
+- cipher: aes-128-gcm
+  name: 50ms | 🇺🇸US_8|232KB/s|A004-260618
+  password: shadowsocks
+  port: 443
+  server: 37.19.198.244
+  sub_tag: A004-260618
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 52ms | vmess-669779353
+  network: tcp
+  port: 18000
+  server: 38.91.107.49
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- cipher: aes-256-cfb
+  name: 52ms | 🇨🇦CA_32|344KB/s|A001-260618
+  password: amazonskr05
+  port: 443
+  server: 3.96.158.76
+  sub_tag: A001-260618
+  type: ss
+  udp: true
+- name: 54ms | 🇺🇸_美国_209
+  type: trojan
+  server: 69.164.205.61
   port: 28443
-  server: 45.32.129.84
-  skip-cert-verify: true
+  password: 2d013f81-a2bb-4fd0-9c48-8201dcd41f85
   sni: vpn-node.internal
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /xVpnTrojanWsSvc7f3a
+    headers:
+      Host: vpn-node.internal
+  udp: true
+- name: 58ms | 🇨🇦CA_30|92KB/s|R002-260618
+  port: 3118
+  server: 184.75.221.82
+  sub_tag: R002-260618
+  type: http
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 71ms | vmess-704660104
+  network: tcp
+  port: 18000
+  server: 23.162.200.198
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: '0'
+  cipher: auto
+  name: 74ms | 🇺🇸US_126|371KB/s|C002-260622
+  network: raw
+  port: 48111
+  server: 129.146.143.80
+  skip-cert-verify: false
+  sub_tag: C002-260622
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  xudp: true
+  packet-encoding: xudp
+- name: 77ms | trojan-742983237
+  password: EQ30679154
+  port: 443
+  server: 44.251.158.80
+  skip-cert-verify: true
+  sni: obliging-louse.rooster465.autos
   type: trojan
   udp: true
+- name: 77ms | 🇨🇦openproxylist.com ss-CA-2
+  type: ss
+  server: 51.222.155.32
+  port: 5003
+  cipher: aes-256-gcm
+  password: g5MeD6Ft3CWlJId
+  udp: true
+- name: 85ms | 🇺🇸 US 1052 → tg@nicevpn123
+  server: 216.128.147.13
+  port: 443
+  type: trojan
+  password: wkmY1R4EcP
+  sni: z-v2-003274.kailib.com
+  skip-cert-verify: true
+  udp: true
 - client-fingerprint: chrome
-  name: '8ms | qilan.de | US Node | HOST #33'
+  name: 86ms | 🇺🇸US_81|101KB/s|M003-260806
+  password: ND91608427
+  port: 443
+  server: 44.246.163.102
+  skip-cert-verify: false
+  sni: fleet-bonefish.rooster465.autos
+  sub_tag: M003-260806
+  type: trojan
+  udp: true
+  network: tcp
+- client-fingerprint: chrome
+  name: '90ms | qilan.de | US Node | HOST #33'
   password: Mitivpn
   port: 443
   server: 3-mitivpn.global.ssl.fastly.net
@@ -67,49 +823,32 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 9ms | 🇺🇸US_163|342KB/s|R002-260618
+- cipher: aes-256-gcm
+  name: 91ms | 🇺🇸US_334|284KB/s|A004-260618
+  password: PSwavTHWD0nkfcyW
   port: 443
-  server: goedkoopgeluid.icu
-  skip-cert-verify: true
-  sni: goedkoopgeluid.icu
-  sub_tag: R002-260618
-  tls: true
-  type: http
+  server: 62.146.171.57
+  sub_tag: A004-260618
+  type: ss
   udp: true
-- name: 9ms | [971ms] [freeSub#218] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+- name: 92ms | trojan-656161125
+  password: FH72359861
   port: 443
-  server: kimberlymilano.icu
-  sni: kimberlymilano.icu
-  tls: true
-  type: http
-- name: 9ms | [850ms] [freeSub#168] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
-  password: null
-  port: 443
-  server: mmgr.club
+  server: obliging-louse.rooster465.autos
   skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 9ms | 🇺🇸US_168|309KB/s|R002-260618
-  port: 443
-  server: berniesbodybla.fun
-  sni: berniesbodybla.fun
-  sub_tag: R002-260618
-  tls: true
-  type: http
+  sni: obliging-louse.rooster465.autos
+  type: trojan
   udp: true
-- name: 9ms | 🇺🇸US_446|300KB/s|P002-260618
-  password: None
+- cipher: aes-256-gcm
+  name: 93ms | 🇺🇸US_706|108KB/s|A004-260618 01
+  password: sFS341eceaIiSm2d
   port: 443
-  server: fullmanfirm.icu
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
+  server: 154.53.63.33
+  sub_tag: A004-260618
+  type: ss
   udp: true
-  sni: fullmanfirm.icu
 - client-fingerprint: chrome
-  name: '10ms | qilan.de | US Node | HOST #19'
+  name: '94ms | qilan.de | US Node | HOST #19'
   password: MiTiVPN
   port: 443
   server: cdn2-mitivpn.global.ssl.fastly.net
@@ -119,26 +858,306 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: '207ms | 美国 071 #2'
-  type: vmess
-  network: ws
-  server: 104.17.77.77
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+- name: 108ms | 🇭🇰 HK 10 → tg@nicevpn123
+  server: chjs.lydurlclub.top
+  port: 443
+  type: trojan
+  password: 507ca9a0-2d8e-4b65-8763-82dfbdbd599f
+  skip-cert-verify: true
+  udp: true
+- name: 110ms | 🇦🇺AU-103.224.212.216-0047
+  server: scottie.golfland.club
+  port: 443
+  type: trojan
+  password: oxcgPpS7rXEGZJ7sQe8BpbQ1LHfIKlDw
+  skip-cert-verify: false
+- name: 111ms | 🇺🇸_美国_212
+  type: trojan
+  server: 128.14.146.132
+  port: 28443
+  password: 8f4a24de-58da-4a61-9529-94234292b62c
+  sni: vpn-node.internal
   skip-cert-verify: true
   tls: true
-  alterId: 0
-  cipher: auto
   ws-opts:
+    path: /xVpnTrojanWsSvc7f3a
     headers:
-      Host: v2ray1.dozapp.xyz
-    path: /lMnsZUN4/
+      Host: vpn-node.internal
+  udp: true
+- name: 113ms | 🇭🇰 HK 9 → tg@nicevpn123
+  server: hkjs.lydurlclub.top
+  port: 443
+  type: trojan
+  password: 507ca9a0-2d8e-4b65-8763-82dfbdbd599f
+  skip-cert-verify: true
+  udp: true
 - client-fingerprint: chrome
-  name: 353ms | 🇫🇷FR_217|418KB/s|C002-260622
+  name: 116ms | 🇺🇸US_638|92KB/s 01
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: fast-drum.rooster465.autos
+  skip-cert-verify: false
+  sni: fast-drum.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 116ms | 🇺🇸US_639|209KB/s 01
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: mature-lamprey.rooster465.autos
+  skip-cert-verify: false
+  sni: mature-lamprey.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 116ms | 🇺🇸US_364|296KB/s 01
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: liked-serval.rooster465.autos
+  skip-cert-verify: false
+  sni: liked-serval.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 116ms | 🇺🇸US_798|256KB/s|M003-260806 01
+  network: tcp
+  password: EQ30679154
+  port: 443
+  server: 44.255.190.116
+  skip-cert-verify: false
+  sni: warm-krill.rooster465.autos
+  sub_tag: M003-260806
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 116ms | 🇺🇸US_643|177KB/s|C002-260622 01
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: sure-bengal.rooster465.autos
+  skip-cert-verify: false
+  sni: sure-bengal.rooster465.autos
+  sub_tag: C002-260622
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 116ms | 🇺🇸US_629|417KB/s 01
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: evident-ant.rooster465.autos
+  skip-cert-verify: false
+  sni: evident-ant.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 116ms | 🇺🇸US_387|172KB/s|A004-260618 01
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: 54.188.176.255
+  skip-cert-verify: false
+  sni: arriving-colt.rooster465.autos
+  sub_tag: A004-260618
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 117ms | 🇺🇸US_660|108KB/s|A004-260618 01
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: 35.91.138.234
+  skip-cert-verify: false
+  sni: sure-bengal.rooster465.autos
+  sub_tag: A004-260618
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 117ms | 🇺🇸US_368|115KB/s 01
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: dominant-jaguar.rooster465.autos
+  skip-cert-verify: false
+  sni: dominant-jaguar.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 117ms | 🇺🇸US_501|101KB/s 01
+  network: tcp
+  password: FH72359861
+  port: 443
+  server: tough-tuna.rooster465.autos
+  skip-cert-verify: false
+  sni: tough-tuna.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 117ms | 🇺🇸US_659|264KB/s|A004-260618 01
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: 35.90.27.143
+  skip-cert-verify: false
+  sni: evident-ant.rooster465.autos
+  sub_tag: A004-260618
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 117ms | 🇺🇸US_386|124KB/s|A004-260618 01
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: 35.88.120.18
+  skip-cert-verify: false
+  sni: dominant-jaguar.rooster465.autos
+  sub_tag: A004-260618
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 117ms | 🇺🇸US_658|377KB/s|A004-260618 01
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: 34.220.224.252
+  skip-cert-verify: false
+  sni: smooth-sculpin.rooster465.autos
+  sub_tag: A004-260618
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 117ms | 🇺🇸US_765|272KB/s|S001-260618 01
+  network: tcp
+  password: EQ30679154
+  port: 443
+  server: 34.223.2.163
+  skip-cert-verify: false
+  sni: active-hippo.rooster465.autos
+  sub_tag: S001-260618
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 117ms | 🇺🇸US_630|387KB/s 01
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: absolute-teal.rooster465.autos
+  skip-cert-verify: false
+  sni: absolute-teal.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 118ms | 🇺🇸US_669|189KB/s|M003-260806 01
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: 35.160.249.189
+  skip-cert-verify: false
+  sni: absolute-teal.rooster465.autos
+  sub_tag: M003-260806
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 118ms | 🇺🇸US_631|88KB/s 01
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: smooth-sculpin.rooster465.autos
+  skip-cert-verify: false
+  sni: smooth-sculpin.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 118ms | 🇺🇸US_520|127KB/s|A004-260618 01
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: 44.243.85.47
+  skip-cert-verify: false
+  sni: liked-serval.rooster465.autos
+  sub_tag: A004-260618
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 118ms | 🇺🇸US_574|160KB/s|A004-260618 01
+  network: tcp
+  password: FH72359861
+  port: 443
+  server: 34.210.213.17
+  skip-cert-verify: false
+  sni: tough-tuna.rooster465.autos
+  sub_tag: A004-260618
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 118ms | 🇺🇸US_685|485KB/s|A004-260618 01
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: 35.91.98.35
+  skip-cert-verify: false
+  sni: mature-lamprey.rooster465.autos
+  sub_tag: A004-260618
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 118ms | 🇺🇸US_594|219KB/s|A004-260618 01
+  network: tcp
+  password: PQ05174892
+  port: 443
+  server: 54.213.46.211
+  skip-cert-verify: false
+  sni: fast-drum.rooster465.autos
+  sub_tag: A004-260618
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 119ms | 🇺🇸US_540|357KB/s|A004-260618 01
+  network: tcp
+  password: AE62539071
+  port: 443
+  server: arriving-colt.rooster465.autos
+  skip-cert-verify: false
+  sni: arriving-colt.rooster465.autos
+  sub_tag: A004-260618
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 119ms | 🇺🇸美国US205 1.15MB/s中性 TG@jcnode
+  password: EQ30679154
+  port: 443
+  server: warm-krill.rooster465.autos
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 122ms | 🇺🇸US_737|127KB/s|A004-260618 01
+  network: tcp
+  password: EQ30679154
+  port: 443
+  server: active-hippo.rooster465.autos
+  skip-cert-verify: false
+  sni: active-hippo.rooster465.autos
+  sub_tag: A004-260618
+  type: trojan
+  udp: true
+- name: 154ms | trojan-602160041
+  password: FH72359861
+  port: 443
+  server: 35.92.245.6
+  skip-cert-verify: true
+  sni: neutral-quail.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 164ms | 🇫🇷FR_85|304KB/s|C002-260622
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.34
+  server: www.speedtest.org
   skip-cert-verify: false
   sni: www.ignitelimit.com
   sub_tag: C002-260622
@@ -146,11 +1165,35 @@ proxies:
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 7.1; Mi A1 Build/N2G47H) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.117 Safari/537.36
+    path: /assignment
+- name: 194ms | trojan-865910607
+  password: 16ae55f9-6b9e-4e57-b494-7e0bba25bf3a
+  port: 28443
+  server: 45.32.129.84
+  skip-cert-verify: true
+  sni: vpn-node.internal
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 211ms | 🇫🇷FR_74|147KB/s|B007-260618
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.26.14.137
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: B007-260618
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/55.0.2883.87 Safari/537.36
     path: /assignment
 - client-fingerprint: chrome
-  name: 360ms | 🇫🇷FR_1283|305KB/s|A001-260618
+  name: 216ms | 🇫🇷FR_429|179KB/s|A001-260618
   network: ws
   password: humanity
   port: 443
@@ -165,60 +1208,28 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
         Gecko) Chrome/51.0.2704.63 Safari/537.36
     path: /assignment
-- client-fingerprint: chrome
-  name: 854ms | 🇫🇷FR_305|267KB/s|C002-260622
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.12.149
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  sub_tag: C002-260622
+- name: 219ms | trojan-906676304
+  password: 7e70223b-f331-41d5-9313-02b8d2df2885
+  port: 20065
+  server: 157.254.38.210
+  skip-cert-verify: true
+  sni: hk.catxstar.com
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: 1022ms | 🇫🇷FR_846|173KB/s|A001-260618
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.20.6.134
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  sub_tag: A001-260618
+- name: 221ms | trojan-881408757
+  password: b1bbf963-f4bc-482d-81b8-597e51c1b7b9
+  port: 48180
+  server: 64.23.155.51
+  skip-cert-verify: true
+  sni: vpn-node.internal
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/56.0.2924.87 Safari/537.36
-    path: /assignment
 - client-fingerprint: chrome
-  name: 1095ms | 🇫🇷FR_291|222KB/s|C002-260622
+  name: 487ms | 🇫🇷FR_417|225KB/s|A001-260618
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.22
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  sub_tag: C002-260622
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/37.0.2062.120 Safari/537.36
-    path: /%2Fassignment
-- client-fingerprint: chrome
-  name: 1174ms | 🇫🇷FR_844|195KB/s|A001-260618
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.179
+  server: 104.18.152.149
   skip-cert-verify: false
   sni: www.ignitelimit.com
   sub_tag: A001-260618
@@ -226,9 +1237,19 @@ proxies:
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.106 Safari/537.36
     path: /assignment
+- name: 558ms | ❓Other_54|124KB/s|R002-260618
+  network: tcp
+  password: a126f35c-e832-4115-8593-b723ade3f7be
+  port: 20023
+  server: kkvlvvq-a.catcat321.com
+  skip-cert-verify: true
+  sni: hk.catxstar.com
+  sub_tag: R002-260618
+  type: trojan
+  udp: true
 proxy-groups:
 - name: FAST
   type: url-test
@@ -236,74 +1257,311 @@ proxy-groups:
   interval: 180
   tolerance: 50
   proxies:
-  - 2ms | 🇺🇸US_1|1.0MB/s
-  - 2ms | 🇺🇸US_434|235KB/s|R002-260618
-  - 4ms | 🇫🇷FR_492|298KB/s|F003-260618
-  - 4ms | 🇫🇷FR_1257|135KB/s|R002-260618
-  - 6ms | trojan-865910607
-  - '8ms | qilan.de | US Node | HOST #33'
-  - 9ms | 🇺🇸US_163|342KB/s|R002-260618
-  - 9ms | [971ms] [freeSub#218] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
-  - 9ms | [850ms] [freeSub#168] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
-  - 9ms | 🇺🇸US_168|309KB/s|R002-260618
-  - 9ms | 🇺🇸US_446|300KB/s|P002-260618
-  - '10ms | qilan.de | US Node | HOST #19'
-  - '207ms | 美国 071 #2'
-  - 353ms | 🇫🇷FR_217|418KB/s|C002-260622
-  - 360ms | 🇫🇷FR_1283|305KB/s|A001-260618
-  - 854ms | 🇫🇷FR_305|267KB/s|C002-260622
-  - 1022ms | 🇫🇷FR_846|173KB/s|A001-260618
-  - 1095ms | 🇫🇷FR_291|222KB/s|C002-260622
-  - 1174ms | 🇫🇷FR_844|195KB/s|A001-260618
+  - 18ms | shadowsocks-158
+  - 18ms | shadowsocks-163
+  - 18ms | 🇺🇸US_128|145KB/s
+  - 18ms | shadowsocks-194
+  - 18ms | 🇺🇸US_246|294KB/s|A004-260618
+  - 20ms | trojan-635823137
+  - 21ms | trojan-674674247
+  - 21ms | 🇺🇸US_49|318KB/s|B007-260618
+  - 23ms | 🇺🇸US_9|272KB/s|A004-260618
+  - 24ms | 🇺🇸US_415|75KB/s|A004-260618
+  - 24ms | 🇺🇸US_1|1.0MB/s
+  - 24ms | US - zhuhai.uk 05
+  - 24ms | 🇺🇸美国US089 1.58MB/s危险 TG@jcnode
+  - 24ms | 🇺🇸US_72|209KB/s|P002-260618
+  - 24ms | 🇺🇸US_238|74KB/s|R002-260618
+  - 24ms | 🇺🇸US_105|288KB/s|P002-260618
+  - 24ms | 🇺🇸US_206|212KB/s|R002-260618
+  - 24ms | [0.02MB/s][809ms] [freeSub#128] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 24ms | 🇺🇸US_235|288KB/s|R002-260618
+  - 24ms | 🇺🇸US_54|235KB/s|R002-260618
 - name: AUTO
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 180
   tolerance: 80
   proxies:
-  - 2ms | 🇺🇸US_1|1.0MB/s
-  - 2ms | 🇺🇸US_434|235KB/s|R002-260618
-  - 4ms | 🇫🇷FR_492|298KB/s|F003-260618
-  - 4ms | 🇫🇷FR_1257|135KB/s|R002-260618
-  - 6ms | trojan-865910607
-  - '8ms | qilan.de | US Node | HOST #33'
-  - 9ms | 🇺🇸US_163|342KB/s|R002-260618
-  - 9ms | [971ms] [freeSub#218] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
-  - 9ms | [850ms] [freeSub#168] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
-  - 9ms | 🇺🇸US_168|309KB/s|R002-260618
-  - 9ms | 🇺🇸US_446|300KB/s|P002-260618
-  - '10ms | qilan.de | US Node | HOST #19'
-  - '207ms | 美国 071 #2'
-  - 353ms | 🇫🇷FR_217|418KB/s|C002-260622
-  - 360ms | 🇫🇷FR_1283|305KB/s|A001-260618
-  - 854ms | 🇫🇷FR_305|267KB/s|C002-260622
-  - 1022ms | 🇫🇷FR_846|173KB/s|A001-260618
-  - 1095ms | 🇫🇷FR_291|222KB/s|C002-260622
-  - 1174ms | 🇫🇷FR_844|195KB/s|A001-260618
+  - 18ms | shadowsocks-158
+  - 18ms | shadowsocks-163
+  - 18ms | 🇺🇸US_128|145KB/s
+  - 18ms | shadowsocks-194
+  - 18ms | 🇺🇸US_246|294KB/s|A004-260618
+  - 20ms | trojan-635823137
+  - 21ms | trojan-674674247
+  - 21ms | 🇺🇸US_49|318KB/s|B007-260618
+  - 23ms | 🇺🇸US_9|272KB/s|A004-260618
+  - 24ms | 🇺🇸US_415|75KB/s|A004-260618
+  - 24ms | 🇺🇸US_1|1.0MB/s
+  - 24ms | US - zhuhai.uk 05
+  - 24ms | 🇺🇸美国US089 1.58MB/s危险 TG@jcnode
+  - 24ms | 🇺🇸US_72|209KB/s|P002-260618
+  - 24ms | 🇺🇸US_238|74KB/s|R002-260618
+  - 24ms | 🇺🇸US_105|288KB/s|P002-260618
+  - 24ms | 🇺🇸US_206|212KB/s|R002-260618
+  - 24ms | [0.02MB/s][809ms] [freeSub#128] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 24ms | 🇺🇸US_235|288KB/s|R002-260618
+  - 24ms | 🇺🇸US_54|235KB/s|R002-260618
+  - 24ms | 🇺🇸US_51|139KB/s|R002-260618
+  - 24ms | [1033ms] [freeSub#170] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 24ms | 🇺🇸US_45|257KB/s|P002-260618
+  - 24ms | [0.02MB/s][814ms] [freeSub#109] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 24ms | [880ms] [freeSub#099] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 24ms | [0.05MB/s][819ms] [freeSub#108] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 24ms | 🇺🇸US_258|414KB/s|P002-260618
+  - 24ms | 🇺🇸美国US254 测速未知危险 TG@jcnode
+  - 24ms | [0.03MB/s][808ms] [freeSub#133] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 24ms | 🇺🇸US_108|221KB/s|R002-260618
+  - 24ms | 🇺🇸US_198|233KB/s|P002-260618
+  - 24ms | 🇺🇸美国US023 1.8MB/s危险 TG@jcnode
+  - 24ms | [838ms] [freeSub#098] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 24ms | [867ms] [freeSub#112] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 24ms | 🇺🇸US_226|144KB/s|R002-260618
+  - 24ms | vmess-244981234
+  - 25ms | [0.01MB/s][833ms] [freeSub#116] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 25ms | vmess-650629583
+  - 25ms | [0.03MB/s][831ms] [freeSub#156] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 26ms | [0.02MB/s][823ms] [freeSub#125] 🔴🇺🇸[🎬📺🎭🎪]_github.com/Ruk1n
+  - 26ms | 🇺🇸US_280|239KB/s|R002-260618
+  - 26ms | 🇺🇸US_401|250KB/s|P002-260618
+  - 26ms | 🇺🇸US_351|263KB/s|P002-260618
+  - 26ms | 🇺🇸US_148|294KB/s|R002-260618
+  - 26ms | 🇺🇸US_149|305KB/s|R002-260618
+  - 27ms | 🇺🇸US_93|283KB/s|R002-260618
+  - 27ms | 🇺🇸US_342|260KB/s|R002-260618
+  - 27ms | [936ms] [freeSub#092] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 27ms | 🇺🇸US_181|186KB/s|R002-260618
+  - 27ms | 🇺🇸US_133|267KB/s|R002-260618
+  - 29ms | 🇺🇸US_111|335KB/s|R002-260618
+  - 29ms | 🇺🇸US_331|371KB/s|A004-260618
+  - 29ms | 🇺🇸US_335|187KB/s|A004-260618
+  - 29ms | [971ms] [freeSub#218] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 29ms | 🇺🇸US_324|325KB/s|A004-260618
+  - 31ms | 🇺🇸US_178|292KB/s|P002-260618
+  - 32ms | 🇺🇸US_140|420KB/s|A004-260618
+  - 32ms | [0.04MB/s][788ms] [freeSub#463] 🟠🇺🇸[🎬📺🎪✈️]_github.com/Ruk1
+  - 33ms | [943ms] [freeSub#166] 🔴🇺🇸[🎬📺🎭🎪]_github.com/Ruk1n
+  - 33ms | [858ms] [freeSub#161] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 34ms | 🇺🇸US_158|350KB/s|P002-260618
+  - 34ms | trojan-655646828
+  - 34ms | shadowsocks-27269
+  - 36ms | trojan-855382209
+  - 36ms | trojan-860329334
+  - 36ms | 🇺🇸US_115|373KB/s|A004-260618
+  - 36ms | 美国/洛杉矶/United States/Los Angeles [https://raw.githubusercontent.com/barry-far/V2
+  - 37ms | 🇺🇸US²_8|4.6MB/s|X|[原生|机房]
+  - 37ms | shadowsocks-156
+  - 37ms | shadowsocks-155
+  - 38ms | 美国/凤凰城/United States/Phoenix [https://raw.githubusercontent.com/MatinGhanbari/v2
+  - 38ms | 🇺🇸_US_美国_1
+  - '39ms | 🇺🇸_US_美国_1 #4'
+  - 44ms | 美国/United States [https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/
+  - 44ms | 🇨🇦CA_28|78KB/s|A004-260618
+  - 44ms | 🇨🇦CA_38|146KB/s|A004-260618
+  - 44ms | 🇨🇦CA_29|450KB/s|A004-260618
+  - 45ms | trojan-738907396
+  - 45ms | trojan-710506302
+  - 45ms | shadowsocks-11012
+  - 46ms | 🇺🇸openproxylist.com ss-US-3
+  - 48ms | 🇺🇸US_3|293KB/s
+  - 48ms | shadowsocks-487917493
+  - 50ms | 🇫🇷FR_411|263KB/s|R002-260618
+  - 50ms | 🇺🇸US_8|232KB/s|A004-260618
+  - 52ms | vmess-669779353
+  - 52ms | 🇨🇦CA_32|344KB/s|A001-260618
+  - 54ms | 🇺🇸_美国_209
+  - 58ms | 🇨🇦CA_30|92KB/s|R002-260618
+  - 71ms | vmess-704660104
+  - 74ms | 🇺🇸US_126|371KB/s|C002-260622
+  - 77ms | trojan-742983237
+  - 77ms | 🇨🇦openproxylist.com ss-CA-2
+  - 85ms | 🇺🇸 US 1052 → tg@nicevpn123
+  - 86ms | 🇺🇸US_81|101KB/s|M003-260806
+  - '90ms | qilan.de | US Node | HOST #33'
+  - 91ms | 🇺🇸US_334|284KB/s|A004-260618
+  - 92ms | trojan-656161125
+  - 93ms | 🇺🇸US_706|108KB/s|A004-260618 01
+  - '94ms | qilan.de | US Node | HOST #19'
+  - 108ms | 🇭🇰 HK 10 → tg@nicevpn123
+  - 110ms | 🇦🇺AU-103.224.212.216-0047
+  - 111ms | 🇺🇸_美国_212
+  - 113ms | 🇭🇰 HK 9 → tg@nicevpn123
+  - 116ms | 🇺🇸US_638|92KB/s 01
+  - 116ms | 🇺🇸US_639|209KB/s 01
+  - 116ms | 🇺🇸US_364|296KB/s 01
+  - 116ms | 🇺🇸US_798|256KB/s|M003-260806 01
+  - 116ms | 🇺🇸US_643|177KB/s|C002-260622 01
+  - 116ms | 🇺🇸US_629|417KB/s 01
+  - 116ms | 🇺🇸US_387|172KB/s|A004-260618 01
+  - 117ms | 🇺🇸US_660|108KB/s|A004-260618 01
+  - 117ms | 🇺🇸US_368|115KB/s 01
+  - 117ms | 🇺🇸US_501|101KB/s 01
+  - 117ms | 🇺🇸US_659|264KB/s|A004-260618 01
+  - 117ms | 🇺🇸US_386|124KB/s|A004-260618 01
+  - 117ms | 🇺🇸US_658|377KB/s|A004-260618 01
+  - 117ms | 🇺🇸US_765|272KB/s|S001-260618 01
+  - 117ms | 🇺🇸US_630|387KB/s 01
+  - 118ms | 🇺🇸US_669|189KB/s|M003-260806 01
+  - 118ms | 🇺🇸US_631|88KB/s 01
+  - 118ms | 🇺🇸US_520|127KB/s|A004-260618 01
+  - 118ms | 🇺🇸US_574|160KB/s|A004-260618 01
+  - 118ms | 🇺🇸US_685|485KB/s|A004-260618 01
+  - 118ms | 🇺🇸US_594|219KB/s|A004-260618 01
+  - 119ms | 🇺🇸US_540|357KB/s|A004-260618 01
+  - 119ms | 🇺🇸美国US205 1.15MB/s中性 TG@jcnode
+  - 122ms | 🇺🇸US_737|127KB/s|A004-260618 01
+  - 154ms | trojan-602160041
+  - 164ms | 🇫🇷FR_85|304KB/s|C002-260622
+  - 194ms | trojan-865910607
+  - 211ms | 🇫🇷FR_74|147KB/s|B007-260618
+  - 216ms | 🇫🇷FR_429|179KB/s|A001-260618
+  - 219ms | trojan-906676304
+  - 221ms | trojan-881408757
+  - 487ms | 🇫🇷FR_417|225KB/s|A001-260618
+  - 558ms | ❓Other_54|124KB/s|R002-260618
 - name: PROXY
   type: select
   proxies:
   - FAST
   - AUTO
   - DIRECT
-  - 2ms | 🇺🇸US_1|1.0MB/s
-  - 2ms | 🇺🇸US_434|235KB/s|R002-260618
-  - 4ms | 🇫🇷FR_492|298KB/s|F003-260618
-  - 4ms | 🇫🇷FR_1257|135KB/s|R002-260618
-  - 6ms | trojan-865910607
-  - '8ms | qilan.de | US Node | HOST #33'
-  - 9ms | 🇺🇸US_163|342KB/s|R002-260618
-  - 9ms | [971ms] [freeSub#218] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
-  - 9ms | [850ms] [freeSub#168] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
-  - 9ms | 🇺🇸US_168|309KB/s|R002-260618
-  - 9ms | 🇺🇸US_446|300KB/s|P002-260618
-  - '10ms | qilan.de | US Node | HOST #19'
-  - '207ms | 美国 071 #2'
-  - 353ms | 🇫🇷FR_217|418KB/s|C002-260622
-  - 360ms | 🇫🇷FR_1283|305KB/s|A001-260618
-  - 854ms | 🇫🇷FR_305|267KB/s|C002-260622
-  - 1022ms | 🇫🇷FR_846|173KB/s|A001-260618
-  - 1095ms | 🇫🇷FR_291|222KB/s|C002-260622
-  - 1174ms | 🇫🇷FR_844|195KB/s|A001-260618
+  - 18ms | shadowsocks-158
+  - 18ms | shadowsocks-163
+  - 18ms | 🇺🇸US_128|145KB/s
+  - 18ms | shadowsocks-194
+  - 18ms | 🇺🇸US_246|294KB/s|A004-260618
+  - 20ms | trojan-635823137
+  - 21ms | trojan-674674247
+  - 21ms | 🇺🇸US_49|318KB/s|B007-260618
+  - 23ms | 🇺🇸US_9|272KB/s|A004-260618
+  - 24ms | 🇺🇸US_415|75KB/s|A004-260618
+  - 24ms | 🇺🇸US_1|1.0MB/s
+  - 24ms | US - zhuhai.uk 05
+  - 24ms | 🇺🇸美国US089 1.58MB/s危险 TG@jcnode
+  - 24ms | 🇺🇸US_72|209KB/s|P002-260618
+  - 24ms | 🇺🇸US_238|74KB/s|R002-260618
+  - 24ms | 🇺🇸US_105|288KB/s|P002-260618
+  - 24ms | 🇺🇸US_206|212KB/s|R002-260618
+  - 24ms | [0.02MB/s][809ms] [freeSub#128] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 24ms | 🇺🇸US_235|288KB/s|R002-260618
+  - 24ms | 🇺🇸US_54|235KB/s|R002-260618
+  - 24ms | 🇺🇸US_51|139KB/s|R002-260618
+  - 24ms | [1033ms] [freeSub#170] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 24ms | 🇺🇸US_45|257KB/s|P002-260618
+  - 24ms | [0.02MB/s][814ms] [freeSub#109] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 24ms | [880ms] [freeSub#099] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 24ms | [0.05MB/s][819ms] [freeSub#108] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 24ms | 🇺🇸US_258|414KB/s|P002-260618
+  - 24ms | 🇺🇸美国US254 测速未知危险 TG@jcnode
+  - 24ms | [0.03MB/s][808ms] [freeSub#133] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 24ms | 🇺🇸US_108|221KB/s|R002-260618
+  - 24ms | 🇺🇸US_198|233KB/s|P002-260618
+  - 24ms | 🇺🇸美国US023 1.8MB/s危险 TG@jcnode
+  - 24ms | [838ms] [freeSub#098] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 24ms | [867ms] [freeSub#112] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 24ms | 🇺🇸US_226|144KB/s|R002-260618
+  - 24ms | vmess-244981234
+  - 25ms | [0.01MB/s][833ms] [freeSub#116] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 25ms | vmess-650629583
+  - 25ms | [0.03MB/s][831ms] [freeSub#156] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 26ms | [0.02MB/s][823ms] [freeSub#125] 🔴🇺🇸[🎬📺🎭🎪]_github.com/Ruk1n
+  - 26ms | 🇺🇸US_280|239KB/s|R002-260618
+  - 26ms | 🇺🇸US_401|250KB/s|P002-260618
+  - 26ms | 🇺🇸US_351|263KB/s|P002-260618
+  - 26ms | 🇺🇸US_148|294KB/s|R002-260618
+  - 26ms | 🇺🇸US_149|305KB/s|R002-260618
+  - 27ms | 🇺🇸US_93|283KB/s|R002-260618
+  - 27ms | 🇺🇸US_342|260KB/s|R002-260618
+  - 27ms | [936ms] [freeSub#092] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 27ms | 🇺🇸US_181|186KB/s|R002-260618
+  - 27ms | 🇺🇸US_133|267KB/s|R002-260618
+  - 29ms | 🇺🇸US_111|335KB/s|R002-260618
+  - 29ms | 🇺🇸US_331|371KB/s|A004-260618
+  - 29ms | 🇺🇸US_335|187KB/s|A004-260618
+  - 29ms | [971ms] [freeSub#218] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 29ms | 🇺🇸US_324|325KB/s|A004-260618
+  - 31ms | 🇺🇸US_178|292KB/s|P002-260618
+  - 32ms | 🇺🇸US_140|420KB/s|A004-260618
+  - 32ms | [0.04MB/s][788ms] [freeSub#463] 🟠🇺🇸[🎬📺🎪✈️]_github.com/Ruk1
+  - 33ms | [943ms] [freeSub#166] 🔴🇺🇸[🎬📺🎭🎪]_github.com/Ruk1n
+  - 33ms | [858ms] [freeSub#161] 🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1n
+  - 34ms | 🇺🇸US_158|350KB/s|P002-260618
+  - 34ms | trojan-655646828
+  - 34ms | shadowsocks-27269
+  - 36ms | trojan-855382209
+  - 36ms | trojan-860329334
+  - 36ms | 🇺🇸US_115|373KB/s|A004-260618
+  - 36ms | 美国/洛杉矶/United States/Los Angeles [https://raw.githubusercontent.com/barry-far/V2
+  - 37ms | 🇺🇸US²_8|4.6MB/s|X|[原生|机房]
+  - 37ms | shadowsocks-156
+  - 37ms | shadowsocks-155
+  - 38ms | 美国/凤凰城/United States/Phoenix [https://raw.githubusercontent.com/MatinGhanbari/v2
+  - 38ms | 🇺🇸_US_美国_1
+  - '39ms | 🇺🇸_US_美国_1 #4'
+  - 44ms | 美国/United States [https://raw.githubusercontent.com/MatinGhanbari/v2ray-configs/
+  - 44ms | 🇨🇦CA_28|78KB/s|A004-260618
+  - 44ms | 🇨🇦CA_38|146KB/s|A004-260618
+  - 44ms | 🇨🇦CA_29|450KB/s|A004-260618
+  - 45ms | trojan-738907396
+  - 45ms | trojan-710506302
+  - 45ms | shadowsocks-11012
+  - 46ms | 🇺🇸openproxylist.com ss-US-3
+  - 48ms | 🇺🇸US_3|293KB/s
+  - 48ms | shadowsocks-487917493
+  - 50ms | 🇫🇷FR_411|263KB/s|R002-260618
+  - 50ms | 🇺🇸US_8|232KB/s|A004-260618
+  - 52ms | vmess-669779353
+  - 52ms | 🇨🇦CA_32|344KB/s|A001-260618
+  - 54ms | 🇺🇸_美国_209
+  - 58ms | 🇨🇦CA_30|92KB/s|R002-260618
+  - 71ms | vmess-704660104
+  - 74ms | 🇺🇸US_126|371KB/s|C002-260622
+  - 77ms | trojan-742983237
+  - 77ms | 🇨🇦openproxylist.com ss-CA-2
+  - 85ms | 🇺🇸 US 1052 → tg@nicevpn123
+  - 86ms | 🇺🇸US_81|101KB/s|M003-260806
+  - '90ms | qilan.de | US Node | HOST #33'
+  - 91ms | 🇺🇸US_334|284KB/s|A004-260618
+  - 92ms | trojan-656161125
+  - 93ms | 🇺🇸US_706|108KB/s|A004-260618 01
+  - '94ms | qilan.de | US Node | HOST #19'
+  - 108ms | 🇭🇰 HK 10 → tg@nicevpn123
+  - 110ms | 🇦🇺AU-103.224.212.216-0047
+  - 111ms | 🇺🇸_美国_212
+  - 113ms | 🇭🇰 HK 9 → tg@nicevpn123
+  - 116ms | 🇺🇸US_638|92KB/s 01
+  - 116ms | 🇺🇸US_639|209KB/s 01
+  - 116ms | 🇺🇸US_364|296KB/s 01
+  - 116ms | 🇺🇸US_798|256KB/s|M003-260806 01
+  - 116ms | 🇺🇸US_643|177KB/s|C002-260622 01
+  - 116ms | 🇺🇸US_629|417KB/s 01
+  - 116ms | 🇺🇸US_387|172KB/s|A004-260618 01
+  - 117ms | 🇺🇸US_660|108KB/s|A004-260618 01
+  - 117ms | 🇺🇸US_368|115KB/s 01
+  - 117ms | 🇺🇸US_501|101KB/s 01
+  - 117ms | 🇺🇸US_659|264KB/s|A004-260618 01
+  - 117ms | 🇺🇸US_386|124KB/s|A004-260618 01
+  - 117ms | 🇺🇸US_658|377KB/s|A004-260618 01
+  - 117ms | 🇺🇸US_765|272KB/s|S001-260618 01
+  - 117ms | 🇺🇸US_630|387KB/s 01
+  - 118ms | 🇺🇸US_669|189KB/s|M003-260806 01
+  - 118ms | 🇺🇸US_631|88KB/s 01
+  - 118ms | 🇺🇸US_520|127KB/s|A004-260618 01
+  - 118ms | 🇺🇸US_574|160KB/s|A004-260618 01
+  - 118ms | 🇺🇸US_685|485KB/s|A004-260618 01
+  - 118ms | 🇺🇸US_594|219KB/s|A004-260618 01
+  - 119ms | 🇺🇸US_540|357KB/s|A004-260618 01
+  - 119ms | 🇺🇸美国US205 1.15MB/s中性 TG@jcnode
+  - 122ms | 🇺🇸US_737|127KB/s|A004-260618 01
+  - 154ms | trojan-602160041
+  - 164ms | 🇫🇷FR_85|304KB/s|C002-260622
+  - 194ms | trojan-865910607
+  - 211ms | 🇫🇷FR_74|147KB/s|B007-260618
+  - 216ms | 🇫🇷FR_429|179KB/s|A001-260618
+  - 219ms | trojan-906676304
+  - 221ms | trojan-881408757
+  - 487ms | 🇫🇷FR_417|225KB/s|A001-260618
+  - 558ms | ❓Other_54|124KB/s|R002-260618
 rules:
 - MATCH,PROXY

@@ -4,44 +4,19 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- cipher: aes-128-gcm
-  name: 17ms | 🇺🇸US_54|328KB/s
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.168
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 18ms | shadowsocks-158
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.167
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 18ms | shadowsocks-159
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.170
-  type: ss
-  udp: true
 - client-fingerprint: chrome
-  name: 25ms | 🇫🇷FR_278|391KB/s|R002-260618 01
-  network: ws
-  password: pH[]S[Bh:_:D6T4k
+  name: '6ms | qilan.de | US Node | HOST #33'
+  password: Mitivpn
   port: 443
-  server: 104.19.45.195
-  sni: AZaDneT-692.PagEs.DEv
-  sub_tag: R002-260618
+  server: 3-mitivpn.global.ssl.fastly.net
+  servername: 3-mitivpn.global.ssl.fastly.net
+  skip-cert-verify: false
+  sni: 3-mitivpn.global.ssl.fastly.net
+  tls: true
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.181 Safari/537.36
-    path: /trsVu9Ualb1DOfGjpw
 - client-fingerprint: chrome
-  name: '94ms | qilan.de | US Node | HOST #19'
+  name: '7ms | qilan.de | US Node | HOST #19'
   password: MiTiVPN
   port: 443
   server: cdn2-mitivpn.global.ssl.fastly.net
@@ -51,57 +26,69 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 219ms | 🇩🇪德国DE130 测速未知中性 TG@jcnode
-  network: ws
-  packet-encoding: xudp
+- name: 10ms | 🇺🇸US_320|814KB/s|R002-260618
+  password: 'null'
   port: 443
-  server: 172.64.146.232
-  servername: renderer-stream-2-62.mirra.now
+  server: efr-marktplatz.club
+  sub_tag: R002-260618
   tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      Host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: 250ms | 🇩🇪德国DE133 测速未知中性 TG@jcnode
-  network: ws
-  packet-encoding: xudp
+  type: http
+  username: 'null'
+  udp: true
+  sni: efr-marktplatz.club
+- name: 10ms | 🇺🇸US_179|826KB/s|R002-260618
   port: 443
-  server: 172.66.171.48
-  servername: renderer-stream-2-62.mirra.now
+  server: fullmanfirm.icu
+  skip-cert-verify: true
+  sub_tag: R002-260618
   tls: true
+  type: http
+  udp: true
+  sni: fullmanfirm.icu
+- name: 12ms | 美国 392
   type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      Host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: 258ms | 🇩🇪德国DE153 测速未知中性 TG@jcnode
-  network: ws
-  packet-encoding: xudp
+  network: tcp
+  server: 165.140.216.142
   port: 443
-  server: 172.64.153.159
-  servername: renderer-stream-2-62.mirra.now
+  uuid: b65a2d69-5634-42a2-e4be-54e8a6176900
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+- name: 27ms | 🇺🇸US_409|813KB/s|R002-260618
+  password: 'null'
+  port: 443
+  server: jgwynphotoarts.pro
+  skip-cert-verify: true
+  sub_tag: R002-260618
   tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      Host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
+  type: http
+  username: 'null'
+  udp: true
+  sni: jgwynphotoarts.pro
+- name: 27ms | 🇺🇸美国US203 测速未知 TG@jcnode
+  password: None
+  port: 443
+  server: carolinafreigh.fun
+  skip-cert-verify: false
+  tls: true
+  type: http
+  username: null
+- name: 27ms | 🇺🇸US_137|674KB/s|P002-260618
+  password: None
+  port: 443
+  server: kimberlymilano.icu
+  skip-cert-verify: false
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+  sni: kimberlymilano.icu
 - client-fingerprint: chrome
-  name: 631ms | 🇫🇷FR_6|361KB/s|C002-260622
+  name: 231ms | 🇫🇷FR_7|111KB/s|C002-260622
   network: ws
   password: humanity
   port: 443
-  server: 104.17.111.3
+  server: 104.18.152.103
   skip-cert-verify: false
   sni: www.ignitelimit.com
   sub_tag: C002-260622
@@ -109,8 +96,56 @@ proxies:
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/49.0.2623.110 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 504ms | 🇫🇷FR_57|89KB/s|A001-260618
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.174.101
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: A001-260618
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.181 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 512ms | ❓Other_13|169KB/s|S004-260618
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.140
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: S004-260618
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 556ms | 🇫🇷FR_17|391KB/s|C002-260622
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.246
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: C002-260622
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.77 Safari/537.36
     path: /assignment
 proxy-groups:
 - name: FAST
@@ -119,44 +154,53 @@ proxy-groups:
   interval: 180
   tolerance: 50
   proxies:
-  - 17ms | 🇺🇸US_54|328KB/s
-  - 18ms | shadowsocks-158
-  - 18ms | shadowsocks-159
-  - 25ms | 🇫🇷FR_278|391KB/s|R002-260618 01
-  - '94ms | qilan.de | US Node | HOST #19'
-  - 219ms | 🇩🇪德国DE130 测速未知中性 TG@jcnode
-  - 250ms | 🇩🇪德国DE133 测速未知中性 TG@jcnode
-  - 258ms | 🇩🇪德国DE153 测速未知中性 TG@jcnode
-  - 631ms | 🇫🇷FR_6|361KB/s|C002-260622
+  - '6ms | qilan.de | US Node | HOST #33'
+  - '7ms | qilan.de | US Node | HOST #19'
+  - 10ms | 🇺🇸US_320|814KB/s|R002-260618
+  - 10ms | 🇺🇸US_179|826KB/s|R002-260618
+  - 12ms | 美国 392
+  - 27ms | 🇺🇸US_409|813KB/s|R002-260618
+  - 27ms | 🇺🇸美国US203 测速未知 TG@jcnode
+  - 27ms | 🇺🇸US_137|674KB/s|P002-260618
+  - 231ms | 🇫🇷FR_7|111KB/s|C002-260622
+  - 504ms | 🇫🇷FR_57|89KB/s|A001-260618
+  - 512ms | ❓Other_13|169KB/s|S004-260618
+  - 556ms | 🇫🇷FR_17|391KB/s|C002-260622
 - name: AUTO
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 180
   tolerance: 80
   proxies:
-  - 17ms | 🇺🇸US_54|328KB/s
-  - 18ms | shadowsocks-158
-  - 18ms | shadowsocks-159
-  - 25ms | 🇫🇷FR_278|391KB/s|R002-260618 01
-  - '94ms | qilan.de | US Node | HOST #19'
-  - 219ms | 🇩🇪德国DE130 测速未知中性 TG@jcnode
-  - 250ms | 🇩🇪德国DE133 测速未知中性 TG@jcnode
-  - 258ms | 🇩🇪德国DE153 测速未知中性 TG@jcnode
-  - 631ms | 🇫🇷FR_6|361KB/s|C002-260622
+  - '6ms | qilan.de | US Node | HOST #33'
+  - '7ms | qilan.de | US Node | HOST #19'
+  - 10ms | 🇺🇸US_320|814KB/s|R002-260618
+  - 10ms | 🇺🇸US_179|826KB/s|R002-260618
+  - 12ms | 美国 392
+  - 27ms | 🇺🇸US_409|813KB/s|R002-260618
+  - 27ms | 🇺🇸美国US203 测速未知 TG@jcnode
+  - 27ms | 🇺🇸US_137|674KB/s|P002-260618
+  - 231ms | 🇫🇷FR_7|111KB/s|C002-260622
+  - 504ms | 🇫🇷FR_57|89KB/s|A001-260618
+  - 512ms | ❓Other_13|169KB/s|S004-260618
+  - 556ms | 🇫🇷FR_17|391KB/s|C002-260622
 - name: PROXY
   type: select
   proxies:
   - FAST
   - AUTO
   - DIRECT
-  - 17ms | 🇺🇸US_54|328KB/s
-  - 18ms | shadowsocks-158
-  - 18ms | shadowsocks-159
-  - 25ms | 🇫🇷FR_278|391KB/s|R002-260618 01
-  - '94ms | qilan.de | US Node | HOST #19'
-  - 219ms | 🇩🇪德国DE130 测速未知中性 TG@jcnode
-  - 250ms | 🇩🇪德国DE133 测速未知中性 TG@jcnode
-  - 258ms | 🇩🇪德国DE153 测速未知中性 TG@jcnode
-  - 631ms | 🇫🇷FR_6|361KB/s|C002-260622
+  - '6ms | qilan.de | US Node | HOST #33'
+  - '7ms | qilan.de | US Node | HOST #19'
+  - 10ms | 🇺🇸US_320|814KB/s|R002-260618
+  - 10ms | 🇺🇸US_179|826KB/s|R002-260618
+  - 12ms | 美国 392
+  - 27ms | 🇺🇸US_409|813KB/s|R002-260618
+  - 27ms | 🇺🇸美国US203 测速未知 TG@jcnode
+  - 27ms | 🇺🇸US_137|674KB/s|P002-260618
+  - 231ms | 🇫🇷FR_7|111KB/s|C002-260622
+  - 504ms | 🇫🇷FR_57|89KB/s|A001-260618
+  - 512ms | ❓Other_13|169KB/s|S004-260618
+  - 556ms | 🇫🇷FR_17|391KB/s|C002-260622
 rules:
 - MATCH,PROXY

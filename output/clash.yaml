@@ -4,273 +4,292 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- cipher: aes-128-gcm
-  name: 18ms | shadowsocks-163
-  password: shadowsocks
-  port: 443
-  server: 156.146.38.168
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 18ms | 🇺🇸US_281|1.0MB/s|A004-260618
-  password: qB2Cv9VIlujj
-  port: 8388
-  server: 23.150.248.20
-  sub_tag: A004-260618
-  type: ss
-  udp: true
-- name: 19ms | 🇫🇷FR_1417|638KB/s|M001-260618
-  network: ws
-  password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
-  port: 443
-  server: 104.18.35.15
+- alterId: 0
+  cipher: auto
+  name: 5ms | 🇺🇸US_507|910KB/s|M002-260618
+  port: 48111
+  server: 129.146.143.80
   skip-cert-verify: false
-  sni: _acme-challenge.sb.cloudns.biz
-  sub_tag: M001-260618
-  type: trojan
-  ws-opts:
-    headers:
-      Host: _acme-challenge.sb.cloudns.biz
-    path: /
+  sub_tag: M002-260618
+  tls: false
+  type: vmess
   udp: true
-- name: 20ms | 🇺🇸US-156.146.38.167-0042
-  server: 156.146.38.167
-  port: 443
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 20ms | 🇫🇷FR_795|218KB/s|M003-260806
-  network: ws
-  password: letiranbreath-x@^f
-  port: 2053
-  server: 0xs3ced9.zzzqwdbwq.workers.dev
-  skip-cert-verify: false
-  sni: 0XS3Ced9.zZzqwdBWq.wOrKErS.DEv
-  sub_tag: M003-260806
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: /eyJqdW5rIjoiYmx1NXI3dml6NjB3NW9nZyIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbIjEwNC4yOC4yNTUuNzQiXX0=
-    early-data-header-name: Sec-WebSocket-Protocol
-    max-early-data: 2560
-- client-fingerprint: chrome
-  name: 20ms | 🇫🇷FR_792|424KB/s|M003-260806
-  network: ws
-  password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
-  port: 443
-  server: 172.64.152.241
-  skip-cert-verify: false
-  sni: _acme-challenge.sb.cloudns.biz
-  sub_tag: M003-260806
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/59.0.3071.115 Safari/537.36
-    path: /
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 21ms | 🇫🇷FR_1358|241KB/s|B007-260618
-  network: ws
-  password: Telegram_healer_config
-  port: 443
-  server: 172.67.152.243
-  skip-cert-verify: false
-  sni: 3W2hk6ZJ92orjcjEdmI77hzC.Ny49nUZ6G33RYkoWAZquNl-b9GuN5T.WoRKERs.dEv
-  sub_tag: B007-260618
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.106 Safari/537.36
-    path: /tr/e2X4F8y1t8YGOWfIV2ImzqxmdmGEpf
-    early-data-header-name: Sec-WebSocket-Protocol
-    max-early-data: 2560
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 21ms | 🇫🇷FR_557|496KB/s|V007-260618
-  network: ws
-  password: Telegram_healer_config
-  port: 443
-  server: uh-e03ojzgq4ev7yy7b.6v46fk4wd2y8l5p2xtd.workers.dev
-  skip-cert-verify: false
-  sni: uH-E03OjZGQ4EV7yy7b.6V46fk4wd2Y8l5p2XTD.WORkErS.Dev
-  sub_tag: V007-260618
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; ANE-LX3 Build/HUAWEIANE-LX3)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /tr/iXLpDGAew6fKEQeQY84txlnklnRciaQ
-    early-data-header-name: Sec-WebSocket-Protocol
-    max-early-data: 2560
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 21ms | 🇫🇷FR_1377|546KB/s|T001-260618
-  network: ws
-  password: Telegram_healer_config
-  port: 443
-  server: 104.21.24.95
+  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
+  xudp: true
+  network: tcp
+  packet-encoding: xudp
+- name: 8ms | 🇺🇸US_362|249KB/s
+  password: ''
+  port: 9002
+  server: 138.199.35.218
   skip-cert-verify: true
-  sni: 1v95v6tjywcytbahl7f7lx8b27g.l4495eycqmse9he0yvoemjfc4ibyf-4.workers.dev
-  sub_tag: T001-260618
+  tls: true
+  type: http
+  username: ''
+  udp: true
+- name: 9ms | 🇺🇸US_163|757KB/s|P002-260618
+  password: ''
+  port: 9002
+  server: 138.199.35.210
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  username: ''
+  udp: true
+- name: 9ms | 🇺🇸US_564|698KB/s|P002-260618
+  password: 'null'
+  port: 9002
+  server: 138.199.35.215
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 9ms | 🇺🇸US_278|772KB/s
+  password: 'null'
+  port: 9002
+  server: 138.199.35.200
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 9ms | 🇺🇸US_198|739KB/s|P002-260618
+  password: None
+  port: 9002
+  server: 138.199.35.204
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 9ms | 🇺🇸US_185|767KB/s|P002-260618
+  password: None
+  port: 9002
+  server: 138.199.35.211
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 9ms | 🇺🇸US_177|758KB/s
+  password: ''
+  port: 9002
+  server: 138.199.35.203
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+  udp: true
+- name: 9ms | 🇺🇸US_72|225KB/s|P002-260618
+  password: None
+  port: 9002
+  server: 138.199.35.198
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 9ms | [0.01MB/s][790ms] [freeSub#114] D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_0cd2d
+  port: 9002
+  server: 138.199.35.195
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 9ms | 🇺🇸US_480|810KB/s|R002-260618
+  port: 9002
+  server: 138.199.35.216
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 9ms | 🇺🇸US_183|719KB/s|R002-260618
+  port: 9002
+  server: 138.199.35.209
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 9ms | 🇺🇸US_366|727KB/s|R002-260618
+  port: 9002
+  server: 138.199.35.206
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 10ms | vmess-145134
+  network: tcp
+  port: 180
+  server: 82.198.246.250
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: 10ms | 🇺🇸US_623|863KB/s|R002-260618
+  password: 'null'
+  port: 9002
+  server: 138.199.35.199
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 10ms | 🇺🇸US_377|815KB/s|R002-260618
+  password: 'null'
+  port: 9002
+  server: 138.199.35.214
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  username: 'null'
+  udp: true
+- name: 10ms | 🇺🇸US_228|697KB/s|P002-260618
+  password: None
+  port: 9002
+  server: 138.199.35.202
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 10ms | 🇺🇸US_584|485KB/s
+  password: ''
+  port: 9443
+  server: 38.95.111.226
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 11ms | vmess-145167
+  network: tcp
+  port: 180
+  server: 82.198.246.37
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: 12ms | 🇺🇸US_170|756KB/s|P002-260618
+  password: None
+  port: 9002
+  server: 138.199.35.213
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 14ms | 🇫🇷FR_276|688KB/s
+  network: ws
+  password: bd85f5fe32d9446a8b1f59e4f710455b
+  port: 443
+  server: 104.24.163.206
+  skip-cert-verify: false
+  sni: BpB-PAnEL-62c3.mlM-eE9A3b83.wOrKErS.dev
   type: trojan
   udp: true
   ws-opts:
     headers:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /tr/zJi4ccv7FeEo780U
+        like Gecko) Chrome/62.0.3202.89 Safari/537.36
+    path: /eyJqdW5rIjoibkN2cER2SDZIUTkiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6IiIsInBhbmVsSVBzIjoiWzJhMDI6ODk4OjE0Njo2NDo6XSJ9
     early-data-header-name: Sec-WebSocket-Protocol
     max-early-data: 2560
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 22ms | 🇫🇷FR_1286|802KB/s|B007-260618
+- name: 165ms | 分享日记_461
   network: ws
-  password: PFAiJ0ND-iqYF@NE
+  password: humanity
   port: 443
-  server: 188.114.97.8
+  server: 104.16.71.213
   skip-cert-verify: false
-  sni: cFOi-2fX16G3-8ry2KDxMcJ.wjESV2IlA3rXBuhpC2NsUgrAChGAWk.wOrKerS.DEv
-  sub_tag: B007-260618
+  sni: www.calmlunch.com
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/45.0.2454.101 Safari/537.36
-    path: /tr/g47sXSSa9D29SmBXchyV
-    early-data-header-name: Sec-WebSocket-Protocol
-    max-early-data: 2560
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 22ms | 🇫🇷FR_973|439KB/s|S004-260618
+      host: www.calmlunch.com
+    path: /assignment
+- client-fingerprint: chrome
+  name: 190ms | 🇫🇷FR_29|486KB/s|C002-260622
   network: ws
-  password: Telegram_healer_config
+  password: humanity
   port: 443
-  server: 104.21.4.124
+  server: 86.38.214.205
   skip-cert-verify: false
-  sni: vRE6r9qrbQi0T25tg.SRtB0M3HDbWr2cjZ8fJuR.WoRKerS.DEv
+  sni: www.ignitelimit.com
+  sub_tag: C002-260622
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.101 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 197ms | 🇫🇷FR_144|692KB/s|S004-260618
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.140
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
   sub_tag: S004-260618
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/48.0.2564.109 Safari/537.36
-    path: /tr/W3Ei3SdcW9sRVMLIbEd8sB1lm
-    early-data-header-name: Sec-WebSocket-Protocol
-    max-early-data: 2560
-- client-fingerprint: chrome
-  name: 22ms | 🇫🇷FR_688|913KB/s|R002-260618 01
-  network: ws
-  password: pH[]S[Bh:_:D6T4k
-  port: 443
-  server: 104.19.45.195
-  sni: AZaDneT-692.PagEs.DEv
-  sub_tag: R002-260618
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.181 Safari/537.36
-    path: /trsVu9Ualb1DOfGjpw
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 23ms | 🇫🇷FR_1304|749KB/s|M003-260806
-  network: ws
-  password: Telegram_healer_config
-  port: 443
-  server: 188.114.96.8
-  skip-cert-verify: false
-  sni: y9p34JPJmQJazaYpf.pIIwDDIlxJcQEHr17af22U7XK-yu.workeRS.Dev
-  sub_tag: M003-260806
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/44.0.2403.157 Safari/537.36
-    path: /tr/1nWXnOaq1ajP7PKxbRS7Sdck48oy
-    early-data-header-name: Sec-WebSocket-Protocol
-    max-early-data: 2560
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 27ms | 🇫🇷FR_279|579KB/s|M003-260806
-  network: ws
-  password: netra
-  port: 2087
-  server: 104.21.60.109
-  skip-cert-verify: false
-  sni: LAtE-FroST-9DA7.ShOamEni5.woRKers.Dev
-  sub_tag: M003-260806
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.113 Safari/537.36
-    path: /tr/WcvMTQZ5OFOfnBZDZ
-    early-data-header-name: Sec-WebSocket-Protocol
-    max-early-data: 2560
-- client-fingerprint: chrome
-  name: '70ms | qilan.de | US Node | HOST #33'
-  password: Mitivpn
-  port: 443
-  server: 3-mitivpn.global.ssl.fastly.net
-  servername: 3-mitivpn.global.ssl.fastly.net
-  skip-cert-verify: false
-  sni: 3-mitivpn.global.ssl.fastly.net
-  tls: true
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: '72ms | qilan.de | US Node | HOST #19'
-  password: MiTiVPN
-  port: 443
-  server: cdn2-mitivpn.global.ssl.fastly.net
-  servername: cdn2-mitivpn.global.ssl.fastly.net
-  skip-cert-verify: false
-  sni: cdn2-mitivpn.global.ssl.fastly.net
-  tls: true
-  type: trojan
-  udp: true
-- name: 133ms | 🇫🇷 法国 | FRA 3
-  server: 45.130.125.126
-  port: 443
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
     path: /assignment
-    headers:
-      Host: www.calmlunch.com
-  udp: true
 - client-fingerprint: chrome
-  name: 195ms | 🇫🇷FR_940|356KB/s|C002-260622
+  name: 199ms | 🇫🇷FR_51|270KB/s|C002-260622
   network: ws
   password: humanity
   port: 443
-  server: www.speedtest.org
+  server: ip.myip2.qzz.io
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: C002-260622
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/49.0.2623.87 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 201ms | 🇫🇷FR_124|1.1MB/s|A001-260618
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.161
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: A001-260618
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/35.0.1916.153 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 205ms | 🇫🇷FR_22|426KB/s|C002-260622
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.73
   skip-cert-verify: false
   sni: www.ignitelimit.com
   sub_tag: C002-260622
@@ -279,14 +298,14 @@ proxies:
   ws-opts:
     headers:
       User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.117 Safari/537.36
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
     path: /assignment
 - client-fingerprint: chrome
-  name: 195ms | 🇫🇷FR_917|318KB/s|B007-260618
+  name: 220ms | 🇫🇷FR_411|595KB/s|B007-260618
   network: ws
   password: humanity
   port: 443
-  server: 104.16.174.36
+  server: www.speedtest.net
   skip-cert-verify: false
   sni: www.ignitelimit.com
   sub_tag: B007-260618
@@ -295,58 +314,185 @@ proxies:
   ws-opts:
     headers:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/53.0.2785.143 Safari/537.36
+        like Gecko) Chrome/69.0.3497.100 Safari/537.36
     path: /assignment
 - client-fingerprint: chrome
-  name: 232ms | 🇫🇷FR_63|679KB/s|S004-260618
+  name: 227ms | 🇫🇷FR_109|610KB/s|C002-260622
   network: ws
   password: humanity
   port: 443
-  server: 104.17.111.4
+  server: 8.6.112.0
   skip-cert-verify: false
   sni: www.ignitelimit.com
-  sub_tag: S004-260618
+  sub_tag: C002-260622
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; WAS-LX3 Build/HUAWEIWAS-LX3)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.117 Safari/537.36
     path: /assignment
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 235ms | ❓Other_111|312KB/s|B007-260618
+- client-fingerprint: chrome
+  name: 227ms | 🇫🇷FR_99|441KB/s|A001-260618
   network: ws
   password: humanity
   port: 443
-  server: 216.24.57.7
+  server: 104.16.174.14
   skip-cert-verify: false
   sni: www.ignitelimit.com
-  sub_tag: B007-260618
+  sub_tag: A001-260618
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.181 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 232ms | 🇫🇷FR_101|198KB/s|A001-260618
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.20.6.134
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: A001-260618
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/56.0.2924.87 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 235ms | 🇫🇷FR_1|117KB/s
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.17.111.8
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
   type: trojan
   udp: true
   ws-opts:
     headers:
       User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/53.0.2785.143 Safari/537.36
+        Gecko) Chrome/69.0.3497.100 Safari/537.36
     path: /assignment
-- client-fingerprint: chrome
-  name: 251ms | 🇮🇩ID_5|550KB/s|M003-260806
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 267ms | 🇫🇷FR_98|510KB/s|A001-260618
   network: ws
-  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
+  password: humanity
   port: 443
-  server: 172.67.176.157
-  skip-cert-verify: true
-  sni: id1.nathaya.web.id
-  sub_tag: M003-260806
+  server: 162.159.136.234
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: A001-260618
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /trojan
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/63.0.3239.84 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 440ms | 🇫🇷FR_39|185KB/s|B007-260618
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.187
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: B007-260618
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/57.0.2987.133 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 645ms | 🇫🇷FR_2|248KB/s
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.97
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/61.0.3163.79 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 646ms | 🇫🇷FR_78|140KB/s|B007-260618
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.225
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: B007-260618
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.94 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 682ms | 🇫🇷FR_110|314KB/s|B007-260618
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.174.6
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: B007-260618
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/67.0.3396.99 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 692ms | 🇫🇷FR_44|651KB/s|C002-260622
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.174.34
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: C002-260622
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 7.1; Mi A1 Build/N2G47H) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 728ms | 🇫🇷FR_68|187KB/s|C002-260622
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.207
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: C002-260622
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/534.30 (KHTML, like Gecko)
+        Chrome/12.0.742.100 Safari/534.30
+    path: /assignment
 proxy-groups:
 - name: FAST
   type: url-test
@@ -354,81 +500,115 @@ proxy-groups:
   interval: 180
   tolerance: 50
   proxies:
-  - 18ms | shadowsocks-163
-  - 18ms | 🇺🇸US_281|1.0MB/s|A004-260618
-  - 19ms | 🇫🇷FR_1417|638KB/s|M001-260618
-  - 20ms | 🇺🇸US-156.146.38.167-0042
-  - 20ms | 🇫🇷FR_795|218KB/s|M003-260806
-  - 20ms | 🇫🇷FR_792|424KB/s|M003-260806
-  - 21ms | 🇫🇷FR_1358|241KB/s|B007-260618
-  - 21ms | 🇫🇷FR_557|496KB/s|V007-260618
-  - 21ms | 🇫🇷FR_1377|546KB/s|T001-260618
-  - 22ms | 🇫🇷FR_1286|802KB/s|B007-260618
-  - 22ms | 🇫🇷FR_973|439KB/s|S004-260618
-  - 22ms | 🇫🇷FR_688|913KB/s|R002-260618 01
-  - 23ms | 🇫🇷FR_1304|749KB/s|M003-260806
-  - 27ms | 🇫🇷FR_279|579KB/s|M003-260806
-  - '70ms | qilan.de | US Node | HOST #33'
-  - '72ms | qilan.de | US Node | HOST #19'
-  - 133ms | 🇫🇷 法国 | FRA 3
-  - 195ms | 🇫🇷FR_940|356KB/s|C002-260622
-  - 195ms | 🇫🇷FR_917|318KB/s|B007-260618
-  - 232ms | 🇫🇷FR_63|679KB/s|S004-260618
+  - 5ms | 🇺🇸US_507|910KB/s|M002-260618
+  - 8ms | 🇺🇸US_362|249KB/s
+  - 9ms | 🇺🇸US_163|757KB/s|P002-260618
+  - 9ms | 🇺🇸US_564|698KB/s|P002-260618
+  - 9ms | 🇺🇸US_278|772KB/s
+  - 9ms | 🇺🇸US_198|739KB/s|P002-260618
+  - 9ms | 🇺🇸US_185|767KB/s|P002-260618
+  - 9ms | 🇺🇸US_177|758KB/s
+  - 9ms | 🇺🇸US_72|225KB/s|P002-260618
+  - 9ms | [0.01MB/s][790ms] [freeSub#114] D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_0cd2d
+  - 9ms | 🇺🇸US_480|810KB/s|R002-260618
+  - 9ms | 🇺🇸US_183|719KB/s|R002-260618
+  - 9ms | 🇺🇸US_366|727KB/s|R002-260618
+  - 10ms | vmess-145134
+  - 10ms | 🇺🇸US_623|863KB/s|R002-260618
+  - 10ms | 🇺🇸US_377|815KB/s|R002-260618
+  - 10ms | 🇺🇸US_228|697KB/s|P002-260618
+  - 10ms | 🇺🇸US_584|485KB/s
+  - 11ms | vmess-145167
+  - 12ms | 🇺🇸US_170|756KB/s|P002-260618
 - name: AUTO
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 180
   tolerance: 80
   proxies:
-  - 18ms | shadowsocks-163
-  - 18ms | 🇺🇸US_281|1.0MB/s|A004-260618
-  - 19ms | 🇫🇷FR_1417|638KB/s|M001-260618
-  - 20ms | 🇺🇸US-156.146.38.167-0042
-  - 20ms | 🇫🇷FR_795|218KB/s|M003-260806
-  - 20ms | 🇫🇷FR_792|424KB/s|M003-260806
-  - 21ms | 🇫🇷FR_1358|241KB/s|B007-260618
-  - 21ms | 🇫🇷FR_557|496KB/s|V007-260618
-  - 21ms | 🇫🇷FR_1377|546KB/s|T001-260618
-  - 22ms | 🇫🇷FR_1286|802KB/s|B007-260618
-  - 22ms | 🇫🇷FR_973|439KB/s|S004-260618
-  - 22ms | 🇫🇷FR_688|913KB/s|R002-260618 01
-  - 23ms | 🇫🇷FR_1304|749KB/s|M003-260806
-  - 27ms | 🇫🇷FR_279|579KB/s|M003-260806
-  - '70ms | qilan.de | US Node | HOST #33'
-  - '72ms | qilan.de | US Node | HOST #19'
-  - 133ms | 🇫🇷 法国 | FRA 3
-  - 195ms | 🇫🇷FR_940|356KB/s|C002-260622
-  - 195ms | 🇫🇷FR_917|318KB/s|B007-260618
-  - 232ms | 🇫🇷FR_63|679KB/s|S004-260618
-  - 235ms | ❓Other_111|312KB/s|B007-260618
-  - 251ms | 🇮🇩ID_5|550KB/s|M003-260806
+  - 5ms | 🇺🇸US_507|910KB/s|M002-260618
+  - 8ms | 🇺🇸US_362|249KB/s
+  - 9ms | 🇺🇸US_163|757KB/s|P002-260618
+  - 9ms | 🇺🇸US_564|698KB/s|P002-260618
+  - 9ms | 🇺🇸US_278|772KB/s
+  - 9ms | 🇺🇸US_198|739KB/s|P002-260618
+  - 9ms | 🇺🇸US_185|767KB/s|P002-260618
+  - 9ms | 🇺🇸US_177|758KB/s
+  - 9ms | 🇺🇸US_72|225KB/s|P002-260618
+  - 9ms | [0.01MB/s][790ms] [freeSub#114] D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_0cd2d
+  - 9ms | 🇺🇸US_480|810KB/s|R002-260618
+  - 9ms | 🇺🇸US_183|719KB/s|R002-260618
+  - 9ms | 🇺🇸US_366|727KB/s|R002-260618
+  - 10ms | vmess-145134
+  - 10ms | 🇺🇸US_623|863KB/s|R002-260618
+  - 10ms | 🇺🇸US_377|815KB/s|R002-260618
+  - 10ms | 🇺🇸US_228|697KB/s|P002-260618
+  - 10ms | 🇺🇸US_584|485KB/s
+  - 11ms | vmess-145167
+  - 12ms | 🇺🇸US_170|756KB/s|P002-260618
+  - 14ms | 🇫🇷FR_276|688KB/s
+  - 165ms | 分享日记_461
+  - 190ms | 🇫🇷FR_29|486KB/s|C002-260622
+  - 197ms | 🇫🇷FR_144|692KB/s|S004-260618
+  - 199ms | 🇫🇷FR_51|270KB/s|C002-260622
+  - 201ms | 🇫🇷FR_124|1.1MB/s|A001-260618
+  - 205ms | 🇫🇷FR_22|426KB/s|C002-260622
+  - 220ms | 🇫🇷FR_411|595KB/s|B007-260618
+  - 227ms | 🇫🇷FR_109|610KB/s|C002-260622
+  - 227ms | 🇫🇷FR_99|441KB/s|A001-260618
+  - 232ms | 🇫🇷FR_101|198KB/s|A001-260618
+  - 235ms | 🇫🇷FR_1|117KB/s
+  - 267ms | 🇫🇷FR_98|510KB/s|A001-260618
+  - 440ms | 🇫🇷FR_39|185KB/s|B007-260618
+  - 645ms | 🇫🇷FR_2|248KB/s
+  - 646ms | 🇫🇷FR_78|140KB/s|B007-260618
+  - 682ms | 🇫🇷FR_110|314KB/s|B007-260618
+  - 692ms | 🇫🇷FR_44|651KB/s|C002-260622
+  - 728ms | 🇫🇷FR_68|187KB/s|C002-260622
 - name: PROXY
   type: select
   proxies:
   - FAST
   - AUTO
   - DIRECT
-  - 18ms | shadowsocks-163
-  - 18ms | 🇺🇸US_281|1.0MB/s|A004-260618
-  - 19ms | 🇫🇷FR_1417|638KB/s|M001-260618
-  - 20ms | 🇺🇸US-156.146.38.167-0042
-  - 20ms | 🇫🇷FR_795|218KB/s|M003-260806
-  - 20ms | 🇫🇷FR_792|424KB/s|M003-260806
-  - 21ms | 🇫🇷FR_1358|241KB/s|B007-260618
-  - 21ms | 🇫🇷FR_557|496KB/s|V007-260618
-  - 21ms | 🇫🇷FR_1377|546KB/s|T001-260618
-  - 22ms | 🇫🇷FR_1286|802KB/s|B007-260618
-  - 22ms | 🇫🇷FR_973|439KB/s|S004-260618
-  - 22ms | 🇫🇷FR_688|913KB/s|R002-260618 01
-  - 23ms | 🇫🇷FR_1304|749KB/s|M003-260806
-  - 27ms | 🇫🇷FR_279|579KB/s|M003-260806
-  - '70ms | qilan.de | US Node | HOST #33'
-  - '72ms | qilan.de | US Node | HOST #19'
-  - 133ms | 🇫🇷 法国 | FRA 3
-  - 195ms | 🇫🇷FR_940|356KB/s|C002-260622
-  - 195ms | 🇫🇷FR_917|318KB/s|B007-260618
-  - 232ms | 🇫🇷FR_63|679KB/s|S004-260618
-  - 235ms | ❓Other_111|312KB/s|B007-260618
-  - 251ms | 🇮🇩ID_5|550KB/s|M003-260806
+  - 5ms | 🇺🇸US_507|910KB/s|M002-260618
+  - 8ms | 🇺🇸US_362|249KB/s
+  - 9ms | 🇺🇸US_163|757KB/s|P002-260618
+  - 9ms | 🇺🇸US_564|698KB/s|P002-260618
+  - 9ms | 🇺🇸US_278|772KB/s
+  - 9ms | 🇺🇸US_198|739KB/s|P002-260618
+  - 9ms | 🇺🇸US_185|767KB/s|P002-260618
+  - 9ms | 🇺🇸US_177|758KB/s
+  - 9ms | 🇺🇸US_72|225KB/s|P002-260618
+  - 9ms | [0.01MB/s][790ms] [freeSub#114] D🔴🇺🇸[🎬🤖📺🎭]_dokng.com_0cd2d
+  - 9ms | 🇺🇸US_480|810KB/s|R002-260618
+  - 9ms | 🇺🇸US_183|719KB/s|R002-260618
+  - 9ms | 🇺🇸US_366|727KB/s|R002-260618
+  - 10ms | vmess-145134
+  - 10ms | 🇺🇸US_623|863KB/s|R002-260618
+  - 10ms | 🇺🇸US_377|815KB/s|R002-260618
+  - 10ms | 🇺🇸US_228|697KB/s|P002-260618
+  - 10ms | 🇺🇸US_584|485KB/s
+  - 11ms | vmess-145167
+  - 12ms | 🇺🇸US_170|756KB/s|P002-260618
+  - 14ms | 🇫🇷FR_276|688KB/s
+  - 165ms | 分享日记_461
+  - 190ms | 🇫🇷FR_29|486KB/s|C002-260622
+  - 197ms | 🇫🇷FR_144|692KB/s|S004-260618
+  - 199ms | 🇫🇷FR_51|270KB/s|C002-260622
+  - 201ms | 🇫🇷FR_124|1.1MB/s|A001-260618
+  - 205ms | 🇫🇷FR_22|426KB/s|C002-260622
+  - 220ms | 🇫🇷FR_411|595KB/s|B007-260618
+  - 227ms | 🇫🇷FR_109|610KB/s|C002-260622
+  - 227ms | 🇫🇷FR_99|441KB/s|A001-260618
+  - 232ms | 🇫🇷FR_101|198KB/s|A001-260618
+  - 235ms | 🇫🇷FR_1|117KB/s
+  - 267ms | 🇫🇷FR_98|510KB/s|A001-260618
+  - 440ms | 🇫🇷FR_39|185KB/s|B007-260618
+  - 645ms | 🇫🇷FR_2|248KB/s
+  - 646ms | 🇫🇷FR_78|140KB/s|B007-260618
+  - 682ms | 🇫🇷FR_110|314KB/s|B007-260618
+  - 692ms | 🇫🇷FR_44|651KB/s|C002-260622
+  - 728ms | 🇫🇷FR_68|187KB/s|C002-260622
 rules:
 - MATCH,PROXY

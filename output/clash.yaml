@@ -4,28 +4,68 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- client-fingerprint: chrome
-  name: 143ms | 🇫🇷FR_26|100KB/s|C002-260622
-  network: ws
-  password: humanity
+- name: 2ms | 🇲🇽MX_4|391KB/s|R002-260618
   port: 443
-  server: www.speedtest.org
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  sub_tag: C002-260622
-  type: trojan
+  server: 45.134.9.41
+  skip-cert-verify: true
+  sni: 991cc80f13caf81d3426ddebb2da7f49-240d6105b6ef86f0.apache-iv.com
+  sub_tag: R002-260618
+  tls: true
+  type: http
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.117 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: 168ms | 🇫🇷FR_113|406KB/s|A001-260618
+- name: 14ms | 🇲🇽MX_6|413KB/s|R002-260618
+  port: 3030
+  server: 189.164.48.17
+  sub_tag: R002-260618
+  type: http
+  udp: true
+- cipher: aes-128-gcm
+  name: 28ms | shadowsocks-194
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.169
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 28ms | shadowsocks-158
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.167
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 28ms | shadowsocks-163
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.168
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 28ms | shadowsocks-159
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.170
+  type: ss
+  udp: true
+- name: 43ms | [0.01MB/s][808ms] [freeSub#227] A🟢🇲🇽[🎬🤖📺🎭]_dokng.com_b2a20
+  port: 10101
+  server: 187.188.171.231
+  type: http
+- name: 82ms | 🇲🇽MX_7|83KB/s|R002-260618 01
+  port: 999
+  server: 201.165.187.252
+  sub_tag: R002-260618
+  type: http
+  udp: true
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 214ms | 🇫🇷FR_89|539KB/s|A001-260618
   network: ws
   password: humanity
   port: 443
-  server: 45.130.125.76
+  server: 162.159.136.234
   skip-cert-verify: false
   sni: www.ignitelimit.com
   sub_tag: A001-260618
@@ -33,15 +73,31 @@ proxies:
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.113 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/63.0.3239.84 Safari/537.36
     path: /assignment
 - client-fingerprint: chrome
-  name: 180ms | 🇫🇷FR_8|391KB/s|C002-260622
+  name: 215ms | 🇫🇷FR_117|437KB/s|A001-260618
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.155
+  server: 104.18.152.149
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: A001-260618
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.106 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 251ms | 🇫🇷FR_48|164KB/s|C002-260622
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.50
   skip-cert-verify: false
   sni: www.ignitelimit.com
   sub_tag: C002-260622
@@ -49,60 +105,104 @@ proxies:
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; vivo 1603 Build/MMB29M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
     path: /assignment
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  name: 261ms | 🇺🇸US_732|114KB/s|M003-260806 01
-  network: ws
-  packet-encoding: xudp
-  port: 8443
-  server: chatgpt.com
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
-  sub_tag: M003-260806
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  ws-opts:
-    headers:
-      Host: v2ray1.dozapp.xyz
-    path: /lMnsZUN4/
-  xudp: true
 - client-fingerprint: chrome
-  name: 405ms | 🇫🇷FR_15|379KB/s
+  name: 282ms | 🇫🇷FR_39|165KB/s|C002-260622
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.97
+  server: 104.18.152.73
   skip-cert-verify: false
   sni: www.ignitelimit.com
+  sub_tag: C002-260622
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 331ms | 🇫🇷FR_180|1012KB/s|B007-260618
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.174.6
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: B007-260618
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/67.0.3396.99 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 380ms | 🇫🇷FR_16|101KB/s|B007-260618
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.174.44
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: B007-260618
   type: trojan
   udp: true
   ws-opts:
     headers:
       User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/61.0.3163.79 Safari/537.36
+        like Gecko) Chrome/52.0.2743.116 Safari/537.36
     path: /assignment
 - client-fingerprint: chrome
-  name: 799ms | 🇫🇷FR_44|192KB/s|S004-260618
+  name: 830ms | 🇫🇷FR_51|706KB/s|B007-260618
   network: ws
   password: humanity
   port: 443
-  server: 104.18.152.140
+  server: 172.67.149.60
   skip-cert-verify: false
   sni: www.ignitelimit.com
-  sub_tag: S004-260618
+  sub_tag: B007-260618
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.3
+        (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
+    path: /assignment
+- client-fingerprint: chrome
+  name: 886ms | 🇫🇷FR_30|845KB/s|B007-260618
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.174.12
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: B007-260618
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/59.0.3071.115 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 1561ms | 🇫🇷FR_32|249KB/s|B007-260618
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.225
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: B007-260618
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.94 Safari/537.36
     path: /assignment
 proxy-groups:
 - name: FAST
@@ -111,35 +211,68 @@ proxy-groups:
   interval: 180
   tolerance: 50
   proxies:
-  - 143ms | 🇫🇷FR_26|100KB/s|C002-260622
-  - 168ms | 🇫🇷FR_113|406KB/s|A001-260618
-  - 180ms | 🇫🇷FR_8|391KB/s|C002-260622
-  - 261ms | 🇺🇸US_732|114KB/s|M003-260806 01
-  - 405ms | 🇫🇷FR_15|379KB/s
-  - 799ms | 🇫🇷FR_44|192KB/s|S004-260618
+  - 2ms | 🇲🇽MX_4|391KB/s|R002-260618
+  - 14ms | 🇲🇽MX_6|413KB/s|R002-260618
+  - 28ms | shadowsocks-194
+  - 28ms | shadowsocks-158
+  - 28ms | shadowsocks-163
+  - 28ms | shadowsocks-159
+  - 43ms | [0.01MB/s][808ms] [freeSub#227] A🟢🇲🇽[🎬🤖📺🎭]_dokng.com_b2a20
+  - 82ms | 🇲🇽MX_7|83KB/s|R002-260618 01
+  - 214ms | 🇫🇷FR_89|539KB/s|A001-260618
+  - 215ms | 🇫🇷FR_117|437KB/s|A001-260618
+  - 251ms | 🇫🇷FR_48|164KB/s|C002-260622
+  - 282ms | 🇫🇷FR_39|165KB/s|C002-260622
+  - 331ms | 🇫🇷FR_180|1012KB/s|B007-260618
+  - 380ms | 🇫🇷FR_16|101KB/s|B007-260618
+  - 830ms | 🇫🇷FR_51|706KB/s|B007-260618
+  - 886ms | 🇫🇷FR_30|845KB/s|B007-260618
+  - 1561ms | 🇫🇷FR_32|249KB/s|B007-260618
 - name: AUTO
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 180
   tolerance: 80
   proxies:
-  - 143ms | 🇫🇷FR_26|100KB/s|C002-260622
-  - 168ms | 🇫🇷FR_113|406KB/s|A001-260618
-  - 180ms | 🇫🇷FR_8|391KB/s|C002-260622
-  - 261ms | 🇺🇸US_732|114KB/s|M003-260806 01
-  - 405ms | 🇫🇷FR_15|379KB/s
-  - 799ms | 🇫🇷FR_44|192KB/s|S004-260618
+  - 2ms | 🇲🇽MX_4|391KB/s|R002-260618
+  - 14ms | 🇲🇽MX_6|413KB/s|R002-260618
+  - 28ms | shadowsocks-194
+  - 28ms | shadowsocks-158
+  - 28ms | shadowsocks-163
+  - 28ms | shadowsocks-159
+  - 43ms | [0.01MB/s][808ms] [freeSub#227] A🟢🇲🇽[🎬🤖📺🎭]_dokng.com_b2a20
+  - 82ms | 🇲🇽MX_7|83KB/s|R002-260618 01
+  - 214ms | 🇫🇷FR_89|539KB/s|A001-260618
+  - 215ms | 🇫🇷FR_117|437KB/s|A001-260618
+  - 251ms | 🇫🇷FR_48|164KB/s|C002-260622
+  - 282ms | 🇫🇷FR_39|165KB/s|C002-260622
+  - 331ms | 🇫🇷FR_180|1012KB/s|B007-260618
+  - 380ms | 🇫🇷FR_16|101KB/s|B007-260618
+  - 830ms | 🇫🇷FR_51|706KB/s|B007-260618
+  - 886ms | 🇫🇷FR_30|845KB/s|B007-260618
+  - 1561ms | 🇫🇷FR_32|249KB/s|B007-260618
 - name: PROXY
   type: select
   proxies:
   - FAST
   - AUTO
   - DIRECT
-  - 143ms | 🇫🇷FR_26|100KB/s|C002-260622
-  - 168ms | 🇫🇷FR_113|406KB/s|A001-260618
-  - 180ms | 🇫🇷FR_8|391KB/s|C002-260622
-  - 261ms | 🇺🇸US_732|114KB/s|M003-260806 01
-  - 405ms | 🇫🇷FR_15|379KB/s
-  - 799ms | 🇫🇷FR_44|192KB/s|S004-260618
+  - 2ms | 🇲🇽MX_4|391KB/s|R002-260618
+  - 14ms | 🇲🇽MX_6|413KB/s|R002-260618
+  - 28ms | shadowsocks-194
+  - 28ms | shadowsocks-158
+  - 28ms | shadowsocks-163
+  - 28ms | shadowsocks-159
+  - 43ms | [0.01MB/s][808ms] [freeSub#227] A🟢🇲🇽[🎬🤖📺🎭]_dokng.com_b2a20
+  - 82ms | 🇲🇽MX_7|83KB/s|R002-260618 01
+  - 214ms | 🇫🇷FR_89|539KB/s|A001-260618
+  - 215ms | 🇫🇷FR_117|437KB/s|A001-260618
+  - 251ms | 🇫🇷FR_48|164KB/s|C002-260622
+  - 282ms | 🇫🇷FR_39|165KB/s|C002-260622
+  - 331ms | 🇫🇷FR_180|1012KB/s|B007-260618
+  - 380ms | 🇫🇷FR_16|101KB/s|B007-260618
+  - 830ms | 🇫🇷FR_51|706KB/s|B007-260618
+  - 886ms | 🇫🇷FR_30|845KB/s|B007-260618
+  - 1561ms | 🇫🇷FR_32|249KB/s|B007-260618
 rules:
 - MATCH,PROXY

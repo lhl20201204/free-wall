@@ -4,244 +4,42 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 6ms | 🇺🇸US_677|737KB/s|A004-260618 01
-  network: tcp
-  packet-encoding: xudp
-  port: 48111
-  server: 129.146.143.80
-  servername: 129.146.143.80
-  skip-cert-verify: false
-  sub_tag: A004-260618
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d4603cc2-e0ee-4651-83f5-1db5b7168177
-  xudp: true
-- name: 6ms | 美国 404
-  type: vmess
-  network: ws
-  server: 129.146.77.248
-  port: 39495
-  uuid: f836c736-87fc-4fde-aabc-00857ecdff3e
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 129.146.77.248
-    path: /cctv13.m3u8
-- name: 8ms | 🇺🇸US_524|338KB/s 01
-  password: ''
-  port: 9443
-  server: 38.95.111.226
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: ''
-- name: 8ms | 英国 010
-  type: vmess
-  network: tcp
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-- cipher: chacha20-ietf-poly1305
-  name: 8ms | shadowsocks-157
-  password: G5p6ww4o67HB
-  port: 8388
-  server: 108.181.0.177
-  type: ss
-  udp: true
-- name: 9ms | 英国 009
-  type: vmess
-  network: tcp
-  server: 82.198.246.233
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-- name: 9ms | 英国 008
-  type: vmess
-  network: tcp
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-- name: 12ms | 🇫🇷FR_61|844KB/s|M001-260618
+- client-fingerprint: chrome
+  name: 54ms | 🇫🇷FR_48|795KB/s|M003-260806
   network: ws
   password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
   port: 443
-  server: 104.18.35.15
+  server: 172.64.152.241
   skip-cert-verify: false
   sni: _acme-challenge.sb.cloudns.biz
-  sub_tag: M001-260618
+  sub_tag: M003-260806
   type: trojan
+  udp: true
   ws-opts:
     headers:
-      Host: _acme-challenge.sb.cloudns.biz
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/59.0.3071.115 Safari/537.36
     path: /
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 122ms | 🇫🇷FR_16|127KB/s|B007-260618
+  network: ws
+  password: humanity
+  port: 443
+  server: 216.24.57.7
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: B007-260618
+  type: trojan
   udp: true
-- cipher: rc4-md5
-  name: 16ms | 🇺🇸US_195|865KB/s|A004-260618 01
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 107.151.182.197
-  sub_tag: A004-260618
-  type: ss
-  udp: true
-- name: 17ms | 🇺🇸US_152|444KB/s|R002-260618
-  port: 9002
-  server: 138.199.35.209
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 17ms | 🇺🇸美国US121 1.58MB/s危险 TG@jcnode
-  port: 9002
-  server: 138.199.35.213
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 17ms | 🇺🇸美国US093 1.66MB/s危险 TG@jcnode
-  password: None
-  port: 9002
-  server: 138.199.35.205
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 17ms | 🇺🇸美国US098 1.66MB/s危险 TG@jcnode
-  password: None
-  port: 9002
-  server: 138.199.35.208
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 17ms | 🇺🇸US_32|536KB/s|P002-260618
-  password: None
-  port: 9002
-  server: 138.199.35.198
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 17ms | 🇺🇸US_146|289KB/s|R002-260618
-  port: 9002
-  server: 138.199.35.211
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 17ms | 🇺🇸美国US106 1.62MB/s危险 TG@jcnode
-  password: None
-  port: 9002
-  server: 138.199.35.195
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 18ms | 🇺🇸美国US027 1.86MB/s危险 TG@jcnode
-  port: 9002
-  server: 138.199.35.214
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 18ms | ❓Other_62|367KB/s|P002-260618
-  password: 'null'
-  port: 9002
-  server: 138.199.35.215
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  username: 'null'
-  udp: true
-- name: 18ms | 🇺🇸美国US097 1.66MB/s危险 TG@jcnode
-  password: 'null'
-  port: 9002
-  server: 138.199.35.212
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-- name: 18ms | 🇺🇸美国US048 1.79MB/s危险 TG@jcnode
-  password: None
-  port: 9002
-  server: 138.199.35.220
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 18ms | 🇺🇸美国US091 1.68MB/s危险 TG@jcnode
-  password: 'null'
-  port: 9002
-  server: 138.199.35.199
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 18ms | 🇺🇸US_31|208KB/s|P002-260618
-  password: 'null'
-  port: 9002
-  server: 138.199.35.207
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  username: 'null'
-  udp: true
-- name: 18ms | 🇺🇸美国US051 1.77MB/s危险 TG@jcnode
-  password: null
-  port: 9002
-  server: 138.199.35.196
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 19ms | 🇺🇸美国US033 1.84MB/s危险 TG@jcnode
-  port: 9002
-  server: 138.199.35.206
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 19ms | 🇺🇸美国US094 1.66MB/s危险 TG@jcnode
-  password: 'null'
-  port: 9002
-  server: 138.199.35.217
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-- name: 20ms | 🇺🇸美国US102 1.64MB/s危险 TG@jcnode
-  password: None
-  port: 9002
-  server: 138.199.35.219
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/53.0.2785.143 Safari/537.36
+    path: /assignment
 - client-fingerprint: chrome
-  name: 182ms | 🇫🇷FR_27|256KB/s|B007-260618
+  name: 146ms | 🇫🇷FR_27|256KB/s|B007-260618
   network: ws
   password: humanity
   port: 443
@@ -256,131 +54,52 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
         Gecko) Chrome/52.0.2743.116 Safari/537.36
     path: /assignment
-- client-fingerprint: chrome
-  name: 217ms | 🇫🇷FR_3|148KB/s|C002-260622
+- name: '195ms | 美国 110 #2'
+  type: vmess
   network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.175
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  sub_tag: C002-260622
-  type: trojan
-  udp: true
+  server: 104.21.57.84
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.139 Safari/537.36
-    path: /assignment
+      Host: v2ray1.dozapp.xyz
+    path: /lMnsZUN4/
 - alterId: 0
   cipher: auto
-  name: 235ms | 🇩🇪德国DE130 测速未知中性 TG@jcnode
+  client-fingerprint: chrome
+  name: 210ms | qilan.de | US 5D7454 | NF GPT D+ YT GM TK 193KB/S X HOST
   network: ws
-  packet-encoding: xudp
-  port: 443
-  server: 172.64.146.232
-  servername: renderer-stream-2-62.mirra.now
+  port: 8443
+  server: 172.67.167.78
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
+  sni: v2ray1.dozapp.xyz
   tls: true
   type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      Host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- client-fingerprint: chrome
-  name: 252ms | 🇫🇷FR_17|109KB/s|C002-260622
-  network: ws
-  password: humanity
-  port: 443
-  server: 8.6.112.0
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  sub_tag: C002-260622
-  type: trojan
   udp: true
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.117 Safari/537.36
-    path: /assignment
-- alterId: 0
+      Host: v2ray1.dozapp.xyz
+    path: /lMnsZUN4/
+- name: 800ms | 美国 395
+  type: vmess
+  network: ws
+  server: 172.64.80.1
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
   cipher: auto
-  name: 257ms | 🇩🇪德国DE153 测速未知中性 TG@jcnode
-  network: ws
-  packet-encoding: xudp
-  port: 443
-  server: 172.64.153.159
-  servername: renderer-stream-2-62.mirra.now
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
   ws-opts:
     headers:
-      Host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- client-fingerprint: chrome
-  name: 260ms | 🇫🇷FR_20|66KB/s|C002-260622
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.18.152.246
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  sub_tag: C002-260622
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.77 Safari/537.36
-    path: /assignment
-- alterId: 0
-  cipher: auto
-  name: 262ms | 🇩🇪德国DE121 测速未知中性 TG@jcnode
-  network: ws
-  packet-encoding: xudp
-  port: 443
-  server: 195.85.23.225
-  servername: renderer-stream-2-62.mirra.now
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      Host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- client-fingerprint: chrome
-  name: 277ms | 🇫🇷FR_6|206KB/s|B007-260618
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.71
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  sub_tag: B007-260618
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 5.1; A37f Build/LMY47V) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/43.0.2357.93 Mobile Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: 312ms | 🇫🇷FR_5|345KB/s|B007-260618
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.174.6
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  sub_tag: B007-260618
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/67.0.3396.99 Safari/537.36
-    path: /assignment
+      Host: v2ray1.dozapp.xyz
+    path: /lMnsZUN4/
 proxy-groups:
 - name: FAST
   type: url-test
@@ -388,107 +107,35 @@ proxy-groups:
   interval: 180
   tolerance: 50
   proxies:
-  - 6ms | 🇺🇸US_677|737KB/s|A004-260618 01
-  - 6ms | 美国 404
-  - 8ms | 🇺🇸US_524|338KB/s 01
-  - 8ms | 英国 010
-  - 8ms | shadowsocks-157
-  - 9ms | 英国 009
-  - 9ms | 英国 008
-  - 12ms | 🇫🇷FR_61|844KB/s|M001-260618
-  - 16ms | 🇺🇸US_195|865KB/s|A004-260618 01
-  - 17ms | 🇺🇸US_152|444KB/s|R002-260618
-  - 17ms | 🇺🇸美国US121 1.58MB/s危险 TG@jcnode
-  - 17ms | 🇺🇸美国US093 1.66MB/s危险 TG@jcnode
-  - 17ms | 🇺🇸美国US098 1.66MB/s危险 TG@jcnode
-  - 17ms | 🇺🇸US_32|536KB/s|P002-260618
-  - 17ms | 🇺🇸US_146|289KB/s|R002-260618
-  - 17ms | 🇺🇸美国US106 1.62MB/s危险 TG@jcnode
-  - 18ms | 🇺🇸美国US027 1.86MB/s危险 TG@jcnode
-  - 18ms | ❓Other_62|367KB/s|P002-260618
-  - 18ms | 🇺🇸美国US097 1.66MB/s危险 TG@jcnode
-  - 18ms | 🇺🇸美国US048 1.79MB/s危险 TG@jcnode
+  - 54ms | 🇫🇷FR_48|795KB/s|M003-260806
+  - 122ms | 🇫🇷FR_16|127KB/s|B007-260618
+  - 146ms | 🇫🇷FR_27|256KB/s|B007-260618
+  - '195ms | 美国 110 #2'
+  - 210ms | qilan.de | US 5D7454 | NF GPT D+ YT GM TK 193KB/S X HOST
+  - 800ms | 美国 395
 - name: AUTO
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 180
   tolerance: 80
   proxies:
-  - 6ms | 🇺🇸US_677|737KB/s|A004-260618 01
-  - 6ms | 美国 404
-  - 8ms | 🇺🇸US_524|338KB/s 01
-  - 8ms | 英国 010
-  - 8ms | shadowsocks-157
-  - 9ms | 英国 009
-  - 9ms | 英国 008
-  - 12ms | 🇫🇷FR_61|844KB/s|M001-260618
-  - 16ms | 🇺🇸US_195|865KB/s|A004-260618 01
-  - 17ms | 🇺🇸US_152|444KB/s|R002-260618
-  - 17ms | 🇺🇸美国US121 1.58MB/s危险 TG@jcnode
-  - 17ms | 🇺🇸美国US093 1.66MB/s危险 TG@jcnode
-  - 17ms | 🇺🇸美国US098 1.66MB/s危险 TG@jcnode
-  - 17ms | 🇺🇸US_32|536KB/s|P002-260618
-  - 17ms | 🇺🇸US_146|289KB/s|R002-260618
-  - 17ms | 🇺🇸美国US106 1.62MB/s危险 TG@jcnode
-  - 18ms | 🇺🇸美国US027 1.86MB/s危险 TG@jcnode
-  - 18ms | ❓Other_62|367KB/s|P002-260618
-  - 18ms | 🇺🇸美国US097 1.66MB/s危险 TG@jcnode
-  - 18ms | 🇺🇸美国US048 1.79MB/s危险 TG@jcnode
-  - 18ms | 🇺🇸美国US091 1.68MB/s危险 TG@jcnode
-  - 18ms | 🇺🇸US_31|208KB/s|P002-260618
-  - 18ms | 🇺🇸美国US051 1.77MB/s危险 TG@jcnode
-  - 19ms | 🇺🇸美国US033 1.84MB/s危险 TG@jcnode
-  - 19ms | 🇺🇸美国US094 1.66MB/s危险 TG@jcnode
-  - 20ms | 🇺🇸美国US102 1.64MB/s危险 TG@jcnode
-  - 182ms | 🇫🇷FR_27|256KB/s|B007-260618
-  - 217ms | 🇫🇷FR_3|148KB/s|C002-260622
-  - 235ms | 🇩🇪德国DE130 测速未知中性 TG@jcnode
-  - 252ms | 🇫🇷FR_17|109KB/s|C002-260622
-  - 257ms | 🇩🇪德国DE153 测速未知中性 TG@jcnode
-  - 260ms | 🇫🇷FR_20|66KB/s|C002-260622
-  - 262ms | 🇩🇪德国DE121 测速未知中性 TG@jcnode
-  - 277ms | 🇫🇷FR_6|206KB/s|B007-260618
-  - 312ms | 🇫🇷FR_5|345KB/s|B007-260618
+  - 54ms | 🇫🇷FR_48|795KB/s|M003-260806
+  - 122ms | 🇫🇷FR_16|127KB/s|B007-260618
+  - 146ms | 🇫🇷FR_27|256KB/s|B007-260618
+  - '195ms | 美国 110 #2'
+  - 210ms | qilan.de | US 5D7454 | NF GPT D+ YT GM TK 193KB/S X HOST
+  - 800ms | 美国 395
 - name: PROXY
   type: select
   proxies:
   - FAST
   - AUTO
   - DIRECT
-  - 6ms | 🇺🇸US_677|737KB/s|A004-260618 01
-  - 6ms | 美国 404
-  - 8ms | 🇺🇸US_524|338KB/s 01
-  - 8ms | 英国 010
-  - 8ms | shadowsocks-157
-  - 9ms | 英国 009
-  - 9ms | 英国 008
-  - 12ms | 🇫🇷FR_61|844KB/s|M001-260618
-  - 16ms | 🇺🇸US_195|865KB/s|A004-260618 01
-  - 17ms | 🇺🇸US_152|444KB/s|R002-260618
-  - 17ms | 🇺🇸美国US121 1.58MB/s危险 TG@jcnode
-  - 17ms | 🇺🇸美国US093 1.66MB/s危险 TG@jcnode
-  - 17ms | 🇺🇸美国US098 1.66MB/s危险 TG@jcnode
-  - 17ms | 🇺🇸US_32|536KB/s|P002-260618
-  - 17ms | 🇺🇸US_146|289KB/s|R002-260618
-  - 17ms | 🇺🇸美国US106 1.62MB/s危险 TG@jcnode
-  - 18ms | 🇺🇸美国US027 1.86MB/s危险 TG@jcnode
-  - 18ms | ❓Other_62|367KB/s|P002-260618
-  - 18ms | 🇺🇸美国US097 1.66MB/s危险 TG@jcnode
-  - 18ms | 🇺🇸美国US048 1.79MB/s危险 TG@jcnode
-  - 18ms | 🇺🇸美国US091 1.68MB/s危险 TG@jcnode
-  - 18ms | 🇺🇸US_31|208KB/s|P002-260618
-  - 18ms | 🇺🇸美国US051 1.77MB/s危险 TG@jcnode
-  - 19ms | 🇺🇸美国US033 1.84MB/s危险 TG@jcnode
-  - 19ms | 🇺🇸美国US094 1.66MB/s危险 TG@jcnode
-  - 20ms | 🇺🇸美国US102 1.64MB/s危险 TG@jcnode
-  - 182ms | 🇫🇷FR_27|256KB/s|B007-260618
-  - 217ms | 🇫🇷FR_3|148KB/s|C002-260622
-  - 235ms | 🇩🇪德国DE130 测速未知中性 TG@jcnode
-  - 252ms | 🇫🇷FR_17|109KB/s|C002-260622
-  - 257ms | 🇩🇪德国DE153 测速未知中性 TG@jcnode
-  - 260ms | 🇫🇷FR_20|66KB/s|C002-260622
-  - 262ms | 🇩🇪德国DE121 测速未知中性 TG@jcnode
-  - 277ms | 🇫🇷FR_6|206KB/s|B007-260618
-  - 312ms | 🇫🇷FR_5|345KB/s|B007-260618
+  - 54ms | 🇫🇷FR_48|795KB/s|M003-260806
+  - 122ms | 🇫🇷FR_16|127KB/s|B007-260618
+  - 146ms | 🇫🇷FR_27|256KB/s|B007-260618
+  - '195ms | 美国 110 #2'
+  - 210ms | qilan.de | US 5D7454 | NF GPT D+ YT GM TK 193KB/S X HOST
+  - 800ms | 美国 395
 rules:
 - MATCH,PROXY

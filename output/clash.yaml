@@ -4,24 +4,110 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- client-fingerprint: chrome
-  name: 12ms | 🇫🇷FR_1887|357KB/s|M003-260806 01
-  network: ws
-  password: 19877587-ed94-4033-88cd-4ac50a5e8718
+- cipher: aes-128-gcm
+  name: 18ms | ❓Other_1|122KB/s
+  password: shadowsocks
   port: 443
-  server: 104.18.153.182
+  server: 156.146.38.168
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 19ms | shadowsocks-159
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.170
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 21ms | 🇺🇸US_1|407KB/s
+  password: shadowsocks
+  port: 443
+  server: 156.146.38.169
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 21ms | 🇫🇷FR_99|1.5MB/s|M003-260806 01
+  network: ws
+  password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
+  port: 443
+  server: 172.64.152.241
   skip-cert-verify: false
-  sni: dimskiee.biz.id
+  sni: _acme-challenge.sb.cloudns.biz
   sub_tag: M003-260806
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/62.0.3202.89 Safari/537.36
-    path: /WangCai-8
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/59.0.3071.115 Safari/537.36
+    path: /
+- name: 23ms | 🇫🇷FR_39|450KB/s|M001-260618
+  network: ws
+  password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
+  port: 443
+  server: 104.18.35.15
+  skip-cert-verify: false
+  sni: _acme-challenge.sb.cloudns.biz
+  sub_tag: M001-260618
+  type: trojan
+  ws-opts:
+    headers:
+      Host: _acme-challenge.sb.cloudns.biz
+    path: /
+  udp: true
 - client-fingerprint: chrome
-  name: 497ms | 🇫🇷法国FR005 1.22MB/s中性 TG@jcnode
+  name: 26ms | 🇫🇷FR_534|306KB/s|R002-260618 01
+  network: ws
+  password: pH[]S[Bh:_:D6T4k
+  port: 443
+  server: 104.19.45.195
+  sni: AZaDneT-692.PagEs.DEv
+  sub_tag: R002-260618
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.181 Safari/537.36
+    path: /trsVu9Ualb1DOfGjpw
+- client-fingerprint: chrome
+  name: 171ms | 🇫🇷FR_2|470KB/s|C002-260622
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.174.46
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: C002-260622
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; CAM-L03 Build/HUAWEICAM-L03) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /assignment
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 188ms | 🇫🇷FR_66|345KB/s|S004-260618
+  network: ws
+  password: humanity
+  port: 443
+  server: 162.159.254.191
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: S004-260618
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 225ms | 🇫🇷法国FR005 1.22MB/s中性 TG@jcnode
   network: ws
   password: humanity
   port: 443
@@ -37,21 +123,89 @@ proxies:
         (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
     path: /assignment
 - client-fingerprint: chrome
-  name: 843ms | 🇫🇷法国FR008 0.86MB/s中性 TG@jcnode
+  name: 264ms | 🇫🇷FR_3|193KB/s
   network: ws
   password: humanity
   port: 443
-  server: 130.250.137.171
-  servername: www.ignitelimit.com
+  server: 104.18.152.219
   skip-cert-verify: false
   sni: www.ignitelimit.com
-  sub_tag: Anonymous-Multi
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/41.0.2272.101 Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; SM-G7102 Build/KOT49H) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+    path: /assignment
+- name: 378ms | 分享日记_121
+  network: ws
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
+  port: 443
+  server: 104.21.83.135
+  skip-cert-verify: true
+  sni: id1.nathaya.web.id
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /trojan
+- name: 398ms | 分享日记_119
+  network: ws
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
+  port: 443
+  server: 172.67.176.157
+  skip-cert-verify: true
+  sni: id1.nathaya.web.id
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /trojan
+- client-fingerprint: chrome
+  name: 446ms | 🇫🇷法国FR006 1.13MB/s中性 TG@jcnode
+  network: ws
+  password: humanity
+  port: 443
+  server: 216.24.57.1
+  servername: www.ignitelimit.com
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.94 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 552ms | 🇫🇷法国FR002 1.62MB/s中性 TG@jcnode
+  network: ws
+  password: humanity
+  port: 443
+  server: 216.24.57.7
+  servername: www.ignitelimit.com
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.67 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 603ms | 🇫🇷FR_36|111KB/s|C002-260622
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.152.246
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  sub_tag: C002-260622
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.77 Safari/537.36
     path: /assignment
 proxy-groups:
 - name: FAST
@@ -60,26 +214,62 @@ proxy-groups:
   interval: 180
   tolerance: 50
   proxies:
-  - 12ms | 🇫🇷FR_1887|357KB/s|M003-260806 01
-  - 497ms | 🇫🇷法国FR005 1.22MB/s中性 TG@jcnode
-  - 843ms | 🇫🇷法国FR008 0.86MB/s中性 TG@jcnode
+  - 18ms | ❓Other_1|122KB/s
+  - 19ms | shadowsocks-159
+  - 21ms | 🇺🇸US_1|407KB/s
+  - 21ms | 🇫🇷FR_99|1.5MB/s|M003-260806 01
+  - 23ms | 🇫🇷FR_39|450KB/s|M001-260618
+  - 26ms | 🇫🇷FR_534|306KB/s|R002-260618 01
+  - 171ms | 🇫🇷FR_2|470KB/s|C002-260622
+  - 188ms | 🇫🇷FR_66|345KB/s|S004-260618
+  - 225ms | 🇫🇷法国FR005 1.22MB/s中性 TG@jcnode
+  - 264ms | 🇫🇷FR_3|193KB/s
+  - 378ms | 分享日记_121
+  - 398ms | 分享日记_119
+  - 446ms | 🇫🇷法国FR006 1.13MB/s中性 TG@jcnode
+  - 552ms | 🇫🇷法国FR002 1.62MB/s中性 TG@jcnode
+  - 603ms | 🇫🇷FR_36|111KB/s|C002-260622
 - name: AUTO
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 180
   tolerance: 80
   proxies:
-  - 12ms | 🇫🇷FR_1887|357KB/s|M003-260806 01
-  - 497ms | 🇫🇷法国FR005 1.22MB/s中性 TG@jcnode
-  - 843ms | 🇫🇷法国FR008 0.86MB/s中性 TG@jcnode
+  - 18ms | ❓Other_1|122KB/s
+  - 19ms | shadowsocks-159
+  - 21ms | 🇺🇸US_1|407KB/s
+  - 21ms | 🇫🇷FR_99|1.5MB/s|M003-260806 01
+  - 23ms | 🇫🇷FR_39|450KB/s|M001-260618
+  - 26ms | 🇫🇷FR_534|306KB/s|R002-260618 01
+  - 171ms | 🇫🇷FR_2|470KB/s|C002-260622
+  - 188ms | 🇫🇷FR_66|345KB/s|S004-260618
+  - 225ms | 🇫🇷法国FR005 1.22MB/s中性 TG@jcnode
+  - 264ms | 🇫🇷FR_3|193KB/s
+  - 378ms | 分享日记_121
+  - 398ms | 分享日记_119
+  - 446ms | 🇫🇷法国FR006 1.13MB/s中性 TG@jcnode
+  - 552ms | 🇫🇷法国FR002 1.62MB/s中性 TG@jcnode
+  - 603ms | 🇫🇷FR_36|111KB/s|C002-260622
 - name: PROXY
   type: select
   proxies:
   - FAST
   - AUTO
   - DIRECT
-  - 12ms | 🇫🇷FR_1887|357KB/s|M003-260806 01
-  - 497ms | 🇫🇷法国FR005 1.22MB/s中性 TG@jcnode
-  - 843ms | 🇫🇷法国FR008 0.86MB/s中性 TG@jcnode
+  - 18ms | ❓Other_1|122KB/s
+  - 19ms | shadowsocks-159
+  - 21ms | 🇺🇸US_1|407KB/s
+  - 21ms | 🇫🇷FR_99|1.5MB/s|M003-260806 01
+  - 23ms | 🇫🇷FR_39|450KB/s|M001-260618
+  - 26ms | 🇫🇷FR_534|306KB/s|R002-260618 01
+  - 171ms | 🇫🇷FR_2|470KB/s|C002-260622
+  - 188ms | 🇫🇷FR_66|345KB/s|S004-260618
+  - 225ms | 🇫🇷法国FR005 1.22MB/s中性 TG@jcnode
+  - 264ms | 🇫🇷FR_3|193KB/s
+  - 378ms | 分享日记_121
+  - 398ms | 分享日记_119
+  - 446ms | 🇫🇷法国FR006 1.13MB/s中性 TG@jcnode
+  - 552ms | 🇫🇷法国FR002 1.62MB/s中性 TG@jcnode
+  - 603ms | 🇫🇷FR_36|111KB/s|C002-260622
 rules:
 - MATCH,PROXY

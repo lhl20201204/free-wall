@@ -2691,7 +2691,7 @@ proxy-groups:
   url: http://cp.cloudflare.com/generate_204
   interval: 600
   tolerance: 80
-  proxies:
+  proxies: &id001
   - 9ms | 🇫🇷FR_272|488KB/s|S004-260618 01
   - 9ms | 🇫🇷FR_966|556KB/s|M003-260806
   - 10ms | 🇫🇷FR_1073|411KB/s|B007-260618
@@ -2891,11 +2891,18 @@ proxy-groups:
   - ~1ms | 🏁RELAY-172.67.216.97-7857
   - ~1ms | 🇺🇸 US 1090 → tg@nicevpn123
   - ~1ms | 🇺🇸 US 2018 → tg@nicevpn123
+- name: AUTO-GOOGLE
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 600
+  tolerance: 80
+  proxies: *id001
 - name: PROXY
   type: select
   proxies:
   - FAST
   - AUTO
+  - AUTO-GOOGLE
   - DIRECT
   - 9ms | 🇫🇷FR_272|488KB/s|S004-260618 01
   - 9ms | 🇫🇷FR_966|556KB/s|M003-260806

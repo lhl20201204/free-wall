@@ -500,7 +500,10 @@ def main() -> int:
         "proxy-groups": [
             {"name": "FAST", "type": "url-test", "url": DELAY_URL, "interval": FAST_INTERVAL, "tolerance": 50, "proxies": fast_names},
             {"name": "AUTO", "type": "url-test", "url": AUTO_URL, "interval": AUTO_INTERVAL, "tolerance": 80, "proxies": names},
-            {"name": "PROXY", "type": "select", "proxies": ["FAST", "AUTO", "DIRECT"] + names},
+            # A group can only carry one test url, so the strict target gets its
+            # own full-pool group instead; both keep testing in parallel.
+            {"name": "AUTO-GOOGLE", "type": "url-test", "url": DELAY_URL, "interval": AUTO_INTERVAL, "tolerance": 80, "proxies": names},
+            {"name": "PROXY", "type": "select", "proxies": ["FAST", "AUTO", "AUTO-GOOGLE", "DIRECT"] + names},
         ],
         "rules": ["MATCH,PROXY"],
     }

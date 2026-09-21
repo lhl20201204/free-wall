@@ -14,6 +14,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+import uuid as uuid_module
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
@@ -105,15 +106,39 @@ def fingerprint(proxy: dict) -> tuple:
     return tuple(str(proxy.get(field, "")) for field in fields)
 
 
+def filled(proxy: dict, field: str) -> bool:
+    return bool(str(proxy.get(field) or "").strip())
+
+
+def integral(value: object) -> bool:
+    try:
+        int(str(value).strip())
+    except (TypeError, ValueError):
+        return False
+    return True
+
+
 def supported_proxy(proxy: dict) -> bool:
     proxy_type = str(proxy.get("type", "")).strip().lower()
     if proxy_type in SKIP_TYPES:
         return False
     cipher = str(proxy.get("cipher") or "").strip().lower()
     if proxy_type in {"ss", "ssr"}:
-        return cipher in SS_CIPHERS
+        return cipher in SS_CIPHERS and filled(proxy, "password")
     if proxy_type == "vmess":
-        return (cipher or "auto") in VMESS_CIPHERS
+        if (cipher or "auto") not in VMESS_CIPHERS:
+            return False
+        # A malformed uuid makes the client reject the whole config, not just
+        # this proxy, so it can never be allowed into the output.
+        try:
+            uuid_module.UUID(str(proxy.get("uuid")))
+        except (TypeError, ValueError, AttributeError):
+            return False
+        return proxy.get("alterId") is None or integral(proxy.get("alterId"))
+    if proxy_type == "trojan":
+        return filled(proxy, "password")
+    if proxy_type == "snell":
+        return filled(proxy, "psk")
     return True
 
 

@@ -27,7 +27,12 @@ OUTPUT = ROOT / "output" / "clash.yaml"
 STATUS = ROOT / "output" / "source-status.json"
 CACHE = ROOT / ".cache"
 MIHOMO_VERSION = "v1.19.29"
+# Strict target: unreachable from mainland China, so passing it proves the node
+# really tunnels out. Used for CI probing and for the FAST group.
 DELAY_URL = os.getenv("DELAY_URL", "http://www.gstatic.com/generate_204")
+# Lenient target for the AUTO group: far higher pass rate, so the client always
+# has something to pick even when no node can reach Google.
+AUTO_URL = os.getenv("AUTO_URL", "http://cp.cloudflare.com/generate_204")
 SKIP_TYPES = {
     "vless",
     "hysteria",
@@ -86,6 +91,9 @@ TCP_WORKERS = env_int("TCP_WORKERS", 80, 8, 200)
 DELAY_CANDIDATES = env_int("DELAY_CANDIDATES", 500, 20, 2000)
 DELAY_TIMEOUT_MS = env_int("DELAY_TIMEOUT_MS", 3000, 500, 8000)
 DELAY_WORKERS = env_int("DELAY_WORKERS", 24, 4, 64)
+FAST_INTERVAL = env_int("FAST_INTERVAL", 180, 60, 3600)
+# The AUTO group holds every node, so a short interval drains a phone battery.
+AUTO_INTERVAL = env_int("AUTO_INTERVAL", 600, 60, 3600)
 
 
 def fetch(url: str) -> dict:
@@ -490,8 +498,8 @@ def main() -> int:
         "log-level": "info",
         "proxies": proxies,
         "proxy-groups": [
-            {"name": "FAST", "type": "url-test", "url": DELAY_URL, "interval": 180, "tolerance": 50, "proxies": fast_names},
-            {"name": "AUTO", "type": "url-test", "url": DELAY_URL, "interval": 180, "tolerance": 80, "proxies": names},
+            {"name": "FAST", "type": "url-test", "url": DELAY_URL, "interval": FAST_INTERVAL, "tolerance": 50, "proxies": fast_names},
+            {"name": "AUTO", "type": "url-test", "url": AUTO_URL, "interval": AUTO_INTERVAL, "tolerance": 80, "proxies": names},
             {"name": "PROXY", "type": "select", "proxies": ["FAST", "AUTO", "DIRECT"] + names},
         ],
         "rules": ["MATCH,PROXY"],

@@ -26,7 +26,9 @@ python -m venv .venv
 MAX_NODES=200 python scripts/update.py
 ```
 
-常用环境变量：`MAX_NODES`（输出上限）、`DELAY_CANDIDATES`（协议测速候选数）、`DISABLE_DELAY_TEST=1`（只做 TCP 探活）。建议不要把上限开得太大，否则 Clash Verge 启动和 url-test 都会变慢。
+两个 url-test 组用不同的测试地址：`FAST` 组用 `DELAY_URL`（默认 gstatic，国内直连不通，测通即证明节点真的翻出去了），`AUTO` 组用 `AUTO_URL`（默认 `cp.cloudflare.com`，通过率高得多，保证客户端不会一个节点都选不出来）。`AUTO` 组含全部节点，间隔默认 600 秒以免手机耗电。
+
+常用环境变量：`MAX_NODES`（输出上限）、`DELAY_CANDIDATES`（协议测速候选数）、`DISABLE_DELAY_TEST=1`（只做 TCP 探活）、`DELAY_URL` 与 `AUTO_URL`（两组的测试地址）、`FAST_INTERVAL` 与 `AUTO_INTERVAL`（两组的测试间隔）。建议不要把上限开得太大，否则 Clash Verge 启动和 url-test 都会变慢。
 
 ## 安全与合规
 

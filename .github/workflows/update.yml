@@ -10,12 +10,14 @@ permissions:
 
 concurrency:
   group: update-clash
-  cancel-in-progress: true
+  # A probing run can exceed the cron interval; killing it means nothing ever
+  # gets committed, so let the in-flight run finish instead.
+  cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

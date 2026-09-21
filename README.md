@@ -20,7 +20,7 @@ python -m venv .venv
 .venv/Scripts/python scripts/update.py
 ```
 
-脚本会并行拉取上游、TCP 探活，再用 mihomo 做协议级延迟测试，只保留延迟最低且真实可用的节点。默认最多输出 200 个，节点名带延迟前缀（如 `123ms | HK-1`），并生成 `FAST`（最快约 20 个）和 `AUTO` 两组。
+脚本会并行拉取上游、TCP 探活，再用 mihomo 做协议级延迟测试。延迟测试只用于排序而不淘汰节点：通过测试的排在前面、名字带真实延迟前缀（如 `123ms | HK-1`），其余 TCP 存活的节点按 RTT 接在后面、前缀带 `~`（如 `~45ms | US-2`），并在同一服务器之间轮转以免被单台主机占满。默认最多输出 200 个，`FAST` 组只放通过测速的节点（最多 20 个），`AUTO` 组包含全部节点交给客户端本地 url-test 挑选。
 
 ```bash
 MAX_NODES=200 python scripts/update.py

@@ -36,6 +36,10 @@ SKIP_TYPES = {
     "ssh",
     "anytls",
     "mieru",
+    # Scraped open proxies: unencrypted, and they answer TCP instantly so RTT
+    # ranking floats them to the top of the pool.
+    "http",
+    "socks5",
 }
 SS_CIPHERS = {
     "aes-128-gcm",
@@ -59,6 +63,8 @@ SS_CIPHERS = {
     "camellia-256-cfb",
 }
 VMESS_CIPHERS = {"auto", "aes-128-gcm", "chacha20-poly1305", "none"}
+# Aggregator metadata and Meta-only keys that make original Clash reject the proxy.
+DROP_KEYS = {"sub_tag", "sub-tag", "delay", "packet-encoding"}
 
 
 def env_int(name: str, default: int, minimum: int, maximum: int) -> int:
@@ -147,7 +153,7 @@ def collect_from_source(source: dict) -> tuple[list[dict], dict]:
                 continue
             if not supported_proxy(proxy) or endpoint(proxy) is None:
                 continue
-            item = dict(proxy)
+            item = {key: value for key, value in proxy.items() if key not in DROP_KEYS}
             item["name"] = str(item["name"]).strip()[:80]
             proxies.append(item)
         return proxies, {"name": name, "url": url, "ok": True, "received": len(candidates), "accepted": len(proxies)}
@@ -356,13 +362,31 @@ def probe_delay(mihomo: Path, proxies: list[dict]) -> list[tuple[dict, int]]:
                 process.wait(timeout=5)
 
 
-def rank_proxies(proxies: list[dict]) -> tuple[list[tuple[dict, int]], str, dict]:
+def spread_by_server(items: list[tuple[dict, int]]) -> list[tuple[dict, int]]:
+    """Round-robin over servers so a single host cannot crowd out the rest."""
+    buckets: dict[str, list[tuple[dict, int]]] = {}
+    for proxy, latency in sorted(items, key=lambda item: item[1]):
+        buckets.setdefault(str(proxy.get("server", "")).strip().lower(), []).append((proxy, latency))
+    order = sorted(buckets.values(), key=lambda bucket: bucket[0][1])
+    spread: list[tuple[dict, int]] = []
+    index = 0
+    while True:
+        added = False
+        for bucket in order:
+            if index < len(bucket):
+                spread.append(bucket[index])
+                added = True
+        if not added:
+            return spread
+        index += 1
+
+
+def rank_proxies(proxies: list[dict]) -> tuple[list[tuple[dict, int, bool]], str, dict]:
     alive = probe_tcp(proxies)
     stats = {"collected": len(proxies), "tcp_alive": len(alive)}
     if not alive:
         return [], "tcp-rtt", stats
-    method = "tcp-rtt"
-    ranked: list[tuple[dict, int]] = [(proxy, int(latency)) for proxy, latency in alive]
+    measured: list[tuple[dict, int]] = []
     try:
         mihomo = ensure_mihomo()
     except Exception as exc:
@@ -374,13 +398,15 @@ def rank_proxies(proxies: list[dict]) -> tuple[list[tuple[dict, int]], str, dict
         try:
             measured = probe_delay(mihomo, candidates)
             stats["delay_ok"] = len(measured)
-            if measured:
-                ranked = measured
-                method = "mihomo-delay"
-            else:
-                stats["delay_fallback"] = "all delay tests failed"
         except Exception as exc:
             stats["delay_error"] = str(exc)
+    verified = {fingerprint(proxy) for proxy, _delay in measured}
+    ranked: list[tuple[dict, int, bool]] = [(proxy, delay, True) for proxy, delay in measured]
+    rest = [(proxy, int(latency)) for proxy, latency in alive if fingerprint(proxy) not in verified]
+    ranked.extend((proxy, latency, False) for proxy, latency in spread_by_server(rest))
+    stats["verified"] = len(measured)
+    stats["unverified"] = len(ranked) - len(measured)
+    method = "mihomo-delay+tcp-rtt" if measured else "tcp-rtt"
     return ranked, method, stats
 
 
@@ -420,12 +446,18 @@ def main() -> int:
     selected = ranked[:MAX_NODES]
     used_output: set[str] = set()
     proxies = []
-    for proxy, delay in selected:
+    verified_names: list[str] = []
+    for proxy, delay, is_verified in selected:
         item = dict(proxy)
-        item["name"] = unique_name(f"{delay}ms | {proxy['name']}", used_output)
+        # "~" marks a node that only answered TCP; the client url-tests it locally.
+        prefix = f"{delay}ms" if is_verified else f"~{delay}ms"
+        item["name"] = unique_name(f"{prefix} | {proxy['name']}", used_output)
         proxies.append(item)
+        if is_verified:
+            verified_names.append(item["name"])
     names = [proxy["name"] for proxy in proxies]
-    fast_names = names[: min(FAST_GROUP, len(names))]
+    fast_pool = verified_names or names
+    fast_names = fast_pool[: min(FAST_GROUP, len(fast_pool))]
     generated = {
         "mixed-port": 7890,
         "allow-lan": False,

@@ -4,16 +4,28 @@ allow-lan: false
 mode: rule
 log-level: info
 proxies:
-- alpn:
-  - ''
-  alterId: '0'
+- cipher: rc4-md5
+  name: 7ms | shadowsocks-1827963705
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 107.155.57.11
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 33ms | shadowsocks-1827963676
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 107.155.57.51
+  type: ss
+  udp: true
+- alterId: '0'
   cipher: auto
-  name: 21ms | 🇺🇸US_433|571KB/s|M003-260806
+  name: 58ms | 🇺🇸US_408|591KB/s|S004-260618
   network: ws
-  port: 80
-  server: 104.21.7.133
+  port: 443
+  server: cf.090227.xyz
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vmess
   udp: true
   uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
@@ -24,60 +36,199 @@ proxies:
     max-early-data: 2048
     path: /ws
   xudp: true
-- name: ~5ms | 🏁RELAY-172.67.204.73-7414
-  server: 172.67.204.73
-  port: 2095
-  type: vmess
-  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
-  alterId: 0
+  servername: vmess.lbw666.dpdns.org
+- alterId: 0
   cipher: auto
-  tls: false
-  skip-cert-verify: false
+  name: 158ms | 分享日记_19
   network: ws
+  port: 443
+  server: uk2-2.998998.best
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
   ws-opts:
-    path: /hgcefomn
-- name: ~5ms | 美国 542
+    headers:
+      host: server3.9966338.xyz
+    path: /waetasiuofguiwer?ed=2560
+- name: '~0ms | 美国 050 #2'
   type: vmess
   network: ws
-  server: get.tech
+  server: slime-rhinestone-spy.glitch.me
   port: 80
-  uuid: 8763e625-929a-43da-b7bf-7e7bc2e57615
+  uuid: 1d5fb496-19fb-48fb-9880-a147326dee62
   skip-cert-verify: true
+  tls: true
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: lv.awsbest.com
-    path: /shared
-- name: ~5ms | 🏁RELAY-104.31.16.58-7733
-  server: 104.31.16.58
-  port: 2053
+      Host: best-charm-pediatrician.glitch.me
+    path: /1d5fb496-19fb-48fb-9880-a147326dee62-vmess
+- name: ~0ms | 🇺🇸 US 1194 → tg@nicevpn123
+  server: 151.101.195.10
+  port: 80
   type: vmess
-  uuid: 72f76c36-3e3c-45b3-a61f-d8f017345958
+  uuid: d39a347a-00c9-4f91-9255-7f536c07c5a8
   alterId: 0
   cipher: auto
-  tls: true
-  skip-cert-verify: false
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2048
-- name: ~5ms | 🏁RELAY-104.31.16.196-7788
-  server: 104.31.16.196
+    path: /aries?ed=2560
+  udp: true
+- name: ~0ms | trojan-250743441
+  password: MiTiVPN
   port: 443
+  server: 199.232.78.140
+  skip-cert-verify: true
+  sni: ssl.fastly.com
+  type: trojan
+  udp: true
+- name: ~0ms | trojan-258617505
+  password: MiTiVPN
+  port: 443
+  server: 151.101.56.7
+  skip-cert-verify: false
+  sni: ssl.fastly.com
+  type: trojan
+  udp: true
+- name: ~0ms | 🇺🇸 US 1581 → tg@nicevpn123
+  server: bolder-metal-comma.glitch.me
+  port: 80
   type: vmess
+  uuid: dac61bb8-461c-4a4a-b14b-5a5ff6991fee
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /dac61bb8-461c-4a4a-b14b-5a5ff6991fee-vmess
+    headers:
+      Host: bolder-metal-comma.glitch.me
+  udp: true
+- name: ~0ms | 美国_🇺🇸_youtube@资源分享师_US_3
+  password: MITIVPN
+  port: 443
+  server: 167.82.76.7
+  skip-cert-verify: true
+  sni: ssl.fastly.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mitivpn---ss--s---mitivpn-33s.global.ssl.fastly.net
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSs---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+- name: '~1ms | 美国 060 #2'
+  type: vmess
+  network: ws
+  server: fastly.com
+  port: 80
+  uuid: 88a34334-3a74-40e2-b1b9-4f8f4aa31f7d
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: Dbdjhiw72ebsu272hs519j.com
+    path: ws/?ed=2048
+- name: ~1ms | 美国 823
+  type: vmess
+  network: ws
+  server: nestle.ir
+  port: 443
   uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
+  skip-cert-verify: true
+  tls: true
   alterId: 0
   cipher: auto
+  ws-opts:
+    headers:
+      Host: nestle.ir
+    path: /wss51068
+- cipher: aes-128-gcm
+  name: ~1ms | 02.24|freesub|未知01
+  password: 6601fb90e9b3
+  port: 443
+  server: www.v2rayfree.eu.org
+  type: ss
+  udp: true
+- name: ~1ms | 美国 338
+  type: vmess
+  network: ws
+  server: kampong.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  skip-cert-verify: true
   tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: kampong.org
+    path: linkvws
+- alterId: 0
+  cipher: auto
+  name: ~1ms | 🇹🇭TH泰国丨yoyapai.com_1
+  network: ws
+  port: 80
+  server: www.true.th
   skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a150d554-e962-4632-829f-ee583ada3f95
+  ws-opts:
+    headers:
+      Host: d7pu5mzr9c4b0.cloudfront.net
+    path: /htun
+- name: ~1ms | 美国_🇺🇸_youtube@资源分享师_US_147
+  password: MITIVPN
+  port: 443
+  server: 199.232.78.101
+  skip-cert-verify: true
+  sni: ssl.fastly.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mitivpn---ss--s---mitivpn-11s.global.ssl.fastly.net
+    path: '@mehrosaboran'
+- name: ~1ms | 🇺🇸 US 1863 → tg@nicevpn123
+  server: 104.21.225.94
+  port: 80
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /wss51068
-- name: ~5ms | 🏁RELAY-104.31.16.35-7751
-  server: 104.31.16.35
+    path: /
+  udp: true
+- name: ~1ms | 🇺🇸 US 1268 → tg@nicevpn123
+  server: 104.19.45.191
+  port: 2095
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: ~1ms | 🏁RELAY-104.16.91.78-7883
+  server: 104.16.91.78
   port: 443
   type: vmess
-  uuid: F591CE71-33F8-4B12-824A-0167FA839ED9
+  uuid: F3E36B53-E75E-48C0-B9F1-F918F397E996
   alterId: 0
   cipher: auto
   tls: true
@@ -85,343 +236,8 @@ proxies:
   network: ws
   ws-opts:
     path: /speedtest
-- name: ~5ms | 美国 997
-  type: vmess
-  network: ws
-  server: 104.16.60.8
-  port: 8880
-  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: square-snowflake-486a.beshir-beisel.workers.dev
-    path: /linde06.indiavideo.sbs/linkws
-- name: ~5ms | 🇺🇸 US 1824 → tg@nicevpn123
-  server: 104.19.49.36
-  port: 443
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
-- name: ~5ms | 🏁RELAY-104.31.16.27-7778
-  server: 104.31.16.27
-  port: 80
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-- name: ~5ms | 🇺🇸 US 1795 → tg@nicevpn123
-  server: 104.19.45.88
-  port: 2095
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
-- client-fingerprint: chrome
-  name: ~5ms | 🇫🇷FR_1200|1.2MB/s|C002-260622 01
-  network: ws
-  password: 45c47cfa-67da-47e0-b20b-5efa674e6a9b
-  port: 443
-  server: 104.16.75.127
-  skip-cert-verify: false
-  sni: unnes.ac.id.r3xxe.eu.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/67.0.3396.87 Safari/537.36
-    path: /us-gllc
-- name: ~5ms | 未知_🏳️_youtube@资源分享师_ZZ_94
-  password: humanity
-  port: 443
-  server: 104.16.174.101
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /assignment
-- name: ~5ms | 伯利兹 010
-  type: vmess
-  network: ws
-  server: 203.30.191.3
-  port: 443
-  uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: oplg1.cfcdn2.xyz
-    path: /AUIKN8AU
-- name: ~5ms | 🇺🇸 US 1172 → tg@nicevpn123
-  server: 104.21.233.46
-  port: 80
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-  udp: true
-- name: ~5ms | 美国 483
-  type: vmess
-  network: ws
-  server: 172.64.152.150
-  port: 443
-  uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: clash6.ssr-free.xyz
-    path: /dongtaiwang.com
-- name: ~5ms | 🇺🇸 US 2032 → tg@nicevpn123
-  server: 104.19.44.186
-  port: 80
-  type: vmess
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /xn--mes53ddysu0o3gl
-  udp: true
-- name: ~5ms | 🏁RELAY-104.31.16.216-7781
-  server: 104.31.16.216
-  port: 443
-  type: vmess
-  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /wss51068
-- name: ~5ms | 🇺🇸 US 300 → tg@nicevpn123
-  server: 104.19.45.168
-  port: 2095
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
-- name: ~5ms | 🏁RELAY-104.31.16.28-7774
-  server: 104.31.16.28
-  port: 80
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-- name: ~5ms | 伯利兹 017
-  type: vmess
-  network: ws
-  server: 203.30.191.5
-  port: 443
-  uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: oplg1.cfcdn2.xyz
-    path: /AUIKN8AU
-- name: ~5ms | 分享日记_539
-  network: ws
-  password: humanity
-  port: 443
-  server: 208.103.161.110
-  skip-cert-verify: true
-  sni: www.creationlong.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: www.creationlong.org
-    path: /assignment
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: ~5ms | FR法国(mibei77.com 米贝节点分享)_10
-  password: humanity
-  port: 443
-  server: 45.130.125.158
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /assignment
-- name: ~5ms | 🇺🇸 US 845 → tg@nicevpn123
-  server: 104.16.42.68
-  port: 2082
-  type: vmess
-  uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws?ed=2048
-  udp: true
-- name: ~5ms | trojan-222616514
-  password: MiTiVPN
-  port: 443
-  server: 172.64.146.59
-  skip-cert-verify: true
-  sni: hk1-mitivpn--mitivpn--mitivpn---mitivpn--mitivpn--mitivpn.kingnetwork.ir
-  type: trojan
-  udp: true
-- name: '~5ms | 美国 089 #2'
-  type: vmess
-  network: ws
-  server: 172.67.204.84
-  port: 8080
-  uuid: 511840c3-558a-4c14-8e61-43de4715fd9b
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: www.speedtest.net.75.mralpha-vpn.COM.
-    path: /Thunder,Thunder,Thunder,Thunder,Thunder,Thunder,Thunder,Thunder,Thunder,Thunder,Thunder,Thunder,Thunder,Thunder?ed=2048
-- name: ~5ms | 美国 643
-  type: vmess
-  network: ws
-  server: 104.18.222.139
-  port: 443
-  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: hms19.best-tizi.top
-    path: /linkws?
-- name: ~5ms | 🇺🇸 US 1968 → tg@nicevpn123
-  server: 104.19.44.50
-  port: 80
-  type: vmess
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /xn--mes53ddysu0o3gl
-  udp: true
-- name: ~5ms | 伯利兹 009
-  type: vmess
-  network: ws
-  server: 203.30.191.191
-  port: 443
-  uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: oplg1.cfcdn2.xyz
-    path: /AUIKN8AU
-- name: ~5ms | 🇺🇸 US 639 → tg@nicevpn123
-  server: 104.21.225.193
-  port: 80
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
-- name: ~5ms | 🇺🇸 US 1974 → tg@nicevpn123
-  server: 104.19.44.206
-  port: 80
-  type: vmess
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /xn--mes53ddysu0o3gl
-  udp: true
-- name: ~5ms | 🏁RELAY-141.193.213.10-2951
-  server: 141.193.213.10
-  port: 443
-  type: vmess
-  uuid: 615a1285-5848-42a1-9859-d4cb37b1fbd8
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /share
-- name: ~5ms | 🇺🇸 US 1725 → tg@nicevpn123
-  server: 104.19.45.205
-  port: 2095
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
-- name: ~5ms | 🏁RELAY-162.159.133.130-7525
-  server: 162.159.133.130
+- name: ~1ms | 🏁RELAY-172.67.212.68-7409
+  server: 172.67.212.68
   port: 2095
   type: vmess
   uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
@@ -432,240 +248,34 @@ proxies:
   network: ws
   ws-opts:
     path: /hgcefomn
-- name: ~5ms | 🇺🇸 US 1296 → tg@nicevpn123
-  server: 104.16.40.91
-  port: 2082
+- name: ~1ms | 美国 668
   type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
   network: ws
-  ws-opts:
-    path: /ws?ed=2048
-  udp: true
-- name: ~5ms | 🏁RELAY-104.31.16.37-7749
-  server: 104.31.16.37
+  server: 172.67.190.208
   port: 80
-  type: vmess
-  uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+  uuid: 4bf074f4-7e9c-4e4b-a10d-156e26199729
+  skip-cert-verify: true
   alterId: 0
   cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
   ws-opts:
-    path: /i99LgvSaslbsPLLQQ7j6Z
-- name: ~5ms | trojan-2516799
+    headers:
+      Host: us03s.5d8ecf82.cfd
+    path: /
+- name: ~1ms | 分享日记_461
+  network: ws
   password: humanity
   port: 443
-  server: 172.64.152.23
+  server: 104.16.71.213
   skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
   udp: true
-- name: ~5ms | 🇺🇸 US 1989 → tg@nicevpn123
-  server: 104.19.44.90
-  port: 80
-  type: vmess
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /xn--mes53ddysu0o3gl
-  udp: true
-- name: ~5ms | 美国 911
-  type: vmess
-  network: ws
-  server: 104.21.89.181
-  port: 80
-  uuid: 65b17c0b-0a52-4b54-9bc9-60e31397b841
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
   ws-opts:
     headers:
-      Host: accklsj.bufu.us.ci
-    path: /65b17c0b-0a52-4b54-9bc9-60e31397b841-vmess
-- name: ~5ms | 🇺🇸 US 757 → tg@nicevpn123
-  server: 104.19.45.110
-  port: 2095
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
-- alterId: 0
-  cipher: auto
-  network: ws
-  port: 443
-  server: 173.245.59.8
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 1052f24e-7b09-45eb-b0c5-d858eb124192
-  ws-opts:
-    headers:
-      Host: 77h2quiet-dream-5c34.foratay741.workers.dev
-    path: /glweidf.cfd/linkws
-  name: ~5ms | 美国 097 [9077d3fb5f7776dc]
-- name: ~5ms | 🇺🇸 US 1260 → tg@nicevpn123
-  server: 104.19.45.161
-  port: 2095
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
-- name: ~5ms | 未知_🏳️_youtube@资源分享师_ZZ_117
-  password: humanity
-  port: 443
-  server: ip.myip2.qzz.io
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
+      host: www.calmlunch.com
     path: /assignment
-- name: ~5ms | 美国 837
-  type: vmess
-  network: ws
-  server: 104.26.14.137
-  port: 80
-  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: tr1-smart.adelping.com.
-    path: /?BIA_TELEGRAM
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: ~5ms | 🇫🇷FR_920|357KB/s|B007-260618 01
-  network: ws
-  password: eabf1999fefbb7d2
-  port: 2087
-  server: waysi.waysi6688.workers.dev
-  skip-cert-verify: false
-  sni: WaYSi.wAYsI6688.WOrkeRS.deV
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/69.0.3497.100 Safari/537.36
-    path: /tr/sMpzOZ0eWEt6jbZ1jjN3BaM7LLoQ
-- name: ~5ms | 🇺🇸 US 1867 → tg@nicevpn123
-  server: 104.19.42.196
-  port: 2082
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws?ed=2048
-  udp: true
-- name: ~5ms | 美国 516
-  type: vmess
-  network: ws
-  server: 23.227.38.20
-  port: 443
-  uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: oplg1.cfcdn2.xyz
-    path: /AUIKN8AU
-- name: ~5ms | 🇺🇸 US 2022 → tg@nicevpn123
-  server: 104.19.44.9
-  port: 80
-  type: vmess
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /xn--mes53ddysu0o3gl
-  udp: true
-- name: ~5ms | 🏁RELAY-172.67.193.109-7418
-  server: 172.67.193.109
-  port: 2095
-  type: vmess
-  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /hgcefomn
-- name: ~5ms | 美国 634
-  type: vmess
-  network: ws
-  server: 104.17.213.57
-  port: 443
-  uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: xmivideo.cfd
-    path: /linkws
-- name: ~5ms | 未知_🏳️_youtube@资源分享师_ZZ_185
-  password: humanity
-  port: 443
-  server: 141.101.90.101
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-- name: ~5ms | 🇺🇸 US 841 → tg@nicevpn123
-  server: 172.67.229.36
-  port: 2086
-  type: vmess
-  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /IOebhLMhl1CTbFHbL95myfRX2
-  udp: true
-- name: ~5ms | 🏁RELAY-154.92.9.99-7538
-  server: 154.92.9.99
+- name: ~1ms | 🏁RELAY-154.92.9.191-7569
+  server: 154.92.9.191
   port: 80
   type: vmess
   uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
@@ -676,151 +286,18 @@ proxies:
   network: ws
   ws-opts:
     path: /blue
-- name: ~5ms | 🇺🇸 US 1976 → tg@nicevpn123
-  server: 104.19.44.62
-  port: 80
-  type: vmess
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /xn--mes53ddysu0o3gl
-  udp: true
-- name: ~5ms | 🏁RELAY-104.31.16.32-7757
-  server: 104.31.16.32
-  port: 80
-  type: vmess
-  uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /i99LgvSaslbsPLLQQ7j6Z
-- name: ~5ms | 🇺🇸 US 1548 → tg@nicevpn123
-  server: 104.21.238.2
-  port: 80
-  type: vmess
-  uuid: c6b76370-e614-11ee-b531-205c6d5f5d78
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-  udp: true
-- name: ~5ms | 分享日记_311
-  network: ws
-  password: c206d543-023d-46cc-9d5a-1f0f2fc16323
-  port: 443
-  server: 188.164.248.122
-  skip-cert-verify: true
-  sni: space.byu.id.yxls.eu.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: space.byu.id.yxls.eu.cc
-    path: /in-pdr
-- name: ~5ms | 保加利亚 001
-  type: vmess
-  network: ws
-  server: 147.78.140.30
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: d396-flower-d396.megare7260.workers.dev
-    path: /kellie.makeup/linkvws
-- name: ~5ms | 分享日记_580
-  network: ws
+- name: ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_236
   password: humanity
   port: 443
-  server: 172.64.155.209
-  skip-cert-verify: false
-  sni: www.gossipglove.com
+  server: 104.26.15.137
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
   type: trojan
   udp: true
   ws-opts:
-    headers:
-      host: www.gossipglove.com
     path: /assignment
-- name: ~5ms | 🇺🇸 US 1341 → tg@nicevpn123
-  server: 104.16.43.45
-  port: 2082
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws?ed=2048
-  udp: true
-- name: ~5ms | 🇺🇸 US 2024 → tg@nicevpn123
-  server: 104.19.44.195
-  port: 80
-  type: vmess
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /xn--mes53ddysu0o3gl
-  udp: true
-- name: ~5ms | 🇺🇸 US 1054 → tg@nicevpn123
-  server: 104.16.123.175
-  port: 2083
-  type: trojan
-  password: qG9K8AGnn9XH5jUqeFu96g
-  sni: cdn13.cdn2cdn.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: '%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252F'
-    headers:
-      Host: cdn13.cdn2cdn.com
-  udp: true
-- name: ~5ms | 🇺🇸 US 733 → tg@nicevpn123
-  server: 104.19.42.154
-  port: 2082
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws?ed=2048
-  udp: true
-- name: ~5ms | 美国 432
-  type: vmess
-  network: ws
-  server: 172.67.70.92
-  port: 80
-  uuid: 0ad4e581-231b-4676-ad75-d8d2db103795
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 806379247235432025041118283937229.s15.chibaba.filegear-sg.me
-    path: /s15.html
-- name: ~5ms | 🇺🇸 US 20 → tg@nicevpn123
-  server: 104.16.39.52
+- name: ~1ms | 🇺🇸 US 1164 → tg@nicevpn123
+  server: 104.16.39.109
   port: 2082
   type: vmess
   uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
@@ -832,78 +309,34 @@ proxies:
   ws-opts:
     path: /ws?ed=2048
   udp: true
-- name: ~5ms | 美国 541
+- name: ~1ms | 🇺🇸 US 263 → tg@nicevpn123
+  server: 104.21.237.57
+  port: 2052
   type: vmess
-  network: ws
-  server: 141.193.213.21
-  port: 443
-  uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c
-  skip-cert-verify: true
-  tls: true
+  uuid: 94e070a5-fc29-49bf-a1c3-11f3ef2df33d
   alterId: 0
   cipher: auto
-  ws-opts:
-    headers:
-      Host: fr1.trump2023.org
-    path: /9JZFDTKE
-- alterId: 0
-  cipher: auto
-  country: 🇺🇦UA
-  h2-opts: {}
-  http-opts: {}
-  name: ~5ms | 🏴‍☠_2Relay_🇺🇦UA-🇺🇸US_940|6.5MB/s|X
-  network: ws
-  port: 443
-  server: 45.67.215.199
-  servername: ous3.dean52.top
+  tls: false
   skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
-  ws-opts:
-    headers:
-      HOST: ous3.dean52.top
-    path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
-- name: ~5ms | 分享日记_575
   network: ws
-  password: humanity
-  port: 443
-  server: 172.64.147.227
-  skip-cert-verify: true
-  sni: www.gossipglove.com
-  type: trojan
+  ws-opts:
+    path: /?ed=1024
   udp: true
-  ws-opts:
-    headers:
-      host: www.gossipglove.com
-    path: /assignment
-- name: ~5ms | 🇺🇸 US 2027 → tg@nicevpn123
-  server: 104.19.44.205
+- name: ~1ms | 美国 289
+  type: vmess
+  network: ws
+  server: 104.16.164.228
   port: 80
-  type: vmess
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
-  alterId: 0
-  cipher: auto
-  tls: false
+  uuid: e6d76927-edd1-442b-92a4-fa031f522c42
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /xn--mes53ddysu0o3gl
-  udp: true
-- name: ~5ms | 🏁RELAY-172.67.211.43-7412
-  server: 172.67.211.43
-  port: 2095
-  type: vmess
-  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
   alterId: 0
   cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
   ws-opts:
-    path: /hgcefomn
-- name: ~5ms | 🇺🇸 US 86 → tg@nicevpn123
-  server: 104.19.45.174
+    headers:
+      Host: sssub.v2.001.ssrsub.com
+    path: /api/v3/download.getFile
+- name: ~1ms | 🇺🇸 US 192 → tg@nicevpn123
+  server: 104.19.45.150
   port: 2095
   type: vmess
   uuid: 7a737f41-b792-4260-94ff-3d864da67b80
@@ -915,8 +348,183 @@ proxies:
   ws-opts:
     path: /
   udp: true
-- name: ~5ms | 🇺🇸 US 127 → tg@nicevpn123
-  server: 104.16.42.110
+- name: ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_62
+  password: humanity
+  port: 443
+  server: 104.16.174.185
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /assignment
+- name: ~1ms | 🏁RELAY-172.67.238.152-7402
+  server: 172.67.238.152
+  port: 2095
+  type: vmess
+  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /hgcefomn
+- name: ~1ms | 🏁RELAY-172.67.147.162-7435
+  server: 172.67.147.162
+  port: 2095
+  type: vmess
+  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /hgcefomn
+- name: ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_96
+  password: humanity
+  port: 443
+  server: 104.18.152.133
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /assignment
+- name: ~1ms | 🇺🇸 US 1011 → tg@nicevpn123
+  server: 104.21.237.26
+  port: 80
+  type: vmess
+  uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+  udp: true
+- name: ~1ms | 美国 655
+  type: vmess
+  network: ws
+  server: 141.101.114.114
+  port: 80
+  uuid: 4bf074f4-7e9c-4e4b-a10d-156e26199729
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: us03s.5d8ecf82.cfd
+    path: /
+- name: ~1ms | 🇺🇸 US 1248 → tg@nicevpn123
+  server: 172.67.164.78
+  port: 2052
+  type: vmess
+  uuid: 5edafe88-b558-4129-a86d-58fd84be79f0
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: ~1ms | vmess-1827159895
+  network: ws
+  port: 443
+  server: yg1.ygkkk.dpdns.org
+  servername: jmp1.907737.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+- name: ~1ms | 哥斯达黎加 001
+  type: vmess
+  network: ws
+  server: 190.93.246.2
+  port: 443
+  uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: lg1.trump2023.us
+    path: /ECTCJ0DF
+- name: ~1ms | 🇺🇸 US 1161 → tg@nicevpn123
+  server: 104.21.25.94
+  port: 80
+  type: vmess
+  uuid: 44e35bf1-6e80-4dd0-88d4-ed90fcfd19ca
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vmess
+  udp: true
+- name: ~1ms | 美国 019
+  type: vmess
+  network: ws
+  server: 104.21.8.157
+  port: 2082
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  tls: false
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: s1c.v2.v001sss.xyz
+    path: /
+- name: ~1ms | 🇺🇸 US 2012 → tg@nicevpn123
+  server: 104.19.44.238
+  port: 80
+  type: vmess
+  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /xn--mes53ddysu0o3gl
+  udp: true
+- name: ~1ms | 🇺🇸 US 350 → tg@nicevpn123
+  server: 172.67.172.219
+  port: 8080
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: ~1ms | 美国 095
+  type: vmess
+  network: ws
+  server: 172.67.194.2
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  skip-cert-verify: true
+  tls: true
+  alterId: 1
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: alvvin.click
+    path: linkvws
+- name: ~1ms | 🇺🇸 US 814 → tg@nicevpn123
+  server: 104.16.42.12
   port: 2082
   type: vmess
   uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be
@@ -928,120 +536,53 @@ proxies:
   ws-opts:
     path: /ws?ed=2048
   udp: true
+- name: ~1ms | 美国 110
+  type: vmess
+  network: ws
+  server: gov.uk
+  port: 443
+  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: zheshiscp.com
+    path: /77848824
+- name: ~1ms | 🇺🇸 US 2026 → tg@nicevpn123
+  server: 104.19.44.237
+  port: 80
+  type: vmess
+  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /xn--mes53ddysu0o3gl
+  udp: true
 - alterId: 0
   cipher: auto
-  name: ~5ms | vmess-1827161107
+  client-fingerprint: chrome
+  name: ~1ms | qilan.de | US VMESS 3736762 | 2.4MB/S HOST
   network: ws
-  port: 8443
-  server: 104.17.77.77
-  servername: v2ray1.dozapp.xyz
+  port: 2083
+  server: 162.159.130.234
+  servername: or3.sfacg.uk
   skip-cert-verify: false
+  sni: or3.sfacg.uk
   tls: true
   type: vmess
   udp: true
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-- name: ~5ms | 🏁RELAY-104.27.203.169-7794
-  server: 104.27.203.169
-  port: 443
-  type: vmess
-  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /wss51068
-- name: ~5ms | 🇺🇸 US 404 → tg@nicevpn123
-  server: 104.16.57.148
-  port: 8080
-  type: vmess
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /dabai.in1485716
-  udp: true
-- name: ~5ms | 🇺🇸 US 1955 → tg@nicevpn123
-  server: 104.19.44.246
-  port: 80
-  type: vmess
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /xn--mes53ddysu0o3gl
-  udp: true
-- name: ~5ms | 🇺🇸 US 144 → tg@nicevpn123
-  server: 104.19.42.81
-  port: 2082
-  type: vmess
-  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws?ed=2048
-  udp: true
-- name: ~5ms | 分享日记_380_3
-  network: ws
-  password: '521314'
-  port: 443
-  server: 104.16.98.215
-  skip-cert-verify: false
-  sni: tjplay.lxdxo.kdns.fr
-  type: trojan
-  udp: true
+  uuid: ac251237-576f-40c8-a543-554960c958b1
   ws-opts:
     headers:
-      host: tjplay.lxdxo.kdns.fr
-    path: Telegram🇨🇳
-- name: ~5ms | 美国 833
-  type: vmess
-  network: ws
-  server: amszxc.66666654.xyz
-  port: 2095
-  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: amszxc.66666654.xyz
-    path: /hgcefomn
-- name: ~5ms | 🇺🇸 US 1994 → tg@nicevpn123
-  server: 104.19.44.184
-  port: 80
-  type: vmess
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /xn--mes53ddysu0o3gl
-  udp: true
-- name: ~5ms | 美国 836
-  type: vmess
-  network: grpc
-  server: 104.31.16.3
-  port: 2087
-  uuid: 98bd45bd-ad4a-4480-87b2-84f81c09aaa8
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-- name: ~5ms | 🏁RELAY-172.67.188.110-7427
-  server: 172.67.188.110
+      Host: or3.sfacg.uk
+    path: /or3
+- name: ~1ms | 🏁RELAY-172.67.194.234-7416
+  server: 172.67.194.234
   port: 2095
   type: vmess
   uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
@@ -1052,74 +593,34 @@ proxies:
   network: ws
   ws-opts:
     path: /hgcefomn
-- name: ~5ms | 🏁RELAY-162.159.138.46-7523
-  server: 162.159.138.46
-  port: 2095
+- name: ~1ms | 美国 651
   type: vmess
-  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
+  network: ws
+  server: 162.159.138.179
+  port: 443
+  uuid: 62aa5f80-0328-4004-a375-7f5a59df4022
+  skip-cert-verify: true
+  tls: true
   alterId: 0
   cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
   ws-opts:
-    path: /hgcefomn
-- name: ~5ms | 分享日记_465
+    headers:
+      Host: hms19.best-tizi.top
+    path: /linkws?
+- alterId: 0
+  cipher: auto
+  name: ~1ms | 🇺🇸美国US029 1.85MB/s中性 TG@jcnode
   network: ws
-  password: humanity
   port: 443
-  server: 172.64.147.131
-  skip-cert-verify: true
-  sni: www.gossipglove.com
-  type: trojan
+  server: US032020.ssgreen.org
+  tls: true
+  type: vmess
   udp: true
+  uuid: 563e0e25-6c5e-4ead-8ba1-68c97b32ff5c
   ws-opts:
-    headers:
-      host: www.gossipglove.com
-    path: /assignment
-- name: ~5ms | 保加利亚 003
-  type: vmess
-  network: ws
-  server: 147.78.140.68
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 6ba6-sound-6ba6.siliy37818.workers.dev
-    path: /meroiy.icu/linkvws
-- name: ~5ms | 英国 019
-  type: vmess
-  network: ws
-  server: 185.162.228.228
-  port: 443
-  uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: lg1.trump2023.us
-    path: /ECTCJ0DF
-- name: ~5ms | 🇺🇸 US 860 → tg@nicevpn123
-  server: 104.19.49.221
-  port: 443
-  type: vmess
-  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
-- name: ~5ms | 🇺🇸 US 681 → tg@nicevpn123
-  server: 104.21.225.243
+    path: /wes
+- name: ~1ms | 🇺🇸 US 816 → tg@nicevpn123
+  server: 104.21.225.22
   port: 80
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -1131,127 +632,33 @@ proxies:
   ws-opts:
     path: /
   udp: true
-- name: ~5ms | 🇺🇸 US 1241 → tg@nicevpn123
-  server: 104.19.45.8
-  port: 2095
+- name: ~1ms | 美国 017
   type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  alterId: 0
-  cipher: auto
+  network: ws
+  server: russia.com
+  port: 8880
+  uuid: 6658a3a6-225a-4d33-a5d2-82cfde565b4e
   tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
-- name: ~5ms | 美国 534
-  type: vmess
-  network: ws
-  server: 23.227.38.40
-  port: 443
-  uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
-  skip-cert-verify: true
-  tls: true
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: lg10.cfcdn1.xyz
-    path: /A2DJOPFT
-- name: ~5ms | 🇮🇩[www.v2nodes.com] trojan-ID-...
-  network: ws
-  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
-  port: 443
-  server: 104.18.32.87
-  skip-cert-verify: false
-  sni: id1.nathaya.web.id
-  type: trojan
-  ws-opts:
-    headers:
-      Host: id1.nathaya.web.id
-    path: /trojan
-- name: ~5ms | 美国 205
+      Host: ssrsub.v03.ssrsub.com
+    path: /api/v3/download.getFile
+- name: ~1ms | 美国 408
   type: vmess
-  network: ws
-  server: 23.227.38.23
-  port: 443
-  uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
+  network: grpc
+  server: 104.18.219.61
+  port: 2087
+  uuid: 8c65cbad-923d-4f73-c653-83c75ca4e1aa
   skip-cert-verify: true
   tls: true
   alterId: 0
   cipher: auto
-  ws-opts:
-    headers:
-      Host: oplg1.cfcdn2.xyz
-    path: /AUIKN8AU
-- name: ~5ms | 🇺🇸 US 2018 → tg@nicevpn123
-  server: 104.19.44.10
-  port: 80
-  type: vmess
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /xn--mes53ddysu0o3gl
-  udp: true
-- name: ~5ms | 立陶宛 003
-  type: vmess
-  network: ws
-  server: 185.148.104.118
-  port: 443
-  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ab-test-frosty-flower-e7fb.tariroc864.workers.dev
-    path: /
-- name: ~5ms | 🏁RELAY-203.23.106.157-7274
-  server: 203.23.106.157
-  port: 443
-  type: vmess
-  uuid: c13277ce-cda6-4d01-cedc-1e3605a0eb72
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /12796
-- name: ~5ms | 🏁RELAY-198.41.222.199-7286
-  server: 198.41.222.199
-  port: 2095
-  type: vmess
-  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /hgcefomn
-- name: ~5ms | 🇺🇸 US 1791 → tg@nicevpn123
-  server: 172.67.223.242
-  port: 2086
-  type: vmess
-  uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
-- name: ~5ms | US美国(mibei77.com 米贝节点分享)_138
+- name: ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_126
   password: humanity
   port: 443
-  server: 104.18.152.103
+  server: 104.18.152.108
   skip-cert-verify: true
   sni: www.ignitelimit.com
   type: trojan
@@ -1260,21 +667,8 @@ proxies:
     headers:
       Host: www.ignitelimit.com
     path: /assignment
-- name: ~5ms | 美国 423
-  type: vmess
-  network: ws
-  server: www.digitalocean.com
-  port: 80
-  uuid: c0622eb2-4259-4170-be71-d978e037358c
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: www.digitalocean.com
-    path: /
-- name: ~5ms | 🇺🇸 US 23 → tg@nicevpn123
-  server: 104.19.42.72
+- name: ~1ms | 🇺🇸 US 1133 → tg@nicevpn123
+  server: 104.16.40.143
   port: 2082
   type: vmess
   uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
@@ -1286,276 +680,57 @@ proxies:
   ws-opts:
     path: /ws?ed=2048
   udp: true
-- name: ~5ms | 美国 425
-  type: vmess
-  network: ws
-  server: upload.ir
-  port: 80
-  uuid: 06c2b568-b7df-4e80-9031-c83569397db4
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: upload.ir
-    path: /vmess
-- name: ~5ms | 🏁RELAY-154.92.9.86-7542
-  server: 154.92.9.86
+- name: ~1ms | 🏁RELAY-104.21.81.238-7821
+  server: 104.21.81.238
   port: 80
   type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
+  uuid: 53d6758a-398c-435b-a4d3-a6d341f69c48
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /blue
-- name: ~5ms | 🏁RELAY-104.17.101.35-7882
-  server: 104.17.101.35
-  port: 443
-  type: vmess
-  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /wss13889
-- name: ~6ms | 🏁RELAY-104.31.16.65-7727
-  server: 104.31.16.65
-  port: 443
-  type: vmess
-  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /wss13889
-- name: ~6ms | 🏁RELAY-104.31.16.210-7783
-  server: 104.31.16.210
-  port: 2053
-  type: vmess
-  uuid: 72f76c36-3e3c-45b3-a61f-d8f017345958
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2048
-- name: ~6ms | 🇺🇸 US 1073 → tg@nicevpn123
-  server: 104.17.147.5
-  port: 443
-  type: trojan
-  password: 2e3562a819634de686ade78e434c0963
-  sni: jobscareertoday.com
-  skip-cert-verify: true
-  udp: true
-- name: ~6ms | 🇺🇸 US 1938 → tg@nicevpn123
-  server: 104.19.44.245
-  port: 80
-  type: vmess
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /xn--mes53ddysu0o3gl
-  udp: true
-- name: ~6ms | 🏁RELAY-172.67.216.97-7405
-  server: 172.67.216.97
-  port: 2095
-  type: vmess
-  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /hgcefomn
-- name: ~6ms | 🇺🇸 US 1883 → tg@nicevpn123
-  server: 172.67.166.192
-  port: 80
-  type: vmess
-  uuid: cd1db809-2de0-409c-aef5-861e95eff53e
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vmess
-  udp: true
-- name: ~6ms | trojan-226579427
-  password: MITIVPN
-  port: 443
-  server: 104.19.229.21
-  skip-cert-verify: false
-  sni: ddee2-mitivpn--mitivpn--mitivpn---mitivpn--mitivpn--mitivpn.kingnetwork.ir
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: ~6ms | 🇩🇪德国DE121 测速未知中性 TG@jcnode
-  network: ws
-  port: 443
-  server: 195.85.23.225
-  servername: renderer-stream-2-62.mirra.now
-  tls: true
-  type: vmess
-  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
-  ws-opts:
-    headers:
-      Host: renderer-stream-2-62.mirra.now
-    path: /api/v1/gpu-stream/socket
-- alterId: 0
-  cipher: auto
-  name: ~6ms | vmess-1827157636
-  network: ws
-  port: 8443
-  server: 172.67.167.78
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-- name: ~6ms | 🇺🇸 US 1079 → tg@nicevpn123
-  server: 104.17.119.135
-  port: 2052
-  type: vmess
-  uuid: bdc7d7c5-be05-3db8-93e9-4d4157bfaa17
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /dabai.in13511917
-  udp: true
-- name: ~6ms | trojan-2519801
-  password: humanity
-  port: 443
-  server: chat.openai.com
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
-  udp: true
-- name: ~6ms | 美国 336
-  type: vmess
-  network: ws
-  server: wto.org
-  port: 443
-  uuid: d57ac173-5615-43db-a3f4-dd1aebb2c6e8
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: us01.secntre.com
-    path: /d57ac173-5615-43db-a3f4-dd1aebb2c6e8-vm?ed=2048
-- name: ~6ms | 🇺🇸 US 1953 → tg@nicevpn123
-  server: 104.19.44.228
-  port: 80
-  type: vmess
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /xn--mes53ddysu0o3gl
-  udp: true
-- name: ~6ms | 🇺🇸 US 1943 → tg@nicevpn123
-  server: 104.19.44.44
-  port: 80
-  type: vmess
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /xn--mes53ddysu0o3gl
-  udp: true
-- name: '~6ms | 其他 035 #2'
-  type: vmess
-  network: ws
-  server: singapore.com
-  port: 2086
-  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ip1.1789034.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  name: ~6ms | 02.24|freesub|哥斯达黎加
-  network: ws
-  port: 443
-  server: 190.93.246.4
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
-  ws-opts:
-    headers:
-      Host: lg10.cfcdn1.xyz
     path: /
-- name: ~6ms | 美国 578
-  type: vmess
-  network: ws
-  server: us80-3.sanfen001.pics
+- name: ~1ms | 🇺🇸 US 2000 → tg@nicevpn123
+  server: 104.19.44.209
   port: 80
-  uuid: ed1e7cc5-e0cf-424a-8e28-70ca305f26d3
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: us80-3.sanfen001.pics
-    path: /zh-cn/
-- name: ~6ms | 伯利兹 012
   type: vmess
-  network: ws
-  server: 203.30.189.189
-  port: 443
-  uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: lg1.trump2023.us
-    path: /ECTCJ0DF
-- name: ~6ms | 🏁RELAY-172.67.197.57-7415
-  server: 172.67.197.57
-  port: 2095
-  type: vmess
-  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
+  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
   alterId: 0
   cipher: auto
   tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /xn--mes53ddysu0o3gl
+  udp: true
+- name: ~1ms | 美国 658
+  type: vmess
+  network: ws
+  server: 172.67.153.119
+  port: 80
+  uuid: 4bf074f4-7e9c-4e4b-a10d-156e26199729
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: us03s.5d8ecf82.cfd
+    path: /
+- name: ~1ms | 🏁RELAY-104.24.154.5-7816
+  server: 104.24.154.5
+  port: 443
+  type: vmess
+  uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a
+  alterId: 0
+  cipher: auto
+  tls: true
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /hgcefomn
-- name: ~6ms | 🇺🇸 US 652 → tg@nicevpn123
+    path: /wss51068
+- name: ~1ms | 🇺🇸 US 652 → tg@nicevpn123
   server: 172.67.229.37
   port: 2086
   type: vmess
@@ -1568,77 +743,92 @@ proxies:
   ws-opts:
     path: /IOebhLMhl1CTbFHbL95myfRX2
   udp: true
-- name: ~6ms | 🇺🇸 US 1728 → tg@nicevpn123
-  server: 104.21.237.184
-  port: 80
+- name: ~1ms | 🇺🇸 US 888 → tg@nicevpn123
+  server: 104.21.4.14
+  port: 2086
   type: vmess
-  uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
+  uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /?ed=2048
+    path: /
   udp: true
-- name: ~6ms | 🇺🇸 US 1940 → tg@nicevpn123
-  server: 104.19.44.204
-  port: 80
+- name: ~1ms | 🇺🇸 US 1209 → tg@nicevpn123
+  server: 104.19.45.139
+  port: 2095
   type: vmess
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /xn--mes53ddysu0o3gl
+    path: /
   udp: true
-- name: ~6ms | 美国 226
-  type: vmess
-  network: ws
-  server: 172.64.146.102
-  port: 8443
-  uuid: c1a8dee0-bdad-4b6d-9926-5e15c3c8ed7d
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
+- alterId: 0
   cipher: auto
-  ws-opts:
-    headers:
-      Host: marco-visibility-tops-estimate.trycloudflare.com
-    path: /c1a8dee0-bdad-4b6d-9926-5e15c3c8ed7d-vm
-- name: ~6ms | 🇺🇸 US 296 → tg@nicevpn123
-  server: 104.18.203.232
-  port: 2083
-  type: trojan
-  password: 2dbd2a10-9512-4b60-84e6-5d9926a9fe5b
-  sni: laenatbar.seyedalikhameneibinamous.site
-  skip-cert-verify: true
-  udp: true
-- name: ~6ms | 🇺🇸 US 1942 → tg@nicevpn123
-  server: 104.19.44.126
-  port: 80
-  type: vmess
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /xn--mes53ddysu0o3gl
-  udp: true
-- name: ~6ms | trojan-1827148866
-  password: humanity
-  port: 443
-  server: 104.18.37.127
+  name: ~1ms | 🇺🇸US_457|131KB/s|A004-260618 01
+  network: tcp
+  port: 12330
+  server: p05.rghvf.sbs
+  servername: p05.rghvf.sbs
   skip-cert-verify: false
-  sni: www.volumeroot.com
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 68adffea-4146-4f92-b2f9-955cd634c274
+  xudp: true
+- name: ~1ms | 🇺🇸 US 283 → tg@nicevpn123
+  server: 104.17.17.103
+  port: 8080
+  type: vmess
+  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
+  udp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: ~1ms | 🇫🇷FR_2070|501KB/s|M003-260806 01
+  network: ws
+  password: 7990f64c-d3d0-4af6-a78b-fc690e5803ad
+  port: 2096
+  server: node-562276409-d1add2.subject88.workers.dev
+  skip-cert-verify: false
+  sni: NODE-562276409-d1aDd2.sUbjECT88.WOrkErs.deV
   type: trojan
   udp: true
-- name: ~6ms | 🇺🇸 US 1964 → tg@nicevpn123
-  server: 104.19.44.161
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.102 Safari/537.36
+    max-early-data: 2560
+    path: /tr/rpmeJRDCbzoeQHjtWQtucdXDWonXCG
+- name: ~1ms | 🇨🇦 CA 23 → tg@nicevpn123
+  server: 23.227.38.44
+  port: 8080
+  type: vmess
+  uuid: 55021a7c-bd6c-418e-be95-ceac8ba27b45
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
+  udp: true
+- name: ~1ms | 🇺🇸 US 1950 → tg@nicevpn123
+  server: 104.19.44.102
   port: 80
   type: vmess
   uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
@@ -1650,7 +840,19 @@ proxies:
   ws-opts:
     path: /xn--mes53ddysu0o3gl
   udp: true
-- name: ~6ms | 🇺🇸 US 844 → tg@nicevpn123
+- name: ~1ms | 🏁RELAY-172.67.189.8-7426
+  server: 172.67.189.8
+  port: 2095
+  type: vmess
+  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /hgcefomn
+- name: ~1ms | 🇺🇸 US 844 → tg@nicevpn123
   server: ip.sb
   port: 2086
   type: vmess
@@ -1665,35 +867,43 @@ proxies:
     headers:
       Host: ip.sb
   udp: true
-- name: ~6ms | 哥斯达黎加 002
+- name: ~1ms | 🇺🇸 US 1005 → tg@nicevpn123
+  server: 104.16.39.69
+  port: 2082
   type: vmess
-  network: ws
-  server: 190.93.246.3
-  port: 443
-  uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: oplg1.zhujicn2.com
-    path: /5QNROSRV
-- name: ~6ms | 🇺🇸 US 1339 → tg@nicevpn123
-  server: 104.19.45.128
-  port: 2095
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /ws?ed=2048
   udp: true
-- name: ~6ms | 🇺🇸 US 2013 → tg@nicevpn123
-  server: 104.19.44.241
+- name: ~1ms | 美国 520
+  type: vmess
+  network: ws
+  server: 190.93.245.2
+  port: 443
+  uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: lg1.trump2023.us
+    path: /ECTCJ0DF
+- name: ~1ms | trojan-1827147300
+  password: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  port: 443
+  server: uk8.998998.best
+  skip-cert-verify: false
+  sni: server41.9966338.xyz
+  type: trojan
+  udp: true
+- name: ~1ms | 🇺🇸 US 1946 → tg@nicevpn123
+  server: 104.19.44.212
   port: 80
   type: vmess
   uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
@@ -1705,82 +915,168 @@ proxies:
   ws-opts:
     path: /xn--mes53ddysu0o3gl
   udp: true
-- name: ~6ms | 法国 001
-  type: vmess
-  network: ws
-  server: 94.140.0.110
-  port: 8880
-  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
-  tls: false
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: food.zhaal.ir
-    path: /
-- name: ~6ms | 🇯🇵 JP 12 → tg@nicevpn123
-  server: 45.85.119.65
-  port: 8443
-  type: vmess
-  uuid: 2b6ff9f6-00b6-4bc7-e16f-a7f1f4d43e4c
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /build
-  udp: true
-- name: ~6ms | 🇺🇸 US 2039 → tg@nicevpn123
-  server: 104.19.45.67
-  port: 80
-  type: vmess
-  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /xiaodao?ed=2048
-  udp: true
-- name: ~6ms | trojan-250718444
-  password: MiTiVPN
+- name: ~1ms | 🇺🇸 US 67 → tg@nicevpn123
+  server: 104.17.61.9
   port: 443
-  server: 104.16.6.189
+  type: trojan
+  password: dba20dcb635e430fa4d3bfc303a149d2
+  sni: jobscareerforlawyers.com
   skip-cert-verify: true
-  sni: j--p-mitivpn--mitivpn--mitivpn---mitivpn--mitivpn--mitivpn.s88r.ir
+  udp: true
+- name: ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_23
+  password: humanity
+  port: 443
+  server: 104.16.174.44
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
   type: trojan
   udp: true
-- name: ~6ms | 🇺🇸 US 1208 → tg@nicevpn123
-  server: 104.19.45.204
-  port: 2095
+  ws-opts:
+    path: /assignment
+- name: ~1ms | 🇺🇸 US 546 → tg@nicevpn123
+  server: 104.21.232.64
+  port: 80
   type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2048
   udp: true
-- name: ~6ms | 美国 140
+- name: ~1ms | 🏁RELAY-141.101.114.33-0051
+  server: 141.101.114.33
+  port: 443
+  type: vmess
+  uuid: e5a88ce2-fc1b-45d1-9c5f-553721d28004
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /dongtaiwang.com
+    headers:
+      Host: v2ray1.zhujicn2.org
+- name: ~1ms | 巴西 021
   type: vmess
   network: ws
-  server: 172.64.144.100
+  server: 188.114.96.5
   port: 443
-  uuid: 6e9217de-ad7e-4a67-bd17-a6dca951733b
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
   skip-cert-verify: true
   tls: true
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: lg3.zhujicn2.com
+      Host: linde06.indiavideo.sbs
+    path: /linkws
+- name: ~1ms | 🇺🇸 US 1773 → tg@nicevpn123
+  server: 104.16.43.66
+  port: 2082
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+  udp: true
+- name: ~1ms | 🇺🇸 US 296 → tg@nicevpn123
+  server: 104.18.203.232
+  port: 2083
+  type: trojan
+  password: 2dbd2a10-9512-4b60-84e6-5d9926a9fe5b
+  sni: laenatbar.seyedalikhameneibinamous.site
+  skip-cert-verify: true
+  udp: true
+- name: ~1ms | 🇺🇸 US 471 → tg@nicevpn123
+  server: 104.16.42.195
+  port: 2082
+  type: vmess
+  uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+  udp: true
+- name: ~1ms | 美国 438
+  type: vmess
+  network: ws
+  server: 104.18.19.99
+  port: 443
+  uuid: b4a65611-4969-42b2-bc74-5768b940bd9e
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: vyvzyhgz.com
     path: /
-- name: ~6ms | 🏁RELAY-162.159.135.251-7524
-  server: 162.159.135.251
+- name: ~1ms | 伯利兹 020
+  type: vmess
+  network: ws
+  server: 203.30.188.121
+  port: 443
+  uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: oplg1.cfcdn2.xyz
+    path: /AUIKN8AU
+- name: ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_61
+  password: humanity
+  port: 443
+  server: 104.16.174.6
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /assignment
+- name: ~1ms | 🇺🇸 US 1951 → tg@nicevpn123
+  server: 104.19.44.29
+  port: 80
+  type: vmess
+  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /xn--mes53ddysu0o3gl
+  udp: true
+- name: ~1ms | 🇺🇸 US 1394 → tg@nicevpn123
+  server: 104.26.3.186
+  port: 2083
+  type: trojan
+  password: 656bcdfe-ae09-4170-a36e-1685ee10b26f
+  sni: freeinternetforeveryone.segaro.tech
+  skip-cert-verify: true
+  udp: true
+- name: ~1ms | trojan-11695
+  password: humanity
+  port: 443
+  server: 104.19.64.105
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  udp: true
+- name: ~1ms | 🏁RELAY-141.101.120.243-7645
+  server: 141.101.120.243
   port: 2095
   type: vmess
   uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
@@ -1791,165 +1087,16 @@ proxies:
   network: ws
   ws-opts:
     path: /hgcefomn
-- alterId: 0
-  cipher: auto
-  name: ~6ms | vmess-1827741482
-  network: ws
+- name: ~1ms | trojan-250743436
+  password: MiTiVPN
   port: 443
-  server: jp5.998998.best
-  servername: server11.9966338.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vmess
+  server: 104.16.98.215
+  skip-cert-verify: true
+  sni: nl1-mitivpn--mitivpn--mitivpn---mitivpn--mitivpn--mitivpn.s88r.ir
+  type: trojan
   udp: true
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-- name: ~6ms | 🇺🇸 US 730 → tg@nicevpn123
-  server: 104.16.43.246
-  port: 2082
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws?ed=2048
-  udp: true
-- name: ~6ms | 🏁RELAY-172.67.156.140-1788
-  server: 172.67.156.140
-  port: 8443
-  type: vmess
-  uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /8cda48b3
-- name: '~6ms | 美国 070 #2'
-  type: vmess
-  network: ws
-  server: 172.67.172.120
-  port: 8080
-  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: oiictw.yydsii.com
-    path: /
-- name: ~6ms | 🇺🇸 US 2028 → tg@nicevpn123
-  server: 104.19.44.18
-  port: 80
-  type: vmess
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /xn--mes53ddysu0o3gl
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: ~6ms | 02.24|freesub|伯利兹|Belize02
-  network: ws
-  port: 443
-  server: 203.30.191.18
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd
-  ws-opts:
-    headers:
-      Host: clash6.ssr-free.xyz
-    path: /dongtaiwang.com
-- name: ~6ms | 澳大利亚 011
-  type: vmess
-  network: ws
-  server: 1.1.1.3
-  port: 443
-  uuid: a91c50c3-c838-428d-a61d-ed372255bb71
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: 1.1.1.3
-    path: /Acdtms4zfx
-- name: ~6ms | 🏁RELAY-154.92.9.80-7547
-  server: 154.92.9.80
-  port: 80
-  type: vmess
-  uuid: dd41b5cb-b72e-4a8c-c75a-3ecc928d6eb3
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /blue
-- name: ~6ms | 🇺🇸 US 718 → tg@nicevpn123
-  server: 104.16.43.62
-  port: 2082
-  type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws?ed=2048
-  udp: true
-- name: ~6ms | 🏁RELAY-172.67.184.53-7428
-  server: 172.67.184.53
-  port: 8443
-  type: vmess
-  uuid: 1cec1ebc-b489-4769-f2d9-e079b5832a60
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /cloudconeaaa
-- name: ~6ms | 美国 1047
-  type: vmess
-  network: ws
-  server: 172.67.199.121
-  port: 8080
-  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: oiictw.yydsii.com
-    path: /
-- name: ~6ms | 英国 021
-  type: vmess
-  network: ws
-  server: 185.162.228.230
-  port: 443
-  uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: lg10.cfcdn1.xyz
-    path: /A2DJOPFT
-- name: ~6ms | 🇺🇸 US 843 → tg@nicevpn123
-  server: 104.16.40.120
+- name: ~1ms | 🇺🇸 US 1852 → tg@nicevpn123
+  server: 104.16.40.236
   port: 2082
   type: vmess
   uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
@@ -1961,20 +1108,32 @@ proxies:
   ws-opts:
     path: /ws?ed=2048
   udp: true
-- name: ~6ms | 🇺🇸 US 2019 → tg@nicevpn123
-  server: 104.19.44.207
-  port: 80
+- name: ~1ms | 🏁RELAY-172.67.212.128-7411
+  server: 172.67.212.128
+  port: 2095
   type: vmess
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
+  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
   alterId: 0
   cipher: auto
   tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /hgcefomn
+- name: ~1ms | 🇺🇸 US 1074 → tg@nicevpn123
+  server: 104.17.61.7
+  port: 443
+  type: trojan
+  password: 4732adfa16c6450bbef87264e41332db
+  sni: jobscareerfortoday.com
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /xn--mes53ddysu0o3gl
+    path: '%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252F6b777a91'
+    headers:
+      Host: jobscareerfortoday.com
   udp: true
-- name: ~6ms | 伯利兹 015
+- name: ~1ms | 伯利兹 015
   type: vmess
   network: ws
   server: 203.30.191.7
@@ -1988,8 +1147,8 @@ proxies:
     headers:
       Host: oplg1.cfcdn2.xyz
     path: /AUIKN8AU
-- name: ~6ms | 🇺🇸 US 1236 → tg@nicevpn123
-  server: 104.16.39.79
+- name: ~1ms | 🇺🇸 US 1247 → tg@nicevpn123
+  server: 104.16.39.33
   port: 2082
   type: vmess
   uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
@@ -2001,36 +1160,83 @@ proxies:
   ws-opts:
     path: /ws?ed=2048
   udp: true
-- name: ~6ms | 🇺🇸 US 1950 → tg@nicevpn123
-  server: 104.19.44.102
-  port: 80
+- name: ~1ms | 🇺🇸 US 973 → tg@nicevpn123
+  server: 104.19.45.226
+  port: 2095
   type: vmess
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /xn--mes53ddysu0o3gl
+    path: /
   udp: true
-- name: ~6ms | 🏁RELAY-172.64.82.215-7459
-  server: 172.64.82.215
-  port: 2095
+- name: ~1ms | 🇺🇸 US 922 → tg@nicevpn123
+  server: 104.16.60.8
+  port: 2083
   type: vmess
-  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
   alterId: 0
   cipher: auto
-  tls: false
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /jahfkjha.cfd/linkws
+  udp: true
+- name: ~1ms | 🏁RELAY-104.31.16.196-7785
+  server: 104.31.16.196
+  port: 443
+  type: vmess
+  uuid: e357cd63-f1a5-4c8e-c42e-26da11207fee
+  alterId: 0
+  cipher: auto
+  tls: true
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /hgcefomn
-- name: ~6ms | 🇺🇸 US 1359 → tg@nicevpn123
-  server: 104.16.43.255
+    path: /root/
+- name: ~1ms | 美国 822
+  type: vmess
+  network: ws
+  server: series-v1.samanehha.co
+  port: 443
+  uuid: 0b65bb06-6b28-487a-8e3c-820dda51e977
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: series-v1.samanehha.co
+    path: /dT9s3HqgZeD3eApzDAfhOHq
+- name: ~1ms | 🇺🇸 US 972 → tg@nicevpn123
+  server: 104.18.202.232
+  port: 2083
+  type: trojan
+  password: 2dbd2a10-9512-4b60-84e6-5d9926a9fe5b
+  sni: laenatbar.seyedalikhameneibinamous.site
+  skip-cert-verify: true
+  udp: true
+- name: ~1ms | 🏁RELAY-172.67.199.34-2914
+  server: 172.67.199.34
+  port: 2053
+  type: vmess
+  uuid: 8947fbe5-c1c7-4716-8564-2092ce776f92
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /DQsafRJn/
+- name: ~1ms | 🇺🇸 US 1823 → tg@nicevpn123
+  server: 104.16.39.124
   port: 2082
   type: vmess
-  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
   alterId: 0
   cipher: auto
   tls: false
@@ -2039,143 +1245,8 @@ proxies:
   ws-opts:
     path: /ws?ed=2048
   udp: true
-- name: ~6ms | 🇺🇸 US 1235 → tg@nicevpn123
-  server: 104.18.21.81
-  port: 8443
-  type: vmess
-  uuid: 2b6ff9f6-00b6-4bc7-e16f-a7f1f4d43e4c
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /build
-  udp: true
-- name: ~6ms | 🏁RELAY-172.67.215.250-0989
-  server: hk80.sanfen001.pics
-  port: 80
-  type: vmess
-  uuid: 80e94af6-e42a-4dbc-8f4b-c5f99bf97d3d
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /zh-cn/download
-    headers:
-      Host: hk80.sanfen001.pics
-- name: ~6ms | 英国 020
-  type: vmess
-  network: ws
-  server: 185.162.228.110
-  port: 443
-  uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: oplg1.cfcdn2.xyz
-    path: /AUIKN8AU
-- name: ~6ms | 🇺🇸 US 972 → tg@nicevpn123
-  server: 104.18.202.232
-  port: 2083
-  type: trojan
-  password: 2dbd2a10-9512-4b60-84e6-5d9926a9fe5b
-  sni: laenatbar.seyedalikhameneibinamous.site
-  skip-cert-verify: true
-  udp: true
-- name: ~6ms | 🇺🇸 US 1132 → tg@nicevpn123
-  server: 104.19.45.189
-  port: 2095
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
-- name: ~6ms | 未知_🏳️_youtube@资源分享师_ZZ_76
-  password: humanity
-  port: 443
-  server: 104.18.152.175
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-- name: ~6ms | 🇺🇸 US 980 → tg@nicevpn123
-  server: 172.67.229.14
-  port: 80
-  type: vmess
-  uuid: 617c9bc4-4116-41c6-99e0-ace49a38fcdb
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY
-  udp: true
-- name: ~6ms | 🇺🇸 US 949 → tg@nicevpn123
-  server: 104.19.45.176
-  port: 2095
-  type: vmess
-  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-  udp: true
-- name: ~6ms | 立陶宛_🇱🇹_youtube@资源分享师_LT_193
-  password: humanity
-  port: 443
-  server: 86.38.214.205
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /assignment
-- name: ~6ms | 🏁RELAY-104.31.16.40-7746
-  server: 104.31.16.40
-  port: 80
-  type: vmess
-  uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /i99LgvSaslbsPLLQQ7j6Z
-- name: ~6ms | 分享日记_525
-  network: ws
-  password: humanity
-  port: 443
-  server: 172.64.147.24
-  skip-cert-verify: true
-  sni: www.gossipglove.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: www.gossipglove.com
-    path: /assignment
-- name: ~6ms | 🇺🇸 US 2014 → tg@nicevpn123
-  server: 104.19.44.219
+- name: ~1ms | 🇺🇸 US 1928 → tg@nicevpn123
+  server: 104.19.44.236
   port: 80
   type: vmess
   uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
@@ -2187,42 +1258,8 @@ proxies:
   ws-opts:
     path: /xn--mes53ddysu0o3gl
   udp: true
-- name: ~6ms | 🏁RELAY-104.16.108.100-7890
-  server: 104.16.108.100
-  port: 8880
-  type: vmess
-  uuid: 4b5e4565-322f-4223-a891-78a84f189726
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /RpT6kZjkw45EenmTcDYWs
-- name: ~6ms | trojan-1843512990
-  password: humanity
-  port: 443
-  server: 104.17.148.22
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
-  udp: true
-- name: ~6ms | 美国 527
-  type: vmess
-  network: ws
-  server: 23.227.38.39
-  port: 443
-  uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958
-  skip-cert-verify: true
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: oplg1.zhujicn2.com
-    path: /5QNROSRV
-- name: ~6ms | 🇺🇸 US 713 → tg@nicevpn123
-  server: 104.16.40.132
+- name: ~1ms | 🇺🇸 US 843 → tg@nicevpn123
+  server: 104.16.40.120
   port: 2082
   type: vmess
   uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
@@ -2234,34 +1271,99 @@ proxies:
   ws-opts:
     path: /ws?ed=2048
   udp: true
-- name: ~6ms | 🏁RELAY-104.31.16.33-7756
-  server: 104.31.16.33
-  port: 80
+- name: ~1ms | 美国 839
   type: vmess
-  uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+  network: ws
+  server: 104.16.68.38
+  port: 2082
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: snowy-river-f497.turkeys-radford.workers.dev
+    path: /glweidf.sbs/linkws
+- name: ~1ms | 🏁RELAY-104.31.16.35-7751
+  server: 104.31.16.35
+  port: 443
+  type: vmess
+  uuid: F591CE71-33F8-4B12-824A-0167FA839ED9
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /speedtest
+- name: ~1ms | 🇺🇸 US 1234 → tg@nicevpn123
+  server: 104.19.45.104
+  port: 2095
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: ~1ms | 🇺🇸 US 1564 → tg@nicevpn123
+  server: 104.16.40.24
+  port: 2082
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+  udp: true
+- name: ~1ms | 🏁RELAY-172.67.237.73-7403
+  server: 172.67.237.73
+  port: 2095
+  type: vmess
+  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /i99LgvSaslbsPLLQQ7j6Z
-- name: ~6ms | 美国 389
-  type: vmess
-  network: ws
-  server: 173.245.58.5
+    path: /hgcefomn
+- name: ~1ms | trojan-258596218
+  password: MITIVPN
   port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  server: 199.232.78.160
+  skip-cert-verify: false
+  sni: ssl.fastly.com
+  type: trojan
+  udp: true
+- name: ~1ms | 美国 421
+  type: vmess
+  network: grpc
+  server: w3.org
+  port: 443
+  uuid: dfbbc8de-8a4f-407d-8069-6de38d83c4e1
   skip-cert-verify: true
   tls: true
   alterId: 0
   cipher: auto
+- name: ~1ms | 分享日记_546
+  network: ws
+  password: humanity
+  port: 443
+  server: www.creationlong.org
+  skip-cert-verify: false
+  type: trojan
+  udp: true
   ws-opts:
-    headers:
-      Host: cy-dew-1c7uwh.cojatoc291.workers.dev
-    path: /kellie.makeup/linkvws
-- name: ~6ms | 🇺🇸 US 1908 → tg@nicevpn123
-  server: 104.16.39.56
+    path: /assignment
+- name: ~1ms | 🇺🇸 US 238 → tg@nicevpn123
+  server: 104.16.39.99
   port: 2082
   type: vmess
   uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
@@ -2273,51 +1375,177 @@ proxies:
   ws-opts:
     path: /ws?ed=2048
   udp: true
-- name: ~6ms | 未知_🏳️_youtube@资源分享师_ZZ_50
-  password: humanity
-  port: 443
-  server: 104.18.152.246
-  skip-cert-verify: true
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.ignitelimit.com
-    path: /assignment
-- name: ~6ms | 🇺🇸 US 441 → tg@nicevpn123
-  server: 104.16.61.8
+- name: ~1ms | 🇺🇸 US 1135 → tg@nicevpn123
+  server: 104.21.225.68
   port: 80
   type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /obdii.cfd/linkws
+    path: /
   udp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: ~6ms | 🇫🇷FR_685|790KB/s|M003-260806 01
+- name: ~1ms | 美国 824
+  type: vmess
   network: ws
-  password: netra
-  port: 2053
-  server: 104.21.60.109
+  server: ip.saintink.eu.org
+  port: 443
+  uuid: b15ee8ec-0b0e-4ce2-b35c-f4be265ba217
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ip.saintink.eu.org
+    path: ua1.v2rayserv.com/vmess
+- alterId: 0
+  cipher: auto
+  name: ~1ms | 分享日记_9
+  network: ws
+  port: 443
+  server: 2cdn.njkrpl.com
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a0449b33-d7f6-42a5-8bdc-3b5e727ec9f8
+  ws-opts:
+    headers:
+      host: 2cdn.njkrpl.com
+    path: /
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  alterId: '0'
+  cipher: auto
+  name: ~1ms | 🇫🇷FR²_4|4.5MB/s|D+|X
+  network: ws
+  port: 8443
+  server: 162.159.152.4
+  servername: frsys.fl-dl.com
   skip-cert-verify: false
-  sni: LatE-fROSt-9da7.shoaMeNi5.woRkERs.dev
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 19e52bf4-1b7d-4bd4-ae66-6ca024436c17
+  ws-opts:
+    headers:
+      Host: frsys.fl-dl.com
+    path: /gbt
+  xudp: true
+- name: ~1ms | 🇺🇸 US 464 → tg@nicevpn123
+  server: www.speedtest.net
+  port: 80
+  type: vmess
+  uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /v149-dskds65
+    headers:
+      Host: www.speedtest.net
+  udp: true
+- name: ~1ms | 🇺🇸 US 1396 → tg@nicevpn123
+  server: 104.16.42.206
+  port: 2082
+  type: vmess
+  uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+  udp: true
+- name: ~1ms | 🇺🇸 US 554 → tg@nicevpn123
+  server: 104.18.29.250
+  port: 2052
+  type: vmess
+  uuid: a595e9ba-b641-480f-8597-323612357ba5
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /video/u4eCZTxW
+  udp: true
+- name: ~1ms | US美国(mibei77.com 米贝节点分享)_56
+  type: vmess
+  server: 172.67.142.177
+  port: 443
+  uuid: 31c3e8e7-f600-436a-87d4-9716143b0b0c
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /London3
+    headers:
+      Host: uk.lovehk.xyz
+  udp: true
+- client-fingerprint: chrome
+  name: ~1ms | 🇸🇬SG_81|656KB/s|M002-260618 01
+  network: ws
+  password: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  port: 443
+  server: sg2.998998.best
+  skip-cert-verify: false
+  sni: nat6.outsidemyheart.space
   type: trojan
   udp: true
   ws-opts:
     early-data-header-name: Sec-WebSocket-Protocol
     headers:
       User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/63.0.3239.132 Safari/537.36
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
     max-early-data: 2560
-    path: /tr/RWyQSqDDvOL421WNrUZNhdX5N7uE4lS7
-- name: ~6ms | 美国 535
+    path: /eriujtheriughwiue
+- name: ~1ms | 🇺🇸 US 2039 → tg@nicevpn123
+  server: 104.19.45.67
+  port: 80
+  type: vmess
+  uuid: 34cb3f75-316d-362f-9210-a5f86453b0a4
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /xiaodao?ed=2048
+  udp: true
+- name: ~1ms | 美国 755
+  type: vmess
+  network: ws
+  server: 104.16.67.38
+  port: 2052
+  uuid: a1655f51-1e20-4a92-8a11-b7ca30a7a353
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: 7hss-butterfly-d4c3.fijetem432.workers.dev
+    path: /
+- name: ~1ms | trojan-256504395
+  password: 6a0a5673-2406-4fd3-b0e9-8ecbd6d16a3a
+  port: 443
+  server: cdn2.bpcdn.cc
+  skip-cert-verify: false
+  sni: ehofhoe.bpuk2026.top
+  type: trojan
+  udp: true
+- name: ~1ms | 美国 535
   type: vmess
   network: ws
   server: 172.66.44.197
@@ -2331,73 +1559,73 @@ proxies:
     headers:
       Host: d.pgypgykmoljklj.xyz
     path: /mR17oBKzZ7
-- name: ~6ms | 🏁RELAY-104.31.16.46-7741
-  server: 104.31.16.46
+- name: ~1ms | 🏁RELAY-172.67.131.245-7441
+  server: 172.67.131.245
   port: 80
   type: vmess
-  uuid: 8abe9496-5e24-4e49-b566-dcf86116017d
+  uuid: 0b65bb06-6b28-487a-8e3c-820dda51e977
   alterId: 0
-  cipher: auto
+  cipher: chacha20-poly1305
   tls: false
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /i99LgvSaslbsPLLQQ7j6Z
-- name: ~6ms | 美国 109
+    path: /dT9s3HqgZeD3eApzDAfhOHq
+- name: ~1ms | 🇺🇸 US 262 → tg@nicevpn123
+  server: 172.67.185.79
+  port: 8080
   type: vmess
-  network: ws
-  server: 104.21.82.183
-  port: 8880
-  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
-  skip-cert-verify: true
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
   alterId: 0
   cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
   ws-opts:
-    headers:
-      Host: server26.beheshtbaneh.com
     path: /
-- name: ~6ms | 🇺🇸 US 1945 → tg@nicevpn123
-  server: 104.19.44.180
-  port: 80
-  type: vmess
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /xn--mes53ddysu0o3gl
   udp: true
-- name: ~6ms | 🇺🇸 US 2016 → tg@nicevpn123
-  server: 104.19.44.85
-  port: 80
+- name: ~1ms | 巴西 007
   type: vmess
-  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
   network: ws
-  ws-opts:
-    path: /xn--mes53ddysu0o3gl
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: ~6ms | 02.24|freesub|美国01
-  network: ws
+  server: 188.114.96.3
   port: 443
-  server: 104.16.23.3
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   skip-cert-verify: true
   tls: true
-  type: vmess
-  uuid: 248f4f6f-270c-47f7-bea8-ed9d89440054
+  alterId: 0
+  cipher: auto
   ws-opts:
     headers:
-      host: yzkoyeb-7595333.koyeb.app
+      Host: oliv.beauty
+    path: linkvws
+- name: ~1ms | 🇺🇸 US 2013 → tg@nicevpn123
+  server: 104.19.44.241
+  port: 80
+  type: vmess
+  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /xn--mes53ddysu0o3gl
+  udp: true
+- name: ~1ms | 美国 994
+  type: vmess
+  network: ws
+  server: 104.18.25.92
+  port: 2052
+  uuid: f584de15-2034-4170-a723-f48c2bae5e0f
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: mysan2.jaquay22.workers.dev
     path: /
-- name: ~6ms | 🇺🇸 US 18 → tg@nicevpn123
-  server: 104.19.45.211
+- name: ~1ms | 🇺🇸 US 813 → tg@nicevpn123
+  server: 104.19.45.241
   port: 2095
   type: vmess
   uuid: 7a737f41-b792-4260-94ff-3d864da67b80
@@ -2409,47 +1637,124 @@ proxies:
   ws-opts:
     path: /
   udp: true
-- name: ~6ms | 🇺🇸 US 367 → tg@nicevpn123
-  server: 104.16.39.179
-  port: 2082
+- name: ~1ms | FR法国(mibei77.com 米贝节点分享)_11
+  password: humanity
+  port: 443
+  server: 159.112.235.52
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /assignment
+- alterId: 0
+  cipher: auto
+  name: ~1ms | 🇩🇪德国DE153 测速未知中性 TG@jcnode
+  network: ws
+  port: 443
+  server: 172.64.153.159
+  servername: renderer-stream-2-62.mirra.now
+  tls: true
   type: vmess
-  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  uuid: db50a20e-7ff5-4e70-948f-17cc9ca7c154
+  ws-opts:
+    headers:
+      Host: renderer-stream-2-62.mirra.now
+    path: /api/v1/gpu-stream/socket
+- name: ~1ms | 🇺🇸 US 1743 → tg@nicevpn123
+  server: 104.21.23.231
+  port: 2095
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /ws?ed=2048
-  udp: true
-- name: ~6ms | 美国 563
-  type: vmess
-  network: ws
-  server: RACKNERD.COM
-  port: 2086
-  uuid: c2a55def-e91e-4132-c504-0f276c4c3a1e
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: RACKNERD.COM
-    path: /aries
-- name: ~6ms | 美国 796
-  type: vmess
-  network: ws
-  server: 7cRom.c6tu5uwk9.buzz
-  port: 80
-  uuid: 53598401-31e1-4ce3-bb2e-6c00a8fc3e01
-  skip-cert-verify: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: sg03.d9ab-22af-fc39ef1d39a0.cfd
     path: /
-- name: ~6ms | 🇺🇸 US 1937 → tg@nicevpn123
-  server: 104.19.44.143
+  udp: true
+- name: ~1ms | 🇺🇸 US 1244 → tg@nicevpn123
+  server: 104.26.14.85
+  port: 2083
+  type: trojan
+  password: 5041df4c-b3ae-481d-adf9-79b39f4810f2
+  sni: taqboostan.zagros.top
+  skip-cert-verify: true
+  udp: true
+- name: ~1ms | 🏁RELAY-172.67.216.97-7405
+  server: 172.67.216.97
+  port: 2095
+  type: vmess
+  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /hgcefomn
+- alterId: 0
+  cipher: auto
+  name: ~1ms | 🇺🇸美国US062 1.75MB/s中性 TG@jcnode
+  network: ws
+  port: 443
+  server: US122203.ssgreen.org
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 4b772b7e-9d77-4568-93ea-2eb8bf2bcca8
+  ws-opts:
+    path: /wes
+- name: ~1ms | 🇺🇸 US 293 → tg@nicevpn123
+  server: 104.19.43.217
+  port: 80
+  type: vmess
+  uuid: 5d815dc6-a795-44ff-aeb6-7ee16a7a1c57
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /needay?ed=2048
+  udp: true
+- name: ~1ms | 分享日记_100
+  network: ws
+  password: humanity
+  port: 443
+  server: 188.114.97.7
+  skip-cert-verify: true
+  sni: wWw.Volumeroot.cOm.
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: www.volumerOot.coM.http/1.1
+    path: /assignment
+- name: ~1ms | 🇺🇸 US 58 → tg@nicevpn123
+  server: 104.21.227.36
+  port: 80
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: ~1ms | trojan-16411
+  password: humanity
+  port: 443
+  server: 45.130.125.126
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  udp: true
+- name: ~1ms | 🇺🇸 US 1915 → tg@nicevpn123
+  server: 104.19.44.46
   port: 80
   type: vmess
   uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
@@ -2461,21 +1766,474 @@ proxies:
   ws-opts:
     path: /xn--mes53ddysu0o3gl
   udp: true
-- name: ~6ms | 美国 392
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: ~1ms | 🇫🇷FR_1872|229KB/s|M003-260806 01
+  network: ws
+  password: A4u^p(_UR*F6
+  port: 443
+  server: 104.18.32.47
+  skip-cert-verify: true
+  sni: 027.eLECTROcelLCO-cf-027.WorKerS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G610F Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /eyJqdW5rIjoidDJ0UDljR2ZIaVBQakg2byIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+- alterId: '0'
+  cipher: auto
+  name: ~1ms | 🇬🇧GB²_1|5.0MB/s|52%|GPT|D+|X
+  network: ws
+  port: 443
+  server: cf-proxy.202507.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: fa8c811b-7bd3-4c04-b9dd-c701698f1efd
+  ws-opts:
+    headers:
+      Host: gb.202507.xyz
+    path: /
+  xudp: true
+- name: ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_204
+  password: humanity
+  port: 443
+  server: 104.18.22.63
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: /assignment
+- name: ~1ms | 🇺🇸 US 1749 → tg@nicevpn123
+  server: 104.21.225.187
+  port: 80
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: ~1ms | 🇺🇸 US 2019 → tg@nicevpn123
+  server: 104.19.44.207
+  port: 80
+  type: vmess
+  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /xn--mes53ddysu0o3gl
+  udp: true
+- name: ~1ms | 🇺🇸 US 1605 → tg@nicevpn123
+  server: 104.19.45.243
+  port: 2095
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: ~1ms | 🇺🇸 US 828 → tg@nicevpn123
+  server: 104.21.225.223
+  port: 80
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+  udp: true
+- name: ~1ms | 美国 361
   type: vmess
   network: ws
-  server: www.wto.org
+  server: 104.21.12.173
   port: 443
-  uuid: f12302a6-a99c-4ff4-b333-cb5b48ec73ea
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   skip-cert-verify: true
   tls: true
   alterId: 0
   cipher: auto
   ws-opts:
     headers:
-      Host: www.wto.org
-    path: f12302a6-a99c-4ff4-b333-cb5b48ec73ea-vm
-- name: ~6ms | 美国 539
+      Host: meroiy.icu
+    path: /linkvws
+- name: ~1ms | 🇺🇸 US 62 → tg@nicevpn123
+  server: 104.16.40.106
+  port: 2082
+  type: vmess
+  uuid: 37d8c992-6170-40e9-89dd-e9a2647223f8
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+  udp: true
+- name: ~1ms | 🏁RELAY-162.159.242.211-7515
+  server: 162.159.242.211
+  port: 2095
+  type: vmess
+  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /hgcefomn
+- name: ~1ms | 🇺🇸 US 1602 → tg@nicevpn123
+  server: 104.21.235.6
+  port: 80
+  type: vmess
+  uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+  udp: true
+- name: ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_72
+  password: humanity
+  port: 443
+  server: 104.18.152.229
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /assignment
+- name: ~1ms | 美国 124
+  type: vmess
+  network: ws
+  server: powerservice.com
+  port: 443
+  uuid: 0764a598-82c4-4b41-ba10-551a625beed5
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: uk2.v2rayserv.com
+    path: /
+- name: ~1ms | 🇺🇸 US 1515 → tg@nicevpn123
+  server: 172.67.188.156
+  port: 8880
+  type: vmess
+  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: ~1ms | trojan-226579427
+  password: MITIVPN
+  port: 443
+  server: 104.19.229.21
+  skip-cert-verify: false
+  sni: ddee2-mitivpn--mitivpn--mitivpn---mitivpn--mitivpn--mitivpn.kingnetwork.ir
+  type: trojan
+  udp: true
+- name: ~1ms | 🏁RELAY-203.23.106.157-7273
+  server: 203.23.106.157
+  port: 443
+  type: vmess
+  uuid: 824c58b1-65ba-4680-a609-663a000dbb92
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /wss13889
+- name: ~1ms | 荷兰 025
+  type: vmess
+  network: ws
+  server: 45.149.12.84
+  port: 443
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /
+- name: ~1ms | 🇺🇸 US 985 → tg@nicevpn123
+  server: 104.19.45.95
+  port: 2095
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: ~1ms | 🇺🇸 US 1235 → tg@nicevpn123
+  server: 104.18.21.81
+  port: 8443
+  type: vmess
+  uuid: 2b6ff9f6-00b6-4bc7-e16f-a7f1f4d43e4c
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /build
+  udp: true
+- name: ~1ms | 🇺🇸 US 824 → tg@nicevpn123
+  server: 104.19.45.140
+  port: 2095
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_123
+  password: humanity
+  port: 443
+  server: 104.18.152.225
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /assignment
+- name: ~1ms | 🏁RELAY-172.67.81.238-7387
+  server: 172.67.81.238
+  port: 443
+  type: vmess
+  uuid: 1af4ba3d-e60f-4f83-b38b-23fc181f676d
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /11201
+- name: ~1ms | 分享日记_336
+  network: ws
+  password: 2f211aae-3678-47a6-b231-46304443772f
+  port: 443
+  server: 188.114.97.82
+  skip-cert-verify: false
+  sni: cdir-0203.wlfvip.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: cdir-0203.wlfvip.comhttp/1.1
+    path: /trojanws
+- name: ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_206
+  password: humanity
+  port: 443
+  server: 104.16.174.117
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: /assignment
+- name: ~1ms | 🇺🇸 US 1728 → tg@nicevpn123
+  server: 104.21.237.184
+  port: 80
+  type: vmess
+  uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+  udp: true
+- name: ~1ms | 🇺🇸 US 1958 → tg@nicevpn123
+  server: 104.19.44.119
+  port: 80
+  type: vmess
+  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /xn--mes53ddysu0o3gl
+  udp: true
+- name: ~1ms | 🇺🇸 US 1931 → tg@nicevpn123
+  server: 104.19.44.200
+  port: 80
+  type: vmess
+  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /xn--mes53ddysu0o3gl
+  udp: true
+- name: ~1ms | IT 17 → tg@nicevpn123
+  server: 188.114.96.65
+  port: 8443
+  type: vmess
+  uuid: 2b6ff9f6-00b6-4bc7-e16f-a7f1f4d43e4c
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_254
+  password: humanity
+  port: 443
+  server: 104.16.174.36
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /assignment
+- alterId: 0
+  cipher: auto
+  name: ~1ms | 🇯🇵日本JP027 1.44MB/s纯净 TG@jcnode
+  network: ws
+  port: 443
+  server: JP032008.ssgreen.org
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 3bae7625-c407-42ac-9d5d-52bb825c7ad1
+  ws-opts:
+    path: /wes
+- name: ~1ms | 🇺🇸 US 935 → tg@nicevpn123
+  server: 104.18.36.119
+  port: 2052
+  type: vmess
+  uuid: aec82fa6-ab70-4d0a-e7fb-422ef729d961
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: ~1ms | 🇺🇸 US 1791 → tg@nicevpn123
+  server: 172.67.223.242
+  port: 2086
+  type: vmess
+  uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: ~1ms | 美国 833
+  type: vmess
+  network: ws
+  server: amszxc.66666654.xyz
+  port: 2095
+  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: amszxc.66666654.xyz
+    path: /hgcefomn
+- name: ~1ms | trojan-11673
+  password: humanity
+  port: 443
+  server: 104.18.12.149
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  udp: true
+- name: ~1ms | 美国 083
+  type: vmess
+  network: ws
+  server: 104.21.4.29
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: oliv.beauty
+    path: linkvws
+- name: ~1ms | 🇺🇸 US 1359 → tg@nicevpn123
+  server: 104.16.43.255
+  port: 2082
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+  udp: true
+- name: ~1ms | 🇺🇸 US 1249 → tg@nicevpn123
+  server: 104.21.84.38
+  port: 8880
+  type: vmess
+  uuid: f9c92e9c-5f92-4ff7-99a1-91a973b6ec57
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: ~1ms | 美国 539
   type: vmess
   network: ws
   server: 23.227.38.38
@@ -2489,35 +2247,46 @@ proxies:
     headers:
       Host: oplg1.cfcdn2.xyz
     path: /AUIKN8AU
-- name: ~6ms | 美国 1024
+- name: ~1ms | 🇺🇸 US 837 → tg@nicevpn123
+  server: 104.21.235.58
+  port: 80
   type: vmess
-  network: ws
-  server: 104.16.67.38
-  port: 8080
-  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
-  skip-cert-verify: true
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   alterId: 0
   cipher: auto
-  ws-opts:
-    headers:
-      Host: square-snowflake-486a.beshir-beisel.workers.dev
-    path: /linde06.indiavideo.sbs/linkws
-- name: ~6ms | 美国 144
-  type: vmess
-  network: ws
-  server: 172.64.155.200
-  port: 443
-  uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4
+  tls: false
   skip-cert-verify: true
-  tls: true
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+  udp: true
+- name: ~1ms | 🏁RELAY-162.159.36.103-7501
+  server: 162.159.36.103
+  port: 2095
+  type: vmess
+  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
   alterId: 0
   cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
   ws-opts:
-    headers:
-      Host: lg4.zhujicn2.com
-    path: /
-- name: ~6ms | 🇺🇸 US 2009 → tg@nicevpn123
-  server: 104.19.44.114
+    path: /hgcefomn
+- name: ~1ms | 🇺🇸 US 845 → tg@nicevpn123
+  server: 104.16.42.68
+  port: 2082
+  type: vmess
+  uuid: f7fe7b40-5eb2-450b-bee7-86e2ff2c97be
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+  udp: true
+- name: ~1ms | 🇺🇸 US 1949 → tg@nicevpn123
+  server: 104.19.44.220
   port: 80
   type: vmess
   uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
@@ -2529,37 +2298,11 @@ proxies:
   ws-opts:
     path: /xn--mes53ddysu0o3gl
   udp: true
-- name: '~6ms | 美国 038 #2'
-  type: vmess
-  network: ws
-  server: 104.16.199.1
-  port: 443
-  uuid: 45202b35-eae3-4e34-84af-b42060fb9187
-  skip-cert-verify: false
-  tls: true
-  alterId: 0
-  cipher: auto
-  ws-opts:
-    headers:
-      Host: ioi.xxioixx.tk
-    path: /
-- name: ~6ms | 🏁RELAY-172.67.191.240-7420
-  server: 172.67.191.240
+- name: ~1ms | 🇺🇸 US 1318 → tg@nicevpn123
+  server: 104.21.225.104
   port: 80
   type: vmess
-  uuid: 92eb32af-ec3c-40d4-ab83-c3df80af64af
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: ~6ms | 🇺🇸 US 1496 → tg@nicevpn123
-  server: 104.18.15.149
-  port: 80
-  type: vmess
-  uuid: 002cdc9f-63ae-4b3f-8720-3b3f760b487d
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   alterId: 0
   cipher: auto
   tls: false
@@ -2568,6 +2311,216 @@ proxies:
   ws-opts:
     path: /
   udp: true
+- alterId: 0
+  cipher: auto
+  name: ~1ms | 🇯🇵日本JP024 1.55MB/s纯净 TG@jcnode
+  network: ws
+  port: 443
+  server: JP032001.ssgreen.org
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f2b4f9af-5934-455d-89ff-cf2ed4158ec6
+  ws-opts:
+    path: /wes
+- name: ~1ms | 🇺🇸 US 160 → tg@nicevpn123
+  server: 104.19.45.81
+  port: 2095
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: ~1ms | 美国 662
+  type: vmess
+  network: ws
+  server: 172.67.138.140
+  port: 443
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: ivideos.sbs
+    path: /linkws
+- name: ~1ms | 🇺🇸 US 66 → tg@nicevpn123
+  server: 104.20.26.40
+  port: 8080
+  type: vmess
+  uuid: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
+  udp: true
+- name: ~1ms | 🏁RELAY-172.67.201.142-2897
+  server: cf-az01-81.clashzone.xyz
+  port: 8443
+  type: vmess
+  uuid: 430b6895-2e0f-4716-9410-e1339d0f9af6
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /v2az81
+    headers:
+      Host: cf-az01-81.clashzone.xyz
+- name: ~1ms | 🇺🇸 US 1260 → tg@nicevpn123
+  server: 104.19.45.161
+  port: 2095
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+  udp: true
+- name: ~1ms | 伯利兹 005
+  type: vmess
+  network: ws
+  server: 203.30.191.9
+  port: 443
+  uuid: c5a2d7b8-bf84-4f97-8577-b9b87f2baaf7
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: oplg1.cfcdn2.xyz
+    path: /AUIKN8AU
+- name: ~1ms | 🇺🇸 US 552 → tg@nicevpn123
+  server: 104.16.39.94
+  port: 2082
+  type: vmess
+  uuid: f1c67059-9b50-4866-bc0c-a7288c1b920a
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+  udp: true
+- name: ~1ms | 🏁RELAY-172.67.237.176-7404
+  server: 172.67.237.176
+  port: 2095
+  type: vmess
+  uuid: 417d27fb-cb93-3bd8-9bf7-71cd91319821
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /hgcefomn
+- name: ~1ms | 英国 021
+  type: vmess
+  network: ws
+  server: 185.162.228.230
+  port: 443
+  uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a
+  skip-cert-verify: true
+  tls: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: lg10.cfcdn1.xyz
+    path: /A2DJOPFT
+- name: ~1ms | 🇺🇸 US 1373 → tg@nicevpn123
+  server: 104.19.48.199
+  port: 2082
+  type: vmess
+  uuid: 753443e5-052c-4476-9cfa-3f434ff2f986
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws?ed=2048
+  udp: true
+- alpn:
+  - h3
+  client-fingerprint: chrome
+  name: ~1ms | 🇫🇷FR_1417|484KB/s|B007-260618 01
+  network: ws
+  password: '123456'
+  port: 443
+  server: 104.19.150.163
+  skip-cert-verify: false
+  sni: now-pages-sub-em4.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/68.0.3440.106 Safari/537.36
+    max-early-data: 2560
+    path: /
+- name: ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_90
+  password: humanity
+  port: 443
+  server: 104.18.152.244
+  skip-cert-verify: true
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.ignitelimit.com
+    path: /assignment
+- name: ~1ms | 美国 837
+  type: vmess
+  network: ws
+  server: 104.26.14.137
+  port: 80
+  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  skip-cert-verify: true
+  alterId: 0
+  cipher: auto
+  ws-opts:
+    headers:
+      Host: tr1-smart.adelping.com.
+    path: /?BIA_TELEGRAM
+- name: ~1ms | 🇺🇸 US 1920 → tg@nicevpn123
+  server: 104.19.44.5
+  port: 80
+  type: vmess
+  uuid: 1cfaad16-d2ba-4c49-af07-d7b9f11f43d0
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /xn--mes53ddysu0o3gl
+  udp: true
+- name: ~1ms | 🇺🇸 US 1709 → tg@nicevpn123
+  server: 104.17.147.8
+  port: 443
+  type: trojan
+  password: 4aec4e7f8cf8454ea4613659822e1a61
+  sni: jobscareerforstudent.com
+  skip-cert-verify: true
+  udp: true
 proxy-groups:
 - name: FAST
   type: url-test
@@ -2575,213 +2528,216 @@ proxy-groups:
   interval: 180
   tolerance: 50
   proxies:
-  - 21ms | 🇺🇸US_433|571KB/s|M003-260806
+  - 7ms | shadowsocks-1827963705
+  - 33ms | shadowsocks-1827963676
+  - 58ms | 🇺🇸US_408|591KB/s|S004-260618
+  - 158ms | 分享日记_19
 - name: AUTO
   type: url-test
   url: http://cp.cloudflare.com/generate_204
   interval: 600
   tolerance: 80
   proxies: &id001
-  - 21ms | 🇺🇸US_433|571KB/s|M003-260806
-  - ~5ms | 🏁RELAY-172.67.204.73-7414
-  - ~5ms | 美国 542
-  - ~5ms | 🏁RELAY-104.31.16.58-7733
-  - ~5ms | 🏁RELAY-104.31.16.196-7788
-  - ~5ms | 🏁RELAY-104.31.16.35-7751
-  - ~5ms | 美国 997
-  - ~5ms | 🇺🇸 US 1824 → tg@nicevpn123
-  - ~5ms | 🏁RELAY-104.31.16.27-7778
-  - ~5ms | 🇺🇸 US 1795 → tg@nicevpn123
-  - ~5ms | 🇫🇷FR_1200|1.2MB/s|C002-260622 01
-  - ~5ms | 未知_🏳️_youtube@资源分享师_ZZ_94
-  - ~5ms | 伯利兹 010
-  - ~5ms | 🇺🇸 US 1172 → tg@nicevpn123
-  - ~5ms | 美国 483
-  - ~5ms | 🇺🇸 US 2032 → tg@nicevpn123
-  - ~5ms | 🏁RELAY-104.31.16.216-7781
-  - ~5ms | 🇺🇸 US 300 → tg@nicevpn123
-  - ~5ms | 🏁RELAY-104.31.16.28-7774
-  - ~5ms | 伯利兹 017
-  - ~5ms | 分享日记_539
-  - ~5ms | FR法国(mibei77.com 米贝节点分享)_10
-  - ~5ms | 🇺🇸 US 845 → tg@nicevpn123
-  - ~5ms | trojan-222616514
-  - '~5ms | 美国 089 #2'
-  - ~5ms | 美国 643
-  - ~5ms | 🇺🇸 US 1968 → tg@nicevpn123
-  - ~5ms | 伯利兹 009
-  - ~5ms | 🇺🇸 US 639 → tg@nicevpn123
-  - ~5ms | 🇺🇸 US 1974 → tg@nicevpn123
-  - ~5ms | 🏁RELAY-141.193.213.10-2951
-  - ~5ms | 🇺🇸 US 1725 → tg@nicevpn123
-  - ~5ms | 🏁RELAY-162.159.133.130-7525
-  - ~5ms | 🇺🇸 US 1296 → tg@nicevpn123
-  - ~5ms | 🏁RELAY-104.31.16.37-7749
-  - ~5ms | trojan-2516799
-  - ~5ms | 🇺🇸 US 1989 → tg@nicevpn123
-  - ~5ms | 美国 911
-  - ~5ms | 🇺🇸 US 757 → tg@nicevpn123
-  - ~5ms | 美国 097 [9077d3fb5f7776dc]
-  - ~5ms | 🇺🇸 US 1260 → tg@nicevpn123
-  - ~5ms | 未知_🏳️_youtube@资源分享师_ZZ_117
-  - ~5ms | 美国 837
-  - ~5ms | 🇫🇷FR_920|357KB/s|B007-260618 01
-  - ~5ms | 🇺🇸 US 1867 → tg@nicevpn123
-  - ~5ms | 美国 516
-  - ~5ms | 🇺🇸 US 2022 → tg@nicevpn123
-  - ~5ms | 🏁RELAY-172.67.193.109-7418
-  - ~5ms | 美国 634
-  - ~5ms | 未知_🏳️_youtube@资源分享师_ZZ_185
-  - ~5ms | 🇺🇸 US 841 → tg@nicevpn123
-  - ~5ms | 🏁RELAY-154.92.9.99-7538
-  - ~5ms | 🇺🇸 US 1976 → tg@nicevpn123
-  - ~5ms | 🏁RELAY-104.31.16.32-7757
-  - ~5ms | 🇺🇸 US 1548 → tg@nicevpn123
-  - ~5ms | 分享日记_311
-  - ~5ms | 保加利亚 001
-  - ~5ms | 分享日记_580
-  - ~5ms | 🇺🇸 US 1341 → tg@nicevpn123
-  - ~5ms | 🇺🇸 US 2024 → tg@nicevpn123
-  - ~5ms | 🇺🇸 US 1054 → tg@nicevpn123
-  - ~5ms | 🇺🇸 US 733 → tg@nicevpn123
-  - ~5ms | 美国 432
-  - ~5ms | 🇺🇸 US 20 → tg@nicevpn123
-  - ~5ms | 美国 541
-  - ~5ms | 🏴‍☠_2Relay_🇺🇦UA-🇺🇸US_940|6.5MB/s|X
-  - ~5ms | 分享日记_575
-  - ~5ms | 🇺🇸 US 2027 → tg@nicevpn123
-  - ~5ms | 🏁RELAY-172.67.211.43-7412
-  - ~5ms | 🇺🇸 US 86 → tg@nicevpn123
-  - ~5ms | 🇺🇸 US 127 → tg@nicevpn123
-  - ~5ms | vmess-1827161107
-  - ~5ms | 🏁RELAY-104.27.203.169-7794
-  - ~5ms | 🇺🇸 US 404 → tg@nicevpn123
-  - ~5ms | 🇺🇸 US 1955 → tg@nicevpn123
-  - ~5ms | 🇺🇸 US 144 → tg@nicevpn123
-  - ~5ms | 分享日记_380_3
-  - ~5ms | 美国 833
-  - ~5ms | 🇺🇸 US 1994 → tg@nicevpn123
-  - ~5ms | 美国 836
-  - ~5ms | 🏁RELAY-172.67.188.110-7427
-  - ~5ms | 🏁RELAY-162.159.138.46-7523
-  - ~5ms | 分享日记_465
-  - ~5ms | 保加利亚 003
-  - ~5ms | 英国 019
-  - ~5ms | 🇺🇸 US 860 → tg@nicevpn123
-  - ~5ms | 🇺🇸 US 681 → tg@nicevpn123
-  - ~5ms | 🇺🇸 US 1241 → tg@nicevpn123
-  - ~5ms | 美国 534
-  - ~5ms | 🇮🇩[www.v2nodes.com] trojan-ID-...
-  - ~5ms | 美国 205
-  - ~5ms | 🇺🇸 US 2018 → tg@nicevpn123
-  - ~5ms | 立陶宛 003
-  - ~5ms | 🏁RELAY-203.23.106.157-7274
-  - ~5ms | 🏁RELAY-198.41.222.199-7286
-  - ~5ms | 🇺🇸 US 1791 → tg@nicevpn123
-  - ~5ms | US美国(mibei77.com 米贝节点分享)_138
-  - ~5ms | 美国 423
-  - ~5ms | 🇺🇸 US 23 → tg@nicevpn123
-  - ~5ms | 美国 425
-  - ~5ms | 🏁RELAY-154.92.9.86-7542
-  - ~5ms | 🏁RELAY-104.17.101.35-7882
-  - ~6ms | 🏁RELAY-104.31.16.65-7727
-  - ~6ms | 🏁RELAY-104.31.16.210-7783
-  - ~6ms | 🇺🇸 US 1073 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 1938 → tg@nicevpn123
-  - ~6ms | 🏁RELAY-172.67.216.97-7405
-  - ~6ms | 🇺🇸 US 1883 → tg@nicevpn123
-  - ~6ms | trojan-226579427
-  - ~6ms | 🇩🇪德国DE121 测速未知中性 TG@jcnode
-  - ~6ms | vmess-1827157636
-  - ~6ms | 🇺🇸 US 1079 → tg@nicevpn123
-  - ~6ms | trojan-2519801
-  - ~6ms | 美国 336
-  - ~6ms | 🇺🇸 US 1953 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 1943 → tg@nicevpn123
-  - '~6ms | 其他 035 #2'
-  - ~6ms | 02.24|freesub|哥斯达黎加
-  - ~6ms | 美国 578
-  - ~6ms | 伯利兹 012
-  - ~6ms | 🏁RELAY-172.67.197.57-7415
-  - ~6ms | 🇺🇸 US 652 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 1728 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 1940 → tg@nicevpn123
-  - ~6ms | 美国 226
-  - ~6ms | 🇺🇸 US 296 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 1942 → tg@nicevpn123
-  - ~6ms | trojan-1827148866
-  - ~6ms | 🇺🇸 US 1964 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 844 → tg@nicevpn123
-  - ~6ms | 哥斯达黎加 002
-  - ~6ms | 🇺🇸 US 1339 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 2013 → tg@nicevpn123
-  - ~6ms | 法国 001
-  - ~6ms | 🇯🇵 JP 12 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 2039 → tg@nicevpn123
-  - ~6ms | trojan-250718444
-  - ~6ms | 🇺🇸 US 1208 → tg@nicevpn123
-  - ~6ms | 美国 140
-  - ~6ms | 🏁RELAY-162.159.135.251-7524
-  - ~6ms | vmess-1827741482
-  - ~6ms | 🇺🇸 US 730 → tg@nicevpn123
-  - ~6ms | 🏁RELAY-172.67.156.140-1788
-  - '~6ms | 美国 070 #2'
-  - ~6ms | 🇺🇸 US 2028 → tg@nicevpn123
-  - ~6ms | 02.24|freesub|伯利兹|Belize02
-  - ~6ms | 澳大利亚 011
-  - ~6ms | 🏁RELAY-154.92.9.80-7547
-  - ~6ms | 🇺🇸 US 718 → tg@nicevpn123
-  - ~6ms | 🏁RELAY-172.67.184.53-7428
-  - ~6ms | 美国 1047
-  - ~6ms | 英国 021
-  - ~6ms | 🇺🇸 US 843 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 2019 → tg@nicevpn123
-  - ~6ms | 伯利兹 015
-  - ~6ms | 🇺🇸 US 1236 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 1950 → tg@nicevpn123
-  - ~6ms | 🏁RELAY-172.64.82.215-7459
-  - ~6ms | 🇺🇸 US 1359 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 1235 → tg@nicevpn123
-  - ~6ms | 🏁RELAY-172.67.215.250-0989
-  - ~6ms | 英国 020
-  - ~6ms | 🇺🇸 US 972 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 1132 → tg@nicevpn123
-  - ~6ms | 未知_🏳️_youtube@资源分享师_ZZ_76
-  - ~6ms | 🇺🇸 US 980 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 949 → tg@nicevpn123
-  - ~6ms | 立陶宛_🇱🇹_youtube@资源分享师_LT_193
-  - ~6ms | 🏁RELAY-104.31.16.40-7746
-  - ~6ms | 分享日记_525
-  - ~6ms | 🇺🇸 US 2014 → tg@nicevpn123
-  - ~6ms | 🏁RELAY-104.16.108.100-7890
-  - ~6ms | trojan-1843512990
-  - ~6ms | 美国 527
-  - ~6ms | 🇺🇸 US 713 → tg@nicevpn123
-  - ~6ms | 🏁RELAY-104.31.16.33-7756
-  - ~6ms | 美国 389
-  - ~6ms | 🇺🇸 US 1908 → tg@nicevpn123
-  - ~6ms | 未知_🏳️_youtube@资源分享师_ZZ_50
-  - ~6ms | 🇺🇸 US 441 → tg@nicevpn123
-  - ~6ms | 🇫🇷FR_685|790KB/s|M003-260806 01
-  - ~6ms | 美国 535
-  - ~6ms | 🏁RELAY-104.31.16.46-7741
-  - ~6ms | 美国 109
-  - ~6ms | 🇺🇸 US 1945 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 2016 → tg@nicevpn123
-  - ~6ms | 02.24|freesub|美国01
-  - ~6ms | 🇺🇸 US 18 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 367 → tg@nicevpn123
-  - ~6ms | 美国 563
-  - ~6ms | 美国 796
-  - ~6ms | 🇺🇸 US 1937 → tg@nicevpn123
-  - ~6ms | 美国 392
-  - ~6ms | 美国 539
-  - ~6ms | 美国 1024
-  - ~6ms | 美国 144
-  - ~6ms | 🇺🇸 US 2009 → tg@nicevpn123
-  - '~6ms | 美国 038 #2'
-  - ~6ms | 🏁RELAY-172.67.191.240-7420
-  - ~6ms | 🇺🇸 US 1496 → tg@nicevpn123
+  - 7ms | shadowsocks-1827963705
+  - 33ms | shadowsocks-1827963676
+  - 58ms | 🇺🇸US_408|591KB/s|S004-260618
+  - 158ms | 分享日记_19
+  - '~0ms | 美国 050 #2'
+  - ~0ms | 🇺🇸 US 1194 → tg@nicevpn123
+  - ~0ms | trojan-250743441
+  - ~0ms | trojan-258617505
+  - ~0ms | 🇺🇸 US 1581 → tg@nicevpn123
+  - ~0ms | 美国_🇺🇸_youtube@资源分享师_US_3
+  - '~1ms | 美国 060 #2'
+  - ~1ms | 美国 823
+  - ~1ms | 02.24|freesub|未知01
+  - ~1ms | 美国 338
+  - ~1ms | 🇹🇭TH泰国丨yoyapai.com_1
+  - ~1ms | 美国_🇺🇸_youtube@资源分享师_US_147
+  - ~1ms | 🇺🇸 US 1863 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1268 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-104.16.91.78-7883
+  - ~1ms | 🏁RELAY-172.67.212.68-7409
+  - ~1ms | 美国 668
+  - ~1ms | 分享日记_461
+  - ~1ms | 🏁RELAY-154.92.9.191-7569
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_236
+  - ~1ms | 🇺🇸 US 1164 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 263 → tg@nicevpn123
+  - ~1ms | 美国 289
+  - ~1ms | 🇺🇸 US 192 → tg@nicevpn123
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_62
+  - ~1ms | 🏁RELAY-172.67.238.152-7402
+  - ~1ms | 🏁RELAY-172.67.147.162-7435
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_96
+  - ~1ms | 🇺🇸 US 1011 → tg@nicevpn123
+  - ~1ms | 美国 655
+  - ~1ms | 🇺🇸 US 1248 → tg@nicevpn123
+  - ~1ms | vmess-1827159895
+  - ~1ms | 哥斯达黎加 001
+  - ~1ms | 🇺🇸 US 1161 → tg@nicevpn123
+  - ~1ms | 美国 019
+  - ~1ms | 🇺🇸 US 2012 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 350 → tg@nicevpn123
+  - ~1ms | 美国 095
+  - ~1ms | 🇺🇸 US 814 → tg@nicevpn123
+  - ~1ms | 美国 110
+  - ~1ms | 🇺🇸 US 2026 → tg@nicevpn123
+  - ~1ms | qilan.de | US VMESS 3736762 | 2.4MB/S HOST
+  - ~1ms | 🏁RELAY-172.67.194.234-7416
+  - ~1ms | 美国 651
+  - ~1ms | 🇺🇸美国US029 1.85MB/s中性 TG@jcnode
+  - ~1ms | 🇺🇸 US 816 → tg@nicevpn123
+  - ~1ms | 美国 017
+  - ~1ms | 美国 408
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_126
+  - ~1ms | 🇺🇸 US 1133 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-104.21.81.238-7821
+  - ~1ms | 🇺🇸 US 2000 → tg@nicevpn123
+  - ~1ms | 美国 658
+  - ~1ms | 🏁RELAY-104.24.154.5-7816
+  - ~1ms | 🇺🇸 US 652 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 888 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1209 → tg@nicevpn123
+  - ~1ms | 🇺🇸US_457|131KB/s|A004-260618 01
+  - ~1ms | 🇺🇸 US 283 → tg@nicevpn123
+  - ~1ms | 🇫🇷FR_2070|501KB/s|M003-260806 01
+  - ~1ms | 🇨🇦 CA 23 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1950 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-172.67.189.8-7426
+  - ~1ms | 🇺🇸 US 844 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1005 → tg@nicevpn123
+  - ~1ms | 美国 520
+  - ~1ms | trojan-1827147300
+  - ~1ms | 🇺🇸 US 1946 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 67 → tg@nicevpn123
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_23
+  - ~1ms | 🇺🇸 US 546 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-141.101.114.33-0051
+  - ~1ms | 巴西 021
+  - ~1ms | 🇺🇸 US 1773 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 296 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 471 → tg@nicevpn123
+  - ~1ms | 美国 438
+  - ~1ms | 伯利兹 020
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_61
+  - ~1ms | 🇺🇸 US 1951 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1394 → tg@nicevpn123
+  - ~1ms | trojan-11695
+  - ~1ms | 🏁RELAY-141.101.120.243-7645
+  - ~1ms | trojan-250743436
+  - ~1ms | 🇺🇸 US 1852 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-172.67.212.128-7411
+  - ~1ms | 🇺🇸 US 1074 → tg@nicevpn123
+  - ~1ms | 伯利兹 015
+  - ~1ms | 🇺🇸 US 1247 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 973 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 922 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-104.31.16.196-7785
+  - ~1ms | 美国 822
+  - ~1ms | 🇺🇸 US 972 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-172.67.199.34-2914
+  - ~1ms | 🇺🇸 US 1823 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1928 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 843 → tg@nicevpn123
+  - ~1ms | 美国 839
+  - ~1ms | 🏁RELAY-104.31.16.35-7751
+  - ~1ms | 🇺🇸 US 1234 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1564 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-172.67.237.73-7403
+  - ~1ms | trojan-258596218
+  - ~1ms | 美国 421
+  - ~1ms | 分享日记_546
+  - ~1ms | 🇺🇸 US 238 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1135 → tg@nicevpn123
+  - ~1ms | 美国 824
+  - ~1ms | 分享日记_9
+  - ~1ms | 🇫🇷FR²_4|4.5MB/s|D+|X
+  - ~1ms | 🇺🇸 US 464 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1396 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 554 → tg@nicevpn123
+  - ~1ms | US美国(mibei77.com 米贝节点分享)_56
+  - ~1ms | 🇸🇬SG_81|656KB/s|M002-260618 01
+  - ~1ms | 🇺🇸 US 2039 → tg@nicevpn123
+  - ~1ms | 美国 755
+  - ~1ms | trojan-256504395
+  - ~1ms | 美国 535
+  - ~1ms | 🏁RELAY-172.67.131.245-7441
+  - ~1ms | 🇺🇸 US 262 → tg@nicevpn123
+  - ~1ms | 巴西 007
+  - ~1ms | 🇺🇸 US 2013 → tg@nicevpn123
+  - ~1ms | 美国 994
+  - ~1ms | 🇺🇸 US 813 → tg@nicevpn123
+  - ~1ms | FR法国(mibei77.com 米贝节点分享)_11
+  - ~1ms | 🇩🇪德国DE153 测速未知中性 TG@jcnode
+  - ~1ms | 🇺🇸 US 1743 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1244 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-172.67.216.97-7405
+  - ~1ms | 🇺🇸美国US062 1.75MB/s中性 TG@jcnode
+  - ~1ms | 🇺🇸 US 293 → tg@nicevpn123
+  - ~1ms | 分享日记_100
+  - ~1ms | 🇺🇸 US 58 → tg@nicevpn123
+  - ~1ms | trojan-16411
+  - ~1ms | 🇺🇸 US 1915 → tg@nicevpn123
+  - ~1ms | 🇫🇷FR_1872|229KB/s|M003-260806 01
+  - ~1ms | 🇬🇧GB²_1|5.0MB/s|52%|GPT|D+|X
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_204
+  - ~1ms | 🇺🇸 US 1749 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 2019 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1605 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 828 → tg@nicevpn123
+  - ~1ms | 美国 361
+  - ~1ms | 🇺🇸 US 62 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-162.159.242.211-7515
+  - ~1ms | 🇺🇸 US 1602 → tg@nicevpn123
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_72
+  - ~1ms | 美国 124
+  - ~1ms | 🇺🇸 US 1515 → tg@nicevpn123
+  - ~1ms | trojan-226579427
+  - ~1ms | 🏁RELAY-203.23.106.157-7273
+  - ~1ms | 荷兰 025
+  - ~1ms | 🇺🇸 US 985 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1235 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 824 → tg@nicevpn123
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_123
+  - ~1ms | 🏁RELAY-172.67.81.238-7387
+  - ~1ms | 分享日记_336
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_206
+  - ~1ms | 🇺🇸 US 1728 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1958 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1931 → tg@nicevpn123
+  - ~1ms | IT 17 → tg@nicevpn123
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_254
+  - ~1ms | 🇯🇵日本JP027 1.44MB/s纯净 TG@jcnode
+  - ~1ms | 🇺🇸 US 935 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1791 → tg@nicevpn123
+  - ~1ms | 美国 833
+  - ~1ms | trojan-11673
+  - ~1ms | 美国 083
+  - ~1ms | 🇺🇸 US 1359 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1249 → tg@nicevpn123
+  - ~1ms | 美国 539
+  - ~1ms | 🇺🇸 US 837 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-162.159.36.103-7501
+  - ~1ms | 🇺🇸 US 845 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1949 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1318 → tg@nicevpn123
+  - ~1ms | 🇯🇵日本JP024 1.55MB/s纯净 TG@jcnode
+  - ~1ms | 🇺🇸 US 160 → tg@nicevpn123
+  - ~1ms | 美国 662
+  - ~1ms | 🇺🇸 US 66 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-172.67.201.142-2897
+  - ~1ms | 🇺🇸 US 1260 → tg@nicevpn123
+  - ~1ms | 伯利兹 005
+  - ~1ms | 🇺🇸 US 552 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-172.67.237.176-7404
+  - ~1ms | 英国 021
+  - ~1ms | 🇺🇸 US 1373 → tg@nicevpn123
+  - ~1ms | 🇫🇷FR_1417|484KB/s|B007-260618 01
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_90
+  - ~1ms | 美国 837
+  - ~1ms | 🇺🇸 US 1920 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1709 → tg@nicevpn123
 - name: AUTO-GOOGLE
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -2795,205 +2751,205 @@ proxy-groups:
   - AUTO
   - AUTO-GOOGLE
   - DIRECT
-  - 21ms | 🇺🇸US_433|571KB/s|M003-260806
-  - ~5ms | 🏁RELAY-172.67.204.73-7414
-  - ~5ms | 美国 542
-  - ~5ms | 🏁RELAY-104.31.16.58-7733
-  - ~5ms | 🏁RELAY-104.31.16.196-7788
-  - ~5ms | 🏁RELAY-104.31.16.35-7751
-  - ~5ms | 美国 997
-  - ~5ms | 🇺🇸 US 1824 → tg@nicevpn123
-  - ~5ms | 🏁RELAY-104.31.16.27-7778
-  - ~5ms | 🇺🇸 US 1795 → tg@nicevpn123
-  - ~5ms | 🇫🇷FR_1200|1.2MB/s|C002-260622 01
-  - ~5ms | 未知_🏳️_youtube@资源分享师_ZZ_94
-  - ~5ms | 伯利兹 010
-  - ~5ms | 🇺🇸 US 1172 → tg@nicevpn123
-  - ~5ms | 美国 483
-  - ~5ms | 🇺🇸 US 2032 → tg@nicevpn123
-  - ~5ms | 🏁RELAY-104.31.16.216-7781
-  - ~5ms | 🇺🇸 US 300 → tg@nicevpn123
-  - ~5ms | 🏁RELAY-104.31.16.28-7774
-  - ~5ms | 伯利兹 017
-  - ~5ms | 分享日记_539
-  - ~5ms | FR法国(mibei77.com 米贝节点分享)_10
-  - ~5ms | 🇺🇸 US 845 → tg@nicevpn123
-  - ~5ms | trojan-222616514
-  - '~5ms | 美国 089 #2'
-  - ~5ms | 美国 643
-  - ~5ms | 🇺🇸 US 1968 → tg@nicevpn123
-  - ~5ms | 伯利兹 009
-  - ~5ms | 🇺🇸 US 639 → tg@nicevpn123
-  - ~5ms | 🇺🇸 US 1974 → tg@nicevpn123
-  - ~5ms | 🏁RELAY-141.193.213.10-2951
-  - ~5ms | 🇺🇸 US 1725 → tg@nicevpn123
-  - ~5ms | 🏁RELAY-162.159.133.130-7525
-  - ~5ms | 🇺🇸 US 1296 → tg@nicevpn123
-  - ~5ms | 🏁RELAY-104.31.16.37-7749
-  - ~5ms | trojan-2516799
-  - ~5ms | 🇺🇸 US 1989 → tg@nicevpn123
-  - ~5ms | 美国 911
-  - ~5ms | 🇺🇸 US 757 → tg@nicevpn123
-  - ~5ms | 美国 097 [9077d3fb5f7776dc]
-  - ~5ms | 🇺🇸 US 1260 → tg@nicevpn123
-  - ~5ms | 未知_🏳️_youtube@资源分享师_ZZ_117
-  - ~5ms | 美国 837
-  - ~5ms | 🇫🇷FR_920|357KB/s|B007-260618 01
-  - ~5ms | 🇺🇸 US 1867 → tg@nicevpn123
-  - ~5ms | 美国 516
-  - ~5ms | 🇺🇸 US 2022 → tg@nicevpn123
-  - ~5ms | 🏁RELAY-172.67.193.109-7418
-  - ~5ms | 美国 634
-  - ~5ms | 未知_🏳️_youtube@资源分享师_ZZ_185
-  - ~5ms | 🇺🇸 US 841 → tg@nicevpn123
-  - ~5ms | 🏁RELAY-154.92.9.99-7538
-  - ~5ms | 🇺🇸 US 1976 → tg@nicevpn123
-  - ~5ms | 🏁RELAY-104.31.16.32-7757
-  - ~5ms | 🇺🇸 US 1548 → tg@nicevpn123
-  - ~5ms | 分享日记_311
-  - ~5ms | 保加利亚 001
-  - ~5ms | 分享日记_580
-  - ~5ms | 🇺🇸 US 1341 → tg@nicevpn123
-  - ~5ms | 🇺🇸 US 2024 → tg@nicevpn123
-  - ~5ms | 🇺🇸 US 1054 → tg@nicevpn123
-  - ~5ms | 🇺🇸 US 733 → tg@nicevpn123
-  - ~5ms | 美国 432
-  - ~5ms | 🇺🇸 US 20 → tg@nicevpn123
-  - ~5ms | 美国 541
-  - ~5ms | 🏴‍☠_2Relay_🇺🇦UA-🇺🇸US_940|6.5MB/s|X
-  - ~5ms | 分享日记_575
-  - ~5ms | 🇺🇸 US 2027 → tg@nicevpn123
-  - ~5ms | 🏁RELAY-172.67.211.43-7412
-  - ~5ms | 🇺🇸 US 86 → tg@nicevpn123
-  - ~5ms | 🇺🇸 US 127 → tg@nicevpn123
-  - ~5ms | vmess-1827161107
-  - ~5ms | 🏁RELAY-104.27.203.169-7794
-  - ~5ms | 🇺🇸 US 404 → tg@nicevpn123
-  - ~5ms | 🇺🇸 US 1955 → tg@nicevpn123
-  - ~5ms | 🇺🇸 US 144 → tg@nicevpn123
-  - ~5ms | 分享日记_380_3
-  - ~5ms | 美国 833
-  - ~5ms | 🇺🇸 US 1994 → tg@nicevpn123
-  - ~5ms | 美国 836
-  - ~5ms | 🏁RELAY-172.67.188.110-7427
-  - ~5ms | 🏁RELAY-162.159.138.46-7523
-  - ~5ms | 分享日记_465
-  - ~5ms | 保加利亚 003
-  - ~5ms | 英国 019
-  - ~5ms | 🇺🇸 US 860 → tg@nicevpn123
-  - ~5ms | 🇺🇸 US 681 → tg@nicevpn123
-  - ~5ms | 🇺🇸 US 1241 → tg@nicevpn123
-  - ~5ms | 美国 534
-  - ~5ms | 🇮🇩[www.v2nodes.com] trojan-ID-...
-  - ~5ms | 美国 205
-  - ~5ms | 🇺🇸 US 2018 → tg@nicevpn123
-  - ~5ms | 立陶宛 003
-  - ~5ms | 🏁RELAY-203.23.106.157-7274
-  - ~5ms | 🏁RELAY-198.41.222.199-7286
-  - ~5ms | 🇺🇸 US 1791 → tg@nicevpn123
-  - ~5ms | US美国(mibei77.com 米贝节点分享)_138
-  - ~5ms | 美国 423
-  - ~5ms | 🇺🇸 US 23 → tg@nicevpn123
-  - ~5ms | 美国 425
-  - ~5ms | 🏁RELAY-154.92.9.86-7542
-  - ~5ms | 🏁RELAY-104.17.101.35-7882
-  - ~6ms | 🏁RELAY-104.31.16.65-7727
-  - ~6ms | 🏁RELAY-104.31.16.210-7783
-  - ~6ms | 🇺🇸 US 1073 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 1938 → tg@nicevpn123
-  - ~6ms | 🏁RELAY-172.67.216.97-7405
-  - ~6ms | 🇺🇸 US 1883 → tg@nicevpn123
-  - ~6ms | trojan-226579427
-  - ~6ms | 🇩🇪德国DE121 测速未知中性 TG@jcnode
-  - ~6ms | vmess-1827157636
-  - ~6ms | 🇺🇸 US 1079 → tg@nicevpn123
-  - ~6ms | trojan-2519801
-  - ~6ms | 美国 336
-  - ~6ms | 🇺🇸 US 1953 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 1943 → tg@nicevpn123
-  - '~6ms | 其他 035 #2'
-  - ~6ms | 02.24|freesub|哥斯达黎加
-  - ~6ms | 美国 578
-  - ~6ms | 伯利兹 012
-  - ~6ms | 🏁RELAY-172.67.197.57-7415
-  - ~6ms | 🇺🇸 US 652 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 1728 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 1940 → tg@nicevpn123
-  - ~6ms | 美国 226
-  - ~6ms | 🇺🇸 US 296 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 1942 → tg@nicevpn123
-  - ~6ms | trojan-1827148866
-  - ~6ms | 🇺🇸 US 1964 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 844 → tg@nicevpn123
-  - ~6ms | 哥斯达黎加 002
-  - ~6ms | 🇺🇸 US 1339 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 2013 → tg@nicevpn123
-  - ~6ms | 法国 001
-  - ~6ms | 🇯🇵 JP 12 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 2039 → tg@nicevpn123
-  - ~6ms | trojan-250718444
-  - ~6ms | 🇺🇸 US 1208 → tg@nicevpn123
-  - ~6ms | 美国 140
-  - ~6ms | 🏁RELAY-162.159.135.251-7524
-  - ~6ms | vmess-1827741482
-  - ~6ms | 🇺🇸 US 730 → tg@nicevpn123
-  - ~6ms | 🏁RELAY-172.67.156.140-1788
-  - '~6ms | 美国 070 #2'
-  - ~6ms | 🇺🇸 US 2028 → tg@nicevpn123
-  - ~6ms | 02.24|freesub|伯利兹|Belize02
-  - ~6ms | 澳大利亚 011
-  - ~6ms | 🏁RELAY-154.92.9.80-7547
-  - ~6ms | 🇺🇸 US 718 → tg@nicevpn123
-  - ~6ms | 🏁RELAY-172.67.184.53-7428
-  - ~6ms | 美国 1047
-  - ~6ms | 英国 021
-  - ~6ms | 🇺🇸 US 843 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 2019 → tg@nicevpn123
-  - ~6ms | 伯利兹 015
-  - ~6ms | 🇺🇸 US 1236 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 1950 → tg@nicevpn123
-  - ~6ms | 🏁RELAY-172.64.82.215-7459
-  - ~6ms | 🇺🇸 US 1359 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 1235 → tg@nicevpn123
-  - ~6ms | 🏁RELAY-172.67.215.250-0989
-  - ~6ms | 英国 020
-  - ~6ms | 🇺🇸 US 972 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 1132 → tg@nicevpn123
-  - ~6ms | 未知_🏳️_youtube@资源分享师_ZZ_76
-  - ~6ms | 🇺🇸 US 980 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 949 → tg@nicevpn123
-  - ~6ms | 立陶宛_🇱🇹_youtube@资源分享师_LT_193
-  - ~6ms | 🏁RELAY-104.31.16.40-7746
-  - ~6ms | 分享日记_525
-  - ~6ms | 🇺🇸 US 2014 → tg@nicevpn123
-  - ~6ms | 🏁RELAY-104.16.108.100-7890
-  - ~6ms | trojan-1843512990
-  - ~6ms | 美国 527
-  - ~6ms | 🇺🇸 US 713 → tg@nicevpn123
-  - ~6ms | 🏁RELAY-104.31.16.33-7756
-  - ~6ms | 美国 389
-  - ~6ms | 🇺🇸 US 1908 → tg@nicevpn123
-  - ~6ms | 未知_🏳️_youtube@资源分享师_ZZ_50
-  - ~6ms | 🇺🇸 US 441 → tg@nicevpn123
-  - ~6ms | 🇫🇷FR_685|790KB/s|M003-260806 01
-  - ~6ms | 美国 535
-  - ~6ms | 🏁RELAY-104.31.16.46-7741
-  - ~6ms | 美国 109
-  - ~6ms | 🇺🇸 US 1945 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 2016 → tg@nicevpn123
-  - ~6ms | 02.24|freesub|美国01
-  - ~6ms | 🇺🇸 US 18 → tg@nicevpn123
-  - ~6ms | 🇺🇸 US 367 → tg@nicevpn123
-  - ~6ms | 美国 563
-  - ~6ms | 美国 796
-  - ~6ms | 🇺🇸 US 1937 → tg@nicevpn123
-  - ~6ms | 美国 392
-  - ~6ms | 美国 539
-  - ~6ms | 美国 1024
-  - ~6ms | 美国 144
-  - ~6ms | 🇺🇸 US 2009 → tg@nicevpn123
-  - '~6ms | 美国 038 #2'
-  - ~6ms | 🏁RELAY-172.67.191.240-7420
-  - ~6ms | 🇺🇸 US 1496 → tg@nicevpn123
+  - 7ms | shadowsocks-1827963705
+  - 33ms | shadowsocks-1827963676
+  - 58ms | 🇺🇸US_408|591KB/s|S004-260618
+  - 158ms | 分享日记_19
+  - '~0ms | 美国 050 #2'
+  - ~0ms | 🇺🇸 US 1194 → tg@nicevpn123
+  - ~0ms | trojan-250743441
+  - ~0ms | trojan-258617505
+  - ~0ms | 🇺🇸 US 1581 → tg@nicevpn123
+  - ~0ms | 美国_🇺🇸_youtube@资源分享师_US_3
+  - '~1ms | 美国 060 #2'
+  - ~1ms | 美国 823
+  - ~1ms | 02.24|freesub|未知01
+  - ~1ms | 美国 338
+  - ~1ms | 🇹🇭TH泰国丨yoyapai.com_1
+  - ~1ms | 美国_🇺🇸_youtube@资源分享师_US_147
+  - ~1ms | 🇺🇸 US 1863 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1268 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-104.16.91.78-7883
+  - ~1ms | 🏁RELAY-172.67.212.68-7409
+  - ~1ms | 美国 668
+  - ~1ms | 分享日记_461
+  - ~1ms | 🏁RELAY-154.92.9.191-7569
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_236
+  - ~1ms | 🇺🇸 US 1164 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 263 → tg@nicevpn123
+  - ~1ms | 美国 289
+  - ~1ms | 🇺🇸 US 192 → tg@nicevpn123
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_62
+  - ~1ms | 🏁RELAY-172.67.238.152-7402
+  - ~1ms | 🏁RELAY-172.67.147.162-7435
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_96
+  - ~1ms | 🇺🇸 US 1011 → tg@nicevpn123
+  - ~1ms | 美国 655
+  - ~1ms | 🇺🇸 US 1248 → tg@nicevpn123
+  - ~1ms | vmess-1827159895
+  - ~1ms | 哥斯达黎加 001
+  - ~1ms | 🇺🇸 US 1161 → tg@nicevpn123
+  - ~1ms | 美国 019
+  - ~1ms | 🇺🇸 US 2012 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 350 → tg@nicevpn123
+  - ~1ms | 美国 095
+  - ~1ms | 🇺🇸 US 814 → tg@nicevpn123
+  - ~1ms | 美国 110
+  - ~1ms | 🇺🇸 US 2026 → tg@nicevpn123
+  - ~1ms | qilan.de | US VMESS 3736762 | 2.4MB/S HOST
+  - ~1ms | 🏁RELAY-172.67.194.234-7416
+  - ~1ms | 美国 651
+  - ~1ms | 🇺🇸美国US029 1.85MB/s中性 TG@jcnode
+  - ~1ms | 🇺🇸 US 816 → tg@nicevpn123
+  - ~1ms | 美国 017
+  - ~1ms | 美国 408
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_126
+  - ~1ms | 🇺🇸 US 1133 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-104.21.81.238-7821
+  - ~1ms | 🇺🇸 US 2000 → tg@nicevpn123
+  - ~1ms | 美国 658
+  - ~1ms | 🏁RELAY-104.24.154.5-7816
+  - ~1ms | 🇺🇸 US 652 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 888 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1209 → tg@nicevpn123
+  - ~1ms | 🇺🇸US_457|131KB/s|A004-260618 01
+  - ~1ms | 🇺🇸 US 283 → tg@nicevpn123
+  - ~1ms | 🇫🇷FR_2070|501KB/s|M003-260806 01
+  - ~1ms | 🇨🇦 CA 23 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1950 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-172.67.189.8-7426
+  - ~1ms | 🇺🇸 US 844 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1005 → tg@nicevpn123
+  - ~1ms | 美国 520
+  - ~1ms | trojan-1827147300
+  - ~1ms | 🇺🇸 US 1946 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 67 → tg@nicevpn123
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_23
+  - ~1ms | 🇺🇸 US 546 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-141.101.114.33-0051
+  - ~1ms | 巴西 021
+  - ~1ms | 🇺🇸 US 1773 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 296 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 471 → tg@nicevpn123
+  - ~1ms | 美国 438
+  - ~1ms | 伯利兹 020
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_61
+  - ~1ms | 🇺🇸 US 1951 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1394 → tg@nicevpn123
+  - ~1ms | trojan-11695
+  - ~1ms | 🏁RELAY-141.101.120.243-7645
+  - ~1ms | trojan-250743436
+  - ~1ms | 🇺🇸 US 1852 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-172.67.212.128-7411
+  - ~1ms | 🇺🇸 US 1074 → tg@nicevpn123
+  - ~1ms | 伯利兹 015
+  - ~1ms | 🇺🇸 US 1247 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 973 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 922 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-104.31.16.196-7785
+  - ~1ms | 美国 822
+  - ~1ms | 🇺🇸 US 972 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-172.67.199.34-2914
+  - ~1ms | 🇺🇸 US 1823 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1928 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 843 → tg@nicevpn123
+  - ~1ms | 美国 839
+  - ~1ms | 🏁RELAY-104.31.16.35-7751
+  - ~1ms | 🇺🇸 US 1234 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1564 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-172.67.237.73-7403
+  - ~1ms | trojan-258596218
+  - ~1ms | 美国 421
+  - ~1ms | 分享日记_546
+  - ~1ms | 🇺🇸 US 238 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1135 → tg@nicevpn123
+  - ~1ms | 美国 824
+  - ~1ms | 分享日记_9
+  - ~1ms | 🇫🇷FR²_4|4.5MB/s|D+|X
+  - ~1ms | 🇺🇸 US 464 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1396 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 554 → tg@nicevpn123
+  - ~1ms | US美国(mibei77.com 米贝节点分享)_56
+  - ~1ms | 🇸🇬SG_81|656KB/s|M002-260618 01
+  - ~1ms | 🇺🇸 US 2039 → tg@nicevpn123
+  - ~1ms | 美国 755
+  - ~1ms | trojan-256504395
+  - ~1ms | 美国 535
+  - ~1ms | 🏁RELAY-172.67.131.245-7441
+  - ~1ms | 🇺🇸 US 262 → tg@nicevpn123
+  - ~1ms | 巴西 007
+  - ~1ms | 🇺🇸 US 2013 → tg@nicevpn123
+  - ~1ms | 美国 994
+  - ~1ms | 🇺🇸 US 813 → tg@nicevpn123
+  - ~1ms | FR法国(mibei77.com 米贝节点分享)_11
+  - ~1ms | 🇩🇪德国DE153 测速未知中性 TG@jcnode
+  - ~1ms | 🇺🇸 US 1743 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1244 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-172.67.216.97-7405
+  - ~1ms | 🇺🇸美国US062 1.75MB/s中性 TG@jcnode
+  - ~1ms | 🇺🇸 US 293 → tg@nicevpn123
+  - ~1ms | 分享日记_100
+  - ~1ms | 🇺🇸 US 58 → tg@nicevpn123
+  - ~1ms | trojan-16411
+  - ~1ms | 🇺🇸 US 1915 → tg@nicevpn123
+  - ~1ms | 🇫🇷FR_1872|229KB/s|M003-260806 01
+  - ~1ms | 🇬🇧GB²_1|5.0MB/s|52%|GPT|D+|X
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_204
+  - ~1ms | 🇺🇸 US 1749 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 2019 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1605 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 828 → tg@nicevpn123
+  - ~1ms | 美国 361
+  - ~1ms | 🇺🇸 US 62 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-162.159.242.211-7515
+  - ~1ms | 🇺🇸 US 1602 → tg@nicevpn123
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_72
+  - ~1ms | 美国 124
+  - ~1ms | 🇺🇸 US 1515 → tg@nicevpn123
+  - ~1ms | trojan-226579427
+  - ~1ms | 🏁RELAY-203.23.106.157-7273
+  - ~1ms | 荷兰 025
+  - ~1ms | 🇺🇸 US 985 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1235 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 824 → tg@nicevpn123
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_123
+  - ~1ms | 🏁RELAY-172.67.81.238-7387
+  - ~1ms | 分享日记_336
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_206
+  - ~1ms | 🇺🇸 US 1728 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1958 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1931 → tg@nicevpn123
+  - ~1ms | IT 17 → tg@nicevpn123
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_254
+  - ~1ms | 🇯🇵日本JP027 1.44MB/s纯净 TG@jcnode
+  - ~1ms | 🇺🇸 US 935 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1791 → tg@nicevpn123
+  - ~1ms | 美国 833
+  - ~1ms | trojan-11673
+  - ~1ms | 美国 083
+  - ~1ms | 🇺🇸 US 1359 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1249 → tg@nicevpn123
+  - ~1ms | 美国 539
+  - ~1ms | 🇺🇸 US 837 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-162.159.36.103-7501
+  - ~1ms | 🇺🇸 US 845 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1949 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1318 → tg@nicevpn123
+  - ~1ms | 🇯🇵日本JP024 1.55MB/s纯净 TG@jcnode
+  - ~1ms | 🇺🇸 US 160 → tg@nicevpn123
+  - ~1ms | 美国 662
+  - ~1ms | 🇺🇸 US 66 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-172.67.201.142-2897
+  - ~1ms | 🇺🇸 US 1260 → tg@nicevpn123
+  - ~1ms | 伯利兹 005
+  - ~1ms | 🇺🇸 US 552 → tg@nicevpn123
+  - ~1ms | 🏁RELAY-172.67.237.176-7404
+  - ~1ms | 英国 021
+  - ~1ms | 🇺🇸 US 1373 → tg@nicevpn123
+  - ~1ms | 🇫🇷FR_1417|484KB/s|B007-260618 01
+  - ~1ms | 未知_🏳️_youtube@资源分享师_ZZ_90
+  - ~1ms | 美国 837
+  - ~1ms | 🇺🇸 US 1920 → tg@nicevpn123
+  - ~1ms | 🇺🇸 US 1709 → tg@nicevpn123
 rules:
 - MATCH,PROXY
